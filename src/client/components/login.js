@@ -19,7 +19,7 @@ function Login() {
                 </div>
                 <div>
                     <label htmlFor={"color"}>Color</label>
-                    <input type={"text"} name={"color"} />
+                    <input type={"color"} name={"color"} />
                 </div>
                 <input type={"submit"} value={"Add Member"} />
             </form>

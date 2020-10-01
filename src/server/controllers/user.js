@@ -5,6 +5,7 @@ const { validationResult } = require('express-validator');
 const { JWT_SECRET } = process.env;
 
 const User = require("../models/user");
+const calculations = require("../middlewares/calculations");
 
 exports.signup = async (req, res, next) => {
     // Check if any error in the form sent by frontend
@@ -32,13 +33,18 @@ exports.signup = async (req, res, next) => {
             // Create bcrypt hash
         let hash = await bcrypt.hash(password, 10);
 
+        // Calculations of trees and amout of leaves given to new user
+        //let newNumberOfLeaves = calculations.assignNumberOfTrees();
+        let newNumberOfLeaves = await calculations.assignNumberOfLeaves();
+
         // Create user
         user = new User({
             username: username,
             email: email,
             password: hash,
             color: color,
-            avatar: avatar
+            avatar: avatar,
+            number_of_leaves: newNumberOfLeaves,
         });
 
         // Insert new user into db
@@ -58,7 +64,7 @@ exports.signup = async (req, res, next) => {
             (err, token) => {
                 if (err)
                     throw err;
-                res.json({ msg: "User created!", token: token });
+                res.json({ msg: "User created!", user: user, token: token });
             }
             );
     } catch(err) {
@@ -67,69 +73,53 @@ exports.signup = async (req, res, next) => {
     }
 };
 
-/*
-exports.signup = (req, res, next) => {
-    User.find().estimatedDocumentCount()
-        .then(count => {
-            let totalAmountOfPlayers = count;
-            User.find()
-                .then(users => {
-                    let totalAmountOfLeavesInGame = users.forEach(user => totalNumberOfLeavesInGame += user.number_of_leaves);
+exports.login = async (req, res, next) => {
+    // Check if any error in the form sent by frontend
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
 
-                    bcrypt.hash(req.body.password, 10)
-                        .then(hash => {
-                            const user = new User({
-                                username: req.body.username,
-                                email: req.body.email,
-                                password: hash,
-                                color: req.body.color,
-                                number_of_trees: 3, // calculer en fonction de table tree-user > assigner au new user 3 random free tree (tree où aucun owner)
-                                number_of_leaves: Math.floor(totalAmountOfLeavesInGame / totalAmountOfPlayers)
-                                });
+    // Get request body from frontend
+    const { email, password } = req.body;
 
-                            if (!user.username || !user.email || !user.password || !user.color)
-                            {
-                                return res.status(400).json({error: 'Please fill up all fiels!'});
-                            }
-                            // Register to DB
-                            user.save()
-                                .then(() => res.status(201).json({message: 'User created!'}))
-                                .catch(error => res.status(500).json({ error }));
-                        })
-                        .catch(error => res.status(500).json({error}));
-                })
-                .catch(error => res.status(500).json({error}));
+    try {
+        // Check if the user's already registered in the db
+        let user = await User.findOne({email: email});
+
+        if (!user) {
+            return res.status(400).json({errors: [{msg: "Invalid credentials. User not found!"}]});
+        }
+
+        const isMatch = await bcrypt.compare(password, user.password);
+
+        if(!isMatch) {
+            return res
+                .status(401)
+                .json({error: "Invalid credentials. Password incorrect!"});
+        }
+
+        // If everything is fine, send token of identification
+        const payload = {
+            user: {
+                id: user.id
             }
-        )
-        .catch(error => res.status(500).json({error}));
-};*/
+        }
 
-exports.login = (req, res, next) => {
-    User.findOne({email: req.body.email})
-        .then(user => {
-            if (!user) {
-                return res.status(401).json({error: "User not found!"});
+        jwt.sign(
+            payload,
+            JWT_SECRET,
+            {expiresIn: "24h"},
+            (err, token) => {
+                if (err)
+                    throw err;
+                res.status(200).json({ msg: "User logged in!", token: token });
             }
-            bcrypt
-                .compare(req.body.password, user.password)
-                .then(valid => {
-                    if (!valid) {
-                        return res
-                            .status(401)
-                            .json({error: "Password incorrect!"});
-                    }
-                    res.status(200).json({
-                        userId: user._id,
-                        token: jwt.sign(
-                            {userId: user._id},
-                            "RANDOM_TOKEN_SECRET",
-                            {expiresIn: "24h"},
-                        ),
-                    });
-                })
-                .catch(error => res.status(500).json({error}));
-        })
-        .catch(error => res.status(500).json({error}));
+        );
+    } catch(err) {
+        console.error(err.message);
+        res.status(500).json({ errors: [{ msg: "Server error"}]});
+    }
 };
 
 exports.getAllUsers = async (req, res, next) => {
@@ -150,33 +140,46 @@ exports.getOneUser = async (req, res, next) => {
     }
 };
 
-exports.updateUser = (req, res, next) => {
-    const updatedUser = req.body;
-    User.findOne({_id: req.params.id})
-        .then(user => {
-            user.username = updatedUser.username
-                ? updatedUser.username
-                : user.username;
-            user.email = updatedUser.email ? updatedUser.email : user.email;
-            user.password = updatedUser.password
-                ? updatedUser.password
-                : user.password;
-            user.color = updatedUser.color ? updatedUser.color : user.color;
-            res.status(200).json({msg: "User updated!", user});
-        })
-        .catch(() => res.status(400).json({error: "No user found!"}));
-};
+exports.updateUser = async (req, res, next) => {
+    try {
+        const {username, password, color} = req.body;
 
-exports.deleteUser = (req, res, next) => {
-    User.deleteOne({_id: req.params.id})
-        .then(data => {
-            if (data.deletedCount !== 0) {
-                res.status(200).json({msg: "User deleted!"});
-            } else {
-                res.status(500).json({
-                    error: "User couldn't be deleted. Try again.",
-                });
-            }
-        })
-        .catch(() => res.status(400).json({error: "No user found!"}));
+        const userToUpdate = await User.findById(req.params.id);
+
+        userToUpdate.username = username ? username : userToUpdate.username;
+
+        if(password) {
+            let hash = await bcrypt.hash(password, 10);
+            userToUpdate.password = hash;
+        } else {
+            userToUpdate.password = userToUpdate.password;
+        }
+
+        userToUpdate.color = color ? color : userToUpdate.color;
+
+        await User.updateOne({_id: req.params.id}, {
+            username: userToUpdate.username,
+            password: userToUpdate.password,
+            color: userToUpdate.color
+        });
+
+        res.status(200).json({msg: "User updated!"});
+    } catch (err) {
+        res.status(400).json({errors: [{msg: "No user found!"}]});
+    };
+}
+
+exports.deleteUser = async (req, res, next) => {
+    try {
+        const response = await User.deleteOne({_id: req.params.id});
+        if (response.deletedCount !== 0) {
+            res.status(200).json({msg: "User deleted!"});
+        } else {
+            res.status(500).json({errors: [{
+                msg: "User couldn't be deleted. Try again.",
+            }]});
+        }
+    } catch(err) {
+        res.status(400).json({errors: [{msg: "No user found!"}]});
+    }
 };

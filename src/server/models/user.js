@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     password: {type: String, required: true},
     color: {type: String, required: true},
     avatar: {type: String},
-    number_of_trees: {type: Number, required: true, default: 0},
+    number_of_trees: {type: Number, required: true, default: 3},
     number_of_leaves: {type: Number, required: true, default: 0},
 });
 

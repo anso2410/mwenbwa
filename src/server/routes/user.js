@@ -16,9 +16,15 @@ router.post("/signup", [
         check('color', 'Color is required').not().isEmpty(),
     ],
     userCtrl.signup);
-router.post("/login", userCtrl.login);
+router.post("/login", [
+        check('email', 'Please include a valid email').isEmail(),
+        check(
+            'password',
+            'Password is required.'
+        ).exists()
+    ],
+    userCtrl.login);
+router.put("/:id", userCtrl.updateUser);
+router.delete("/:id", userCtrl.deleteUser);
 
 module.exports = router;
-
-/*
-*/

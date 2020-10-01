@@ -11,6 +11,8 @@ const Data = require("./models/data");
 const Tree = require("./models/tree");
 const User = require("./models/user");
 
+const calculations = require("./middlewares/calculations");
+
 const app = express();
 
 // Process env variables
@@ -34,7 +36,7 @@ app.use((req, res, next) => {
 
 // Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
 // (permet d'avoir accès à l'index.html pour la route "/" notamment.
-//app.use(express.static(path.resolve(__dirname, "../../bin/client")));
+app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 // API Test
 app.get("/", (req, res) => {
@@ -130,3 +132,7 @@ app.use("/api/gamelog", userRoutes);*/
 app.listen(PORT, () =>
     console.log(`🚀 Server is listening on port ${PORT}.`),
 );
+
+
+// Test
+calculations.assignNumberOfLeaves();
