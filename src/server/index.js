@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 
 // Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
 // (permet d'avoir accès à l'index.html pour la route "/" notamment.
-//app.use(express.static(path.resolve(__dirname, "../../bin/client")));
+app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 // API Test
 app.get("/", (req, res) => {

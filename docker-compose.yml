@@ -10,7 +10,7 @@ services:
       - './node_modules:/src/app/node_modules'
       - './bin:/src/app/bin'
       -  './.env:/src/app/.env'
-      - './config/default.json:/src/app/config/default.json'
+     
     expose:
       - '12345'
       - '9229'

@@ -10,6 +10,7 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./scss/app.scss";
 
-import Login from "./components/login";
+import App from "./components/main";
+import L from "leaflet";
 
-ReactDOM.render(<Login />, document.querySelector("#app"));
+ReactDOM.render(<App />, document.querySelector("#app"));

@@ -7,9 +7,23 @@ body {
   max-height: 100vh;
   min-height: 20vh;
   position: relative;
-  background-color: lightgreen;
+  background-color: rgb(106, 107, 106);;
   color: $mainColor;
   font-size: 16px;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.test {
+  padding: 5px;
+  
+}
+.leaflet-container {
+  width: 50%;
+  height: 50vh;
+  margin: 50px auto;
+
+}
+.margin {
+  margin-left: 50px;
 }
