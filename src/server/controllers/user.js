@@ -157,13 +157,18 @@ exports.updateUser = async (req, res, next) => {
 
         userToUpdate.color = color ? color : userToUpdate.color;
 
-        await User.updateOne({_id: req.params.id}, {
+        await userToUpdate.save();
+
+        // Variante, no need, méthode .save() + recommandée car exécute full validation
+        /*
+        await User.updateOne(
+            {_id: req.params.id}, {
             username: userToUpdate.username,
             password: userToUpdate.password,
             color: userToUpdate.color
-        });
+        });*/
 
-        res.status(200).json({msg: "User updated!"});
+        res.status(200).json({msg: "User updated!", userToUpdate});
     } catch (err) {
         res.status(400).json({errors: [{msg: "No user found!"}]});
     };

@@ -14,3 +14,13 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(uniqueValidator);
 
 module.exports = mongoose.model("User", userSchema);
+
+/*
+Story.findOne({ title: 'Casino Royale' }, function(error, story) {
+  if (error) {
+    return handleError(error);
+  }
+  story.author = author;
+  console.log(story.author.name); // prints "Ian Fleming"
+});
+ */

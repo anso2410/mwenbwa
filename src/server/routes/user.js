@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const { check } = require('express-validator');
+const auth = require('../middlewares/auth');
 
 const userCtrl = require("../controllers/user");
 
-router.get("/", userCtrl.getAllUsers);
-router.get("/:id", userCtrl.getOneUser);
+router.get("/", auth, userCtrl.getAllUsers);
+router.get("/:id", auth, userCtrl.getOneUser);
 router.post("/signup", [
         check('username', 'Username is required').not().isEmpty(),
         check('email', 'Please include a valid email').isEmail(),
@@ -24,7 +25,7 @@ router.post("/login", [
         ).exists()
     ],
     userCtrl.login);
-router.put("/:id", userCtrl.updateUser);
-router.delete("/:id", userCtrl.deleteUser);
+router.put("/:id", auth, userCtrl.updateUser);
+router.delete("/:id", auth, userCtrl.deleteUser);
 
 module.exports = router;

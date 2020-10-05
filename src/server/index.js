@@ -3,6 +3,9 @@ import express from "express";
 import path from "path";
 import connectDB from "./config/db";
 
+// Op to run before anything else
+const sanitizeDataset = require("./middlewares/sanitizeTrees");
+
 // Import des routes
 const treeRoutes = require("./routes/tree");
 const userRoutes = require("./routes/user");
@@ -54,6 +57,19 @@ app.get("/users/:id", (req, res) => {
         .then(user => res.status(200).json(user))
         .catch(() => res.status(400).json({error: "No user found!"}));
 });
+
+app.get("/api/trees/:id", async (req, res) => {
+    try {
+        const tree = await Tree
+            .findById(req.params.id)
+            .populate('owner_id');
+        res.status(200).json(tree);
+    } catch (err) {
+        res.status(400).json({error: "No tree found!"});
+    }
+});
+
+app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
 
 /*app.get("/api/trees/:id", (req, res) => {
     Data.findOne({ _id: req.params.id }, (err, doc) => {

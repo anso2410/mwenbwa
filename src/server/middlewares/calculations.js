@@ -1,7 +1,7 @@
 const User = require('../models/user');
 
 // TO DO
-exports.assignRandomFreeTrees = async (user) => {
+/*exports.assignRandomFreeTrees = async (user) => {
     try {
         // Check free trees and assign tree random ones
         const totalAmountOfPlayers = await User.find().estimatedDocumentCount();
@@ -16,7 +16,7 @@ exports.assignRandomFreeTrees = async (user) => {
     } catch {
         console.log({errors: [{msg: "Server internal error."}]});
     }
-};
+};*/
 
 exports.assignNumberOfLeaves = async () => {
     try {
@@ -28,13 +28,11 @@ exports.assignNumberOfLeaves = async () => {
 
         leavesInGame.forEach(user => {
             totalAmountOfLeavesInGame += parseInt(user.number_of_leaves);
-            console.log(totalAmountOfLeavesInGame);
         });
 
         let leavesToGiveToNewUser = Math.round(totalAmountOfLeavesInGame / totalAmountOfPlayers);
 
         // Assign result to user
-        console.log(leavesToGiveToNewUser);
         return leavesToGiveToNewUser;
 
     } catch {
