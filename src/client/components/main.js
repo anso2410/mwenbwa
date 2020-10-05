@@ -3,19 +3,14 @@ import Login from "./login";
 import Test from "./carte";
 import Title from "./title";
 
-function App ()
-{
+function App() {
     return (
-        
-            
-        
         <div>
-           <Title />
-           <Login />
+            <Title />
+            <Login />
             <Test />
         </div>
-      
-    )
+    );
 }
 
 export default App;

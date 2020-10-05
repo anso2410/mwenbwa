@@ -1,0 +1,979 @@
+[ 
+    {
+        "y_lambert72": 149623.77,
+        "arbotag": 1653,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5753164,
+        "geoloc": {
+            "lat": 50.650997,
+            "lon": 5.5753164
+        },
+        "hauteur_totale": 23.5,
+        "x_lambert72": 235323.48,
+        "y_phi": 50.650997,
+        "nom_complet": "Platanus x acerifolia",
+        "diametre_cime": 11,
+        "circonf": 184
+    },
+    {
+        "y_lambert72": 147833.56,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6304464,
+        "geoloc": {
+            "lat": 50.634315,
+            "lon": 5.6304464
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 239253.23,
+        "y_phi": 50.634315,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 151409.02,
+        "arbotag": 14396,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5664897,
+        "geoloc": {
+            "lat": 50.667137,
+            "lon": 5.5664897
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 234670.38,
+        "y_phi": 50.667137,
+        "nom_complet": "Prunus serrulata 'Sunset Boulevard'",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 151387.69,
+        "arbotag": 14397,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.566485,
+        "geoloc": {
+            "lat": 50.666946,
+            "lon": 5.566485
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 234670.38,
+        "y_phi": 50.666946,
+        "nom_complet": "Prunus serrulata 'Sunset Boulevard'",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 147827.34,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6301723,
+        "geoloc": {
+            "lat": 50.634262,
+            "lon": 5.6301723
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 239233.94,
+        "y_phi": 50.634262,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 147830.17,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6297636,
+        "geoloc": {
+            "lat": 50.634293,
+            "lon": 5.6297636
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 239204.95,
+        "y_phi": 50.634293,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 148806.02,
+        "arbotag": 16240,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6354003,
+        "geoloc": {
+            "lat": 50.643005,
+            "lon": 5.6354003
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 239587.12,
+        "y_phi": 50.643005,
+        "nom_complet": "Tilia x europaea",
+        "diametre_cime": null,
+        "circonf": 125
+    },
+    {
+        "y_lambert72": 149546.77,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5761557,
+        "geoloc": {
+            "lat": 50.650295,
+            "lon": 5.5761557
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 235384.08,
+        "y_phi": 50.650295,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 149544.12,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5766373,
+        "geoloc": {
+            "lat": 50.650265,
+            "lon": 5.5766373
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 235418.2,
+        "y_phi": 50.650265,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    
+       {
+           "y_lambert72": 149682.77,
+           "arbotag": 1770,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.5805,
+           "geoloc": {
+               "lat": 50.651474,
+               "lon": 5.5805
+           },
+           "hauteur_totale": 17.3,
+           "x_lambert72": 235689.14,
+           "y_phi": 50.651474,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 9,
+           "circonf": 136
+       },
+       {
+           "y_lambert72": 149688.6,
+           "arbotag": 1771,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.580591,
+           "geoloc": {
+               "lat": 50.651524,
+               "lon": 5.580591
+           },
+           "hauteur_totale": 18.1,
+           "x_lambert72": 235695.48,
+           "y_phi": 50.651524,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 11,
+           "circonf": 165
+       },
+       {
+           "y_lambert72": 149693.1,
+           "arbotag": 1772,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.5806785,
+           "geoloc": {
+               "lat": 50.65156,
+               "lon": 5.5806785
+           },
+           "hauteur_totale": 18.2,
+           "x_lambert72": 235701.58,
+           "y_phi": 50.65156,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 9,
+           "circonf": 110
+       },
+       {
+           "y_lambert72": 149700.5,
+           "arbotag": 1700,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.581035,
+           "geoloc": {
+               "lat": 50.651627,
+               "lon": 5.581035
+           },
+           "hauteur_totale": 16.7,
+           "x_lambert72": 235726.7,
+           "y_phi": 50.651627,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 10,
+           "circonf": 77
+       },
+       {
+           "y_lambert72": 149652.61,
+           "arbotag": 1657,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.575368,
+           "geoloc": {
+               "lat": 50.651253,
+               "lon": 5.575368
+           },
+           "hauteur_totale": 9.5,
+           "x_lambert72": 235326.66,
+           "y_phi": 50.651253,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 5,
+           "circonf": 35
+       },
+       {
+           "y_lambert72": 149629.6,
+           "arbotag": 1654,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.5753293,
+           "geoloc": {
+               "lat": 50.651047,
+               "lon": 5.5753293
+           },
+           "hauteur_totale": 22.0,
+           "x_lambert72": 235324.28,
+           "y_phi": 50.651047,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 8,
+           "circonf": 169
+       },
+       {
+           "y_lambert72": 149624.81,
+           "arbotag": 1635,
+           "date_donnees": "2020-05-14T00:00:00+00:00",
+           "x_lambda": 5.5751634,
+           "geoloc": {
+               "lat": 50.651005,
+               "lon": 5.5751634
+           },
+           "hauteur_totale": 23.5,
+           "x_lambert72": 235312.64,
+           "y_phi": 50.651005,
+           "nom_complet": "Platanus x acerifolia",
+           "diametre_cime": 9,
+           "circonf": 208
+       },
+    {
+        "y_lambert72": 148917.86,
+        "arbotag": 3320,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.581683,
+        "geoloc": {
+            "lat": 50.64458,
+            "lon": 5.581683
+        },
+        "hauteur_totale": 22.4,
+        "x_lambert72": 235785.33,
+        "y_phi": 50.64458,
+        "nom_complet": "Platanus x acerifolia",
+        "diametre_cime": 13,
+        "circonf": 292
+    },
+    {
+        "y_lambert72": 148924.56,
+        "arbotag": 3321,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.581805,
+        "geoloc": {
+            "lat": 50.64464,
+            "lon": 5.581805
+        },
+        "hauteur_totale": 20.2,
+        "x_lambert72": 235793.86,
+        "y_phi": 50.64464,
+        "nom_complet": "Platanus x acerifolia",
+        "diametre_cime": 10,
+        "circonf": 195
+    },
+    {
+        "y_lambert72": 148933.44,
+        "arbotag": 3322,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5819006,
+        "geoloc": {
+            "lat": 50.644722,
+            "lon": 5.5819006
+        },
+        "hauteur_totale": 22.3,
+        "x_lambert72": 235800.45,
+        "y_phi": 50.644722,
+        "nom_complet": "Platanus x acerifolia",
+        "diametre_cime": 15,
+        "circonf": 300
+    },
+    {
+        "y_lambert72": 145288.34,
+        "arbotag": 14423,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.584002,
+        "geoloc": {
+            "lat": 50.611923,
+            "lon": 5.584002
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 236008.8,
+        "y_phi": 50.611923,
+        "nom_complet": "Tilia cordata",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145307.39,
+        "arbotag": 14418,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.584065,
+        "geoloc": {
+            "lat": 50.612095,
+            "lon": 5.584065
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 236012.94,
+        "y_phi": 50.612095,
+        "nom_complet": "Tilia cordata",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145328.12,
+        "arbotag": 14412,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5841026,
+        "geoloc": {
+            "lat": 50.61228,
+            "lon": 5.5841026
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 236015.27,
+        "y_phi": 50.61228,
+        "nom_complet": "Tilia cordata",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 150936.2,
+        "arbotag": 8508,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6508875,
+        "geoloc": {
+            "lat": 50.66199,
+            "lon": 5.6508875
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 240645.9,
+        "y_phi": 50.66199,
+        "nom_complet": "Acer platanoides",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 151010.62,
+        "arbotag": 8503,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6507497,
+        "geoloc": {
+            "lat": 50.662663,
+            "lon": 5.6507497
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 240634.88,
+        "y_phi": 50.662663,
+        "nom_complet": "Acer platanoides",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 150980.8,
+        "arbotag": 8505,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.650815,
+        "geoloc": {
+            "lat": 50.66239,
+            "lon": 5.650815
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 240640.0,
+        "y_phi": 50.66239,
+        "nom_complet": "Acer platanoides",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 150962.2,
+        "arbotag": 8506,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.650842,
+        "geoloc": {
+            "lat": 50.662224,
+            "lon": 5.650842
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 240642.25,
+        "y_phi": 50.662224,
+        "nom_complet": "Acer platanoides",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146077.9,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6205783,
+        "geoloc": {
+            "lat": 50.618637,
+            "lon": 5.6205783
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 238584.64,
+        "y_phi": 50.618637,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 146076.34,
+        "arbotag": null,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.620548,
+        "geoloc": {
+            "lat": 50.61862,
+            "lon": 5.620548
+        },
+        "hauteur_totale": null,
+        "x_lambert72": 238582.5,
+        "y_phi": 50.61862,
+        "nom_complet": "en cours de détermination",
+        "diametre_cime": null,
+        "circonf": null
+    },
+    {
+        "y_lambert72": 145421.06,
+        "arbotag": 14436,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5891104,
+        "geoloc": {
+            "lat": 50.613064,
+            "lon": 5.5891104
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236368.2,
+        "y_phi": 50.613064,
+        "nom_complet": "Platanus X acerifolia \"Alphen's globe\"",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145440.48,
+        "arbotag": 14433,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5890346,
+        "geoloc": {
+            "lat": 50.61324,
+            "lon": 5.5890346
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236362.55,
+        "y_phi": 50.61324,
+        "nom_complet": "Platanus X acerifolia \"Alphen's globe\"",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 146398.38,
+        "arbotag": 14832,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.570647,
+        "geoloc": {
+            "lat": 50.622044,
+            "lon": 5.570647
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235045.44,
+        "y_phi": 50.622044,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 146392.81,
+        "arbotag": 14831,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.570724,
+        "geoloc": {
+            "lat": 50.621994,
+            "lon": 5.570724
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235050.98,
+        "y_phi": 50.621994,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146368.56,
+        "arbotag": 14829,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.571033,
+        "geoloc": {
+            "lat": 50.621773,
+            "lon": 5.571033
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235073.27,
+        "y_phi": 50.621773,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146313.98,
+        "arbotag": 14823,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5717335,
+        "geoloc": {
+            "lat": 50.621273,
+            "lon": 5.5717335
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235123.72,
+        "y_phi": 50.621273,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146339.4,
+        "arbotag": 14826,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5714145,
+        "geoloc": {
+            "lat": 50.621506,
+            "lon": 5.5714145
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 235100.73,
+        "y_phi": 50.621506,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 146358.8,
+        "arbotag": 14828,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.571154,
+        "geoloc": {
+            "lat": 50.62168,
+            "lon": 5.571154
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235081.98,
+        "y_phi": 50.62168,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146331.22,
+        "arbotag": 14825,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.571516,
+        "geoloc": {
+            "lat": 50.62143,
+            "lon": 5.571516
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235108.06,
+        "y_phi": 50.62143,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 146304.52,
+        "arbotag": 14822,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5718694,
+        "geoloc": {
+            "lat": 50.621185,
+            "lon": 5.5718694
+        },
+        "hauteur_totale": 7.5,
+        "x_lambert72": 235133.48,
+        "y_phi": 50.621185,
+        "nom_complet": "Corylus  colurna",
+        "diametre_cime": null,
+        "circonf": 75
+    },
+    {
+        "y_lambert72": 145473.66,
+        "arbotag": 15189,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5870624,
+        "geoloc": {
+            "lat": 50.61356,
+            "lon": 5.5870624
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236222.39,
+        "y_phi": 50.61356,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145465.45,
+        "arbotag": 15262,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5872173,
+        "geoloc": {
+            "lat": 50.613483,
+            "lon": 5.5872173
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236233.5,
+        "y_phi": 50.613483,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145464.66,
+        "arbotag": 15261,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.587793,
+        "geoloc": {
+            "lat": 50.613472,
+            "lon": 5.587793
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236274.25,
+        "y_phi": 50.613472,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145472.06,
+        "arbotag": 15201,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5897307,
+        "geoloc": {
+            "lat": 50.613518,
+            "lon": 5.5897307
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236411.3,
+        "y_phi": 50.613518,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145471.0,
+        "arbotag": 15202,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.58988,
+        "geoloc": {
+            "lat": 50.613506,
+            "lon": 5.58988
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236421.89,
+        "y_phi": 50.613506,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145459.84,
+        "arbotag": 15252,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.589411,
+        "geoloc": {
+            "lat": 50.61341,
+            "lon": 5.589411
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236388.84,
+        "y_phi": 50.61341,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145459.06,
+        "arbotag": 15251,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5895677,
+        "geoloc": {
+            "lat": 50.613403,
+            "lon": 5.5895677
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236399.97,
+        "y_phi": 50.613403,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145458.27,
+        "arbotag": 15249,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5898104,
+        "geoloc": {
+            "lat": 50.61339,
+            "lon": 5.5898104
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236417.16,
+        "y_phi": 50.61339,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145465.97,
+        "arbotag": 15205,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.590451,
+        "geoloc": {
+            "lat": 50.613453,
+            "lon": 5.590451
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236462.38,
+        "y_phi": 50.613453,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145464.12,
+        "arbotag": 15207,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5907083,
+        "geoloc": {
+            "lat": 50.613434,
+            "lon": 5.5907083
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236480.62,
+        "y_phi": 50.613434,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145454.6,
+        "arbotag": 15208,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5911436,
+        "geoloc": {
+            "lat": 50.613346,
+            "lon": 5.5911436
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236511.58,
+        "y_phi": 50.613346,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145439.78,
+        "arbotag": 15245,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.591182,
+        "geoloc": {
+            "lat": 50.613213,
+            "lon": 5.591182
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236514.55,
+        "y_phi": 50.613213,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145435.55,
+        "arbotag": 15243,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.591464,
+        "geoloc": {
+            "lat": 50.61317,
+            "lon": 5.591464
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236534.6,
+        "y_phi": 50.61317,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145422.31,
+        "arbotag": 15242,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5921826,
+        "geoloc": {
+            "lat": 50.613045,
+            "lon": 5.5921826
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236585.66,
+        "y_phi": 50.613045,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145381.84,
+        "arbotag": 15213,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.594311,
+        "geoloc": {
+            "lat": 50.612656,
+            "lon": 5.594311
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236737.02,
+        "y_phi": 50.612656,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145378.4,
+        "arbotag": 15214,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5944376,
+        "geoloc": {
+            "lat": 50.612625,
+            "lon": 5.5944376
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236746.0,
+        "y_phi": 50.612625,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145375.75,
+        "arbotag": 15215,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5945525,
+        "geoloc": {
+            "lat": 50.6126,
+            "lon": 5.5945525
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236754.2,
+        "y_phi": 50.6126,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145374.95,
+        "arbotag": 15216,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.5947695,
+        "geoloc": {
+            "lat": 50.61259,
+            "lon": 5.5947695
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236769.55,
+        "y_phi": 50.61259,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145380.52,
+        "arbotag": 15218,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.595406,
+        "geoloc": {
+            "lat": 50.612633,
+            "lon": 5.595406
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 236814.53,
+        "y_phi": 50.612633,
+        "nom_complet": "Cornus mas",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145057.92,
+        "arbotag": 14990,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.6207166,
+        "geoloc": {
+            "lat": 50.609463,
+            "lon": 5.6207166
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 238611.62,
+        "y_phi": 50.609463,
+        "nom_complet": "Sorbus aria",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145062.1,
+        "arbotag": 14989,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.620817,
+        "geoloc": {
+            "lat": 50.6095,
+            "lon": 5.620817
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 238618.67,
+        "y_phi": 50.6095,
+        "nom_complet": "Sorbus aria",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145066.3,
+        "arbotag": 14988,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.620929,
+        "geoloc": {
+            "lat": 50.60954,
+            "lon": 5.620929
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 238626.5,
+        "y_phi": 50.60954,
+        "nom_complet": "Sorbus aria",
+        "diametre_cime": null,
+        "circonf": 25
+    },
+    {
+        "y_lambert72": 145076.1,
+        "arbotag": 14986,
+        "date_donnees": "2020-05-14T00:00:00+00:00",
+        "x_lambda": 5.621163,
+        "geoloc": {
+            "lat": 50.609623,
+            "lon": 5.621163
+        },
+        "hauteur_totale": 2.5,
+        "x_lambert72": 238642.9,
+        "y_phi": 50.609623,
+        "nom_complet": "Sorbus aria",
+        "diametre_cime": null,
+        "circonf": 25
+    }
+]
