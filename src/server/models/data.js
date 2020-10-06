@@ -18,3 +18,9 @@ const dataSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Data", dataSchema);
+
+// Paragraphe perso
+// Paragraphe sur why cette société, qu'est-ce qui intéresse, pourquoi on veut aller chez eux (personnaliser en citant leurs projets) + anecdote intéressante
+// Se vanter par rapport à compétences développées
+// Nicolas m'a conseillé
+// Je veux un rendez-vous, puis merci à bientôt

@@ -28,26 +28,28 @@ exports.sanitizeTrees = async (req, res, next) => {
 
         //const result = await Tree.updateOne({_id: trees[0]._id}, {$unset: {full_name: ""}});
 
+        /*
+        const heightInCm = Math.round(trees[1].hauteur_totale * 100);
+        const diameterFromCirconf = Math.round(trees[1].circonf / Math.PI);
+        const treeValue = Math.round(trees[1].hauteur_totale * Math.round(trees[1].circonf / Math.PI));
+        */
+        /*
         const result = await Tree.updateOne(
-            let heightInCm = trees[0].hauteur_totale * 100;
-            let diameterFromCirconf = Math.round(trees[0].circonf / Math.PI);
-
-            {_id: trees[0]._id},
+            {_id: trees[1]._id},
             {
                 $set: {
-                    full_name: trees[0].nom_complet,
+                    full_name: trees[1].nom_complet,
                     size: {
                         height: heightInCm,
                         diameter: diameterFromCirconf,
                     },
-                    value: 0,
-                    geoloc: {
-                        lat: trees[0].geoloc.lat,
-                        lon: trees[0].geoloc.lon,
+                    value: treeValue,
+                    location: {
+                        coordinates: [trees[1].x_lambda, trees[1].y_phi],
                     },
-                    wikipedia_page: `https://en.wikipedia.org/wiki/${trees[0].nom_complet}`,
-                },
-                $unset: {
+                    wikipedia_page: `https://en.wikipedia.org/wiki/${trees[1].nom_complet}`,
+                },*/
+                /*$unset: {
                     nom_complet: "",
                     arbotag: "",
                     date_donnees: "",
@@ -58,10 +60,9 @@ exports.sanitizeTrees = async (req, res, next) => {
                     diametre_cime: "",
                     hauteur_totale: "",
                     circonf: "",
-                },
-            });
+                },*/
+            //});
 
-        /*
         trees.forEach(async tree => {
             if (tree.geoloc.lat === null || tree.geoloc.lat === 0 || tree.geoloc.lat === undefined)
             {
@@ -73,19 +74,24 @@ exports.sanitizeTrees = async (req, res, next) => {
                 tree.geoloc.lon = tree.x_lambda;
             }
 
+            const heightInCm = Math.round(tree.hauteur_totale * 100);
+            const diameterInCm = Math.round(tree.circonf / Math.PI);
+            const treeValue = Math.round((heightInCm * diameterInCm) / 100);
+            //const = tree.nom_complet;
+
             await Tree.updateOne(
                 {_id: tree._id},
                 {
                     $set: {
                             full_name: tree.nom_complet,
                             size: {
-                                height: tree.hauteur_totale,
-                                diameter: Math.round(tree.circonf / Math.PI),
+                                height: heightInCm,
+                                diameter: diameterInCm,
                             },
-                            value: tree.hauteur_totale * (Math.round(tree.circonf / Math.PI)),
-                            geoloc: {
-                                lat: tree.geoloc.lat,
-                                lon: tree.geoloc.lon,
+                            value: treeValue,
+                            location: {
+                                type: "Point",
+                                coordinates: [tree.geoloc.lon, tree.geoloc.lat],
                             },
                             wikipedia_page: `https://en.wikipedia.org/wiki/${tree.nom_complet}`,
                         },
@@ -96,12 +102,13 @@ exports.sanitizeTrees = async (req, res, next) => {
                         x_lambert72: "",
                         y_lambert72: "",
                         x_lambda: "",
+                        geoloc: "",
                         y_phi: "",
                         diametre_cime: "",
                         hauteur_totale: "",
                         circonf: ""},
                 });
-        });*/
+        });
 
         /*
         const data = await Data.find();
@@ -150,13 +157,8 @@ exports.sanitizeTrees = async (req, res, next) => {
 
         // await trees[i].save();
 
-        if (result != 0) {
-            console.log({msg: "Dataset cleaned!"});
-            res.status(200).json({msg: "Dataset cleaned!"});
-        } else {
-            console.log({msg: "Error!"});
-            res.status(200).json({msg: "Error!"});
-        }
+        console.log({msg: "Dataset cleaned!"});
+        res.status(200).json({msg: "Dataset cleaned!"});
     } catch {
         console.log({errors: [{msg: "Server internal error."}]});
         res.status(500).json({msg: "Server internal error"});

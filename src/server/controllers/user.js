@@ -144,7 +144,7 @@ exports.updateUser = async (req, res, next) => {
     try {
         const {username, password, color} = req.body;
 
-        const userToUpdate = await User.findById(req.params.id);
+        const userToUpdate = await User.findById(req.user.id); // req.params.id
 
         userToUpdate.username = username ? username : userToUpdate.username;
 
