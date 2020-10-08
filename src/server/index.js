@@ -4,7 +4,7 @@ import path from "path";
 import connectDB from "./config/db";
 
 // Op to run before anything else
-const sanitizeDataset = require("./middlewares/sanitizeTrees");
+const sanitizeDataset = require("./utilities/sanitizeTrees");
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
@@ -14,7 +14,7 @@ const Data = require("./models/data");
 const Tree = require("./models/tree");
 const User = require("./models/user");
 
-const calculations = require("./middlewares/calculations");
+const calculations = require("./utilities/calculations");
 
 const app = express();
 
@@ -69,7 +69,6 @@ app.get("/api/trees/:id", async (req, res) => {
     }
 });
 
-app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
 
 /*app.get("/api/trees/:id", (req, res) => {
     Data.findOne({ _id: req.params.id }, (err, doc) => {
@@ -149,6 +148,7 @@ app.listen(PORT, () =>
     console.log(`🚀 Server is listening on port ${PORT}.`),
 );
 
+// Tests
+// app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
 
-// Test
-calculations.assignNumberOfLeaves();
+//calculations.assignRandomFreeTrees("5f7f0a362816ab0241c98744");
