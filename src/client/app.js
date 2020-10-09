@@ -8,8 +8,11 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
-import "./scss/app.scss";
+import "./styles/normalize.css";
+import "./styles/responsive.css";
+import "./styles/main.css";
+import MyWood from "./components/mywood";
 
-import Login from "./components/login";
+// import Login from "./components/login";
 
-ReactDOM.render(<Login />, document.querySelector("#app"));
+ReactDOM.render(<MyWood />, document.querySelector("#app"));

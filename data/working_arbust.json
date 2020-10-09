@@ -1,0 +1,4762 @@
+[{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31405"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5805,
+        50.651474
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1730,
+      "diameter": 43
+    },
+    "transactions_history": [],
+    "value": 744,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31406"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.580591,
+        50.651524
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1810,
+      "diameter": 53
+    },
+    "transactions_history": [],
+    "value": 959,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31407"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5806785,
+        50.65156
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1820,
+      "diameter": 35
+    },
+    "transactions_history": [],
+    "value": 637,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31408"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.581035,
+        50.651627
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1670,
+      "diameter": 25
+    },
+    "transactions_history": [],
+    "value": 418,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31409"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.575368,
+        50.651253
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 950,
+      "diameter": 11
+    },
+    "transactions_history": [],
+    "value": 105,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3140a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5753293,
+        50.651047
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2200,
+      "diameter": 54
+    },
+    "transactions_history": [],
+    "value": 1188,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3140b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5751634,
+        50.651005
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2350,
+      "diameter": 66
+    },
+    "transactions_history": [],
+    "value": 1551,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3140c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5753164,
+        50.650997
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2350,
+      "diameter": 59
+    },
+    "transactions_history": [],
+    "value": 1387,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3140e"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Sunset Boulevard'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5664897,
+        50.667137
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Sunset Boulevard'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3140f"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Sunset Boulevard'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.566485,
+        50.666946
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Sunset Boulevard'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31412"
+    },
+    "comments": [],
+    "full_name": "Tilia x europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6354003,
+        50.643005
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia x europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31418"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.562202,
+        50.630062
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31419"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5619316,
+        50.63047
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3141a"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.562364,
+        50.629974
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3141b"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.562317,
+        50.630035
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3141c"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.562285,
+        50.630096
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3141e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.583716,
+        50.661423
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1930,
+      "diameter": 56
+    },
+    "transactions_history": [],
+    "value": 1081,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3141f"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5814037,
+        50.66355
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1740,
+      "diameter": 27
+    },
+    "transactions_history": [],
+    "value": 470,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31420"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5921946,
+        50.66242
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2280,
+      "diameter": 63
+    },
+    "transactions_history": [],
+    "value": 1436,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31421"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5863633,
+        50.660385
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1950,
+      "diameter": 54
+    },
+    "transactions_history": [],
+    "value": 1053,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31422"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586533,
+        50.66035
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1830,
+      "diameter": 58
+    },
+    "transactions_history": [],
+    "value": 1061,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31423"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586733,
+        50.66026
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1740,
+      "diameter": 59
+    },
+    "transactions_history": [],
+    "value": 1027,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31424"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586981,
+        50.66012
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1970,
+      "diameter": 70
+    },
+    "transactions_history": [],
+    "value": 1379,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31425"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5872827,
+        50.659977
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1890,
+      "diameter": 55
+    },
+    "transactions_history": [],
+    "value": 1040,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31426"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.588321,
+        50.66002
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1780,
+      "diameter": 71
+    },
+    "transactions_history": [],
+    "value": 1264,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31427"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5879283,
+        50.659943
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1640,
+      "diameter": 53
+    },
+    "transactions_history": [],
+    "value": 869,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31428"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5888033,
+        50.660114
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2060,
+      "diameter": 67
+    },
+    "transactions_history": [],
+    "value": 1380,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31429"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5890827,
+        50.660164
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2070,
+      "diameter": 37
+    },
+    "transactions_history": [],
+    "value": 766,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5928993,
+        50.662403
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2260,
+      "diameter": 67
+    },
+    "transactions_history": [],
+    "value": 1514,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5898366,
+        50.660297
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2080,
+      "diameter": 65
+    },
+    "transactions_history": [],
+    "value": 1352,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5924783,
+        50.66234
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2100,
+      "diameter": 57
+    },
+    "transactions_history": [],
+    "value": 1197,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142d"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5899177,
+        50.66031
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2080,
+      "diameter": 68
+    },
+    "transactions_history": [],
+    "value": 1414,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.590202,
+        50.660362
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1980,
+      "diameter": 30
+    },
+    "transactions_history": [],
+    "value": 594,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3142f"
+    },
+    "comments": [],
+    "full_name": "Pinus sylvestris",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.577277,
+        50.62845
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2150,
+      "diameter": 49
+    },
+    "transactions_history": [],
+    "value": 1054,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pinus sylvestris"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31431"
+    },
+    "comments": [],
+    "full_name": "Tilia X Europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5783916,
+        50.63957
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia X Europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31432"
+    },
+    "comments": [],
+    "full_name": "Tilia X Europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.57837,
+        50.639507
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1250,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia X Europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31433"
+    },
+    "comments": [],
+    "full_name": "Tilia X Europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5784097,
+        50.639656
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia X Europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31434"
+    },
+    "comments": [],
+    "full_name": "Tilia X Europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5791264,
+        50.642517
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1250,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 500,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia X Europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31435"
+    },
+    "comments": [],
+    "full_name": "Tilia X Europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5790286,
+        50.642128
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1750,
+      "diameter": 64
+    },
+    "transactions_history": [],
+    "value": 1120,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia X Europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31436"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5907974,
+        50.660473
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2000,
+      "diameter": 73
+    },
+    "transactions_history": [],
+    "value": 1460,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31437"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5908966,
+        50.660484
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2000,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1380,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31438"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5909915,
+        50.660503
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1730,
+      "diameter": 50
+    },
+    "transactions_history": [],
+    "value": 865,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31439"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.591199,
+        50.66054
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1730,
+      "diameter": 45
+    },
+    "transactions_history": [],
+    "value": 779,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.591654,
+        50.660934
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1970,
+      "diameter": 75
+    },
+    "transactions_history": [],
+    "value": 1478,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.591729,
+        50.66141
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2140,
+      "diameter": 74
+    },
+    "transactions_history": [],
+    "value": 1584,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5917506,
+        50.661545
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2350,
+      "diameter": 67
+    },
+    "transactions_history": [],
+    "value": 1575,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143d"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5917873,
+        50.66176
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2210,
+      "diameter": 70
+    },
+    "transactions_history": [],
+    "value": 1547,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5919104,
+        50.661987
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2130,
+      "diameter": 73
+    },
+    "transactions_history": [],
+    "value": 1555,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3143f"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5857453,
+        50.66048
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1640,
+      "diameter": 39
+    },
+    "transactions_history": [],
+    "value": 640,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31440"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585907,
+        50.66048
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2100,
+      "diameter": 57
+    },
+    "transactions_history": [],
+    "value": 1197,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31441"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586584,
+        50.66042
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1650,
+      "diameter": 57
+    },
+    "transactions_history": [],
+    "value": 941,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31442"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586926,
+        50.660286
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1640,
+      "diameter": 70
+    },
+    "transactions_history": [],
+    "value": 1148,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31443"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.587015,
+        50.660248
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1880,
+      "diameter": 56
+    },
+    "transactions_history": [],
+    "value": 1053,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31444"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5870647,
+        50.660202
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1830,
+      "diameter": 61
+    },
+    "transactions_history": [],
+    "value": 1116,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31445"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5931034,
+        50.662987
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2250,
+      "diameter": 78
+    },
+    "transactions_history": [],
+    "value": 1755,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31446"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5885577,
+        50.660156
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1820,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1256,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31447"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.588675,
+        50.66017
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1860,
+      "diameter": 67
+    },
+    "transactions_history": [],
+    "value": 1246,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31448"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5929313,
+        50.662876
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2150,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1484,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31449"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5889635,
+        50.66022
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2020,
+      "diameter": 59
+    },
+    "transactions_history": [],
+    "value": 1192,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5926676,
+        50.662716
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2110,
+      "diameter": 66
+    },
+    "transactions_history": [],
+    "value": 1393,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5924087,
+        50.662556
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2350,
+      "diameter": 82
+    },
+    "transactions_history": [],
+    "value": 1927,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5894055,
+        50.660294
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2190,
+      "diameter": 66
+    },
+    "transactions_history": [],
+    "value": 1445,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144d"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5896535,
+        50.66033
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1640,
+      "diameter": 54
+    },
+    "transactions_history": [],
+    "value": 886,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.590285,
+        50.66044
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1930,
+      "diameter": 66
+    },
+    "transactions_history": [],
+    "value": 1274,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3144f"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5903754,
+        50.66045
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1750,
+      "diameter": 54
+    },
+    "transactions_history": [],
+    "value": 945,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31450"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5905647,
+        50.660496
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1980,
+      "diameter": 65
+    },
+    "transactions_history": [],
+    "value": 1287,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31451"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5906596,
+        50.660507
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1900,
+      "diameter": 61
+    },
+    "transactions_history": [],
+    "value": 1159,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31452"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.590759,
+        50.660534
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1900,
+      "diameter": 57
+    },
+    "transactions_history": [],
+    "value": 1083,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31453"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5908585,
+        50.66055
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1720,
+      "diameter": 56
+    },
+    "transactions_history": [],
+    "value": 963,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31454"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.591134,
+        50.660618
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1180,
+      "diameter": 42
+    },
+    "transactions_history": [],
+    "value": 496,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31455"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5915856,
+        50.661232
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2050,
+      "diameter": 64
+    },
+    "transactions_history": [],
+    "value": 1312,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31456"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5915833,
+        50.661312
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2390,
+      "diameter": 88
+    },
+    "transactions_history": [],
+    "value": 2103,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31457"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5916295,
+        50.661552
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2430,
+      "diameter": 74
+    },
+    "transactions_history": [],
+    "value": 1798,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31458"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.591702,
+        50.66191
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2660,
+      "diameter": 71
+    },
+    "transactions_history": [],
+    "value": 1889,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31459"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5918274,
+        50.662075
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2340,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1615,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5918827,
+        50.662125
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2340,
+      "diameter": 70
+    },
+    "transactions_history": [],
+    "value": 1638,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5920477,
+        50.662262
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2240,
+      "diameter": 75
+    },
+    "transactions_history": [],
+    "value": 1680,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5921445,
+        50.662357
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2320,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1601,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145d"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5966864,
+        50.660725
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5968976,
+        50.660736
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3145f"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5965185,
+        50.661137
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31460"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5964465,
+        50.661213
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31461"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5963182,
+        50.661343
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31462"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5961905,
+        50.661484
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31463"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5961266,
+        50.66155
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31464"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5958967,
+        50.661575
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31465"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.595742,
+        50.66196
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31466"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5949535,
+        50.662098
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31467"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.594847,
+        50.66223
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31468"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5944347,
+        50.662296
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31469"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.594413,
+        50.662193
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146a"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.594129,
+        50.662235
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146b"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5937576,
+        50.66241
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146c"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593605,
+        50.662346
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146d"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5932045,
+        50.662426
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146e"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593022,
+        50.662586
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3146f"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5934663,
+        50.662384
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31471"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5931416,
+        50.662872
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31472"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593309,
+        50.66299
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31473"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.59337,
+        50.66304
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31474"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593526,
+        50.66315
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31475"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593596,
+        50.6632
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31476"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.593861,
+        50.663383
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31477"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5970707,
+        50.660534
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31478"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5969534,
+        50.660664
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31479"
+    },
+    "comments": [],
+    "full_name": "Acer campestris",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.600614,
+        50.623974
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer campestris"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147a"
+    },
+    "comments": [],
+    "full_name": "Robinia pseudoacacia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.633731,
+        50.636917
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Robinia pseudoacacia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147b"
+    },
+    "comments": [],
+    "full_name": "Acer platanoides 'Globosum'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6337757,
+        50.63705
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer platanoides 'Globosum'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147c"
+    },
+    "comments": [],
+    "full_name": "Sorbus aucuparia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6333675,
+        50.63423
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Sorbus aucuparia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147d"
+    },
+    "comments": [],
+    "full_name": "Acer platanoides",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.633096,
+        50.634594
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer platanoides"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147e"
+    },
+    "comments": [],
+    "full_name": "Prunus cerasifera 'Nigra'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6330404,
+        50.63516
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus cerasifera 'Nigra'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3147f"
+    },
+    "comments": [],
+    "full_name": "Prunus cerasifera 'Nigra'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.633165,
+        50.635193
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus cerasifera 'Nigra'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31480"
+    },
+    "comments": [],
+    "full_name": "Acer platanoides",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6330833,
+        50.635372
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer platanoides"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31481"
+    },
+    "comments": [],
+    "full_name": "Acer platanoides 'Faassen's Black'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6331515,
+        50.635536
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1250,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 500,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer platanoides 'Faassen's Black'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31482"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6333046,
+        50.63566
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31483"
+    },
+    "comments": [],
+    "full_name": "Sorbus aria",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.633338,
+        50.63608
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1250,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 500,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Sorbus aria"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31484"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.643555,
+        50.63509
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 180,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31485"
+    },
+    "comments": [],
+    "full_name": "Acer pseudoplatanus 'Leopoldii'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.64292,
+        50.63534
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer pseudoplatanus 'Leopoldii'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31486"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.551715,
+        50.649204
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31487"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5513206,
+        50.649315
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31488"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5497174,
+        50.649746
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31489"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5499053,
+        50.649693
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148a"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5504413,
+        50.649006
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148b"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5502887,
+        50.649258
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148c"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5500865,
+        50.64944
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148d"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5501356,
+        50.649357
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148e"
+    },
+    "comments": [],
+    "full_name": "Pyrus calleryana 'Chanticleer'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5500374,
+        50.64939
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 60,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pyrus calleryana 'Chanticleer'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3148f"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus 'Fastigiata'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.619463,
+        50.611557
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus 'Fastigiata'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31490"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus 'Fastigiata'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6194987,
+        50.611626
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus 'Fastigiata'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31491"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus 'Fastigiata'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.619534,
+        50.611694
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus 'Fastigiata'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31492"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus 'Fastigiata'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.6196527,
+        50.61195
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 250,
+      "diameter": 8
+    },
+    "transactions_history": [],
+    "value": 20,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus 'Fastigiata'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31493"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861683,
+        50.61122
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1930,
+      "diameter": 38
+    },
+    "transactions_history": [],
+    "value": 733,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31494"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861864,
+        50.61112
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1870,
+      "diameter": 47
+    },
+    "transactions_history": [],
+    "value": 879,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31495"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5862007,
+        50.611015
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1960,
+      "diameter": 53
+    },
+    "transactions_history": [],
+    "value": 1039,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31496"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586206,
+        50.61096
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1740,
+      "diameter": 38
+    },
+    "transactions_history": [],
+    "value": 661,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31497"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861,
+        50.61095
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1750,
+      "diameter": 35
+    },
+    "transactions_history": [],
+    "value": 613,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31498"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Kanzan'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585017,
+        50.612366
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 780,
+      "diameter": 70
+    },
+    "transactions_history": [],
+    "value": 546,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Kanzan'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d31499"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Kanzan'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5849843,
+        50.612545
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 910,
+      "diameter": 71
+    },
+    "transactions_history": [],
+    "value": 646,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Kanzan'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149a"
+    },
+    "comments": [],
+    "full_name": "Fraxinus excelsior",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585229,
+        50.61247
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1670,
+      "diameter": 69
+    },
+    "transactions_history": [],
+    "value": 1152,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Fraxinus excelsior"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149b"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Kanzan'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585057,
+        50.612015
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 700,
+      "diameter": 14
+    },
+    "transactions_history": [],
+    "value": 98,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Kanzan'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149c"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5853333,
+        50.612022
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 720,
+      "diameter": 39
+    },
+    "transactions_history": [],
+    "value": 281,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149d"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585347,
+        50.611977
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 49
+    },
+    "transactions_history": [],
+    "value": 377,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149e"
+    },
+    "comments": [],
+    "full_name": "Robinia pseudoacacia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585569,
+        50.610416
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1990,
+      "diameter": 66
+    },
+    "transactions_history": [],
+    "value": 1313,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Robinia pseudoacacia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d3149f"
+    },
+    "comments": [],
+    "full_name": "Quercus robur",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585403,
+        50.610374
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1470,
+      "diameter": 52
+    },
+    "transactions_history": [],
+    "value": 764,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Quercus robur"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a0"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5853653,
+        50.61181
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 660,
+      "diameter": 32
+    },
+    "transactions_history": [],
+    "value": 211,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a1"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5853715,
+        50.61176
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 780,
+      "diameter": 46
+    },
+    "transactions_history": [],
+    "value": 359,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a2"
+    },
+    "comments": [],
+    "full_name": "Quercus robur",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585443,
+        50.610466
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1760,
+      "diameter": 61
+    },
+    "transactions_history": [],
+    "value": 1074,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Quercus robur"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a3"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5853896,
+        50.6116
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 830,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 332,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a4"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585392,
+        50.61155
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 43
+    },
+    "transactions_history": [],
+    "value": 331,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a5"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852447,
+        50.61192
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 670,
+      "diameter": 33
+    },
+    "transactions_history": [],
+    "value": 221,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a6"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585273,
+        50.611706
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 185,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a7"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852923,
+        50.611595
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 760,
+      "diameter": 28
+    },
+    "transactions_history": [],
+    "value": 213,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314a9"
+    },
+    "comments": [],
+    "full_name": "Ginkgo biloba",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852304,
+        50.61136
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1330,
+      "diameter": 29
+    },
+    "transactions_history": [],
+    "value": 386,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ginkgo biloba"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314aa"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5854445,
+        50.611176
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1860,
+      "diameter": 44
+    },
+    "transactions_history": [],
+    "value": 818,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ab"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585447,
+        50.611122
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1940,
+      "diameter": 49
+    },
+    "transactions_history": [],
+    "value": 951,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ac"
+    },
+    "comments": [],
+    "full_name": "Populus alba",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585114,
+        50.611492
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2360,
+      "diameter": 85
+    },
+    "transactions_history": [],
+    "value": 2006,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Populus alba"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ad"
+    },
+    "comments": [],
+    "full_name": "Prunus cerasifera 'Nigra'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5850964,
+        50.61168
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 28
+    },
+    "transactions_history": [],
+    "value": 210,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus cerasifera 'Nigra'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ae"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5854716,
+        50.611027
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1470,
+      "diameter": 25
+    },
+    "transactions_history": [],
+    "value": 368,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314af"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5853796,
+        50.61091
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1370,
+      "diameter": 20
+    },
+    "transactions_history": [],
+    "value": 274,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b0"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861483,
+        50.61143
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 800,
+      "diameter": 36
+    },
+    "transactions_history": [],
+    "value": 288,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b1"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585378,
+        50.610855
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1600,
+      "diameter": 30
+    },
+    "transactions_history": [],
+    "value": 480,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b2"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586035,
+        50.611538
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 38
+    },
+    "transactions_history": [],
+    "value": 293,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b3"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5860324,
+        50.611588
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 41
+    },
+    "transactions_history": [],
+    "value": 316,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b4"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586019,
+        50.611637
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 780,
+      "diameter": 30
+    },
+    "transactions_history": [],
+    "value": 234,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b5"
+    },
+    "comments": [],
+    "full_name": "Aesculus hippocastanum",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5855017,
+        50.610756
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1700,
+      "diameter": 35
+    },
+    "transactions_history": [],
+    "value": 595,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Aesculus hippocastanum"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b6"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585981,
+        50.611908
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 750,
+      "diameter": 35
+    },
+    "transactions_history": [],
+    "value": 263,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b7"
+    },
+    "comments": [],
+    "full_name": "Tilia x europaea",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5859785,
+        50.61196
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 810,
+      "diameter": 55
+    },
+    "transactions_history": [],
+    "value": 446,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia x europaea"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b8"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585959,
+        50.612064
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 710,
+      "diameter": 28
+    },
+    "transactions_history": [],
+    "value": 199,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314b9"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5860796,
+        50.611965
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 740,
+      "diameter": 34
+    },
+    "transactions_history": [],
+    "value": 252,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ba"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586103,
+        50.61185
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 690,
+      "diameter": 32
+    },
+    "transactions_history": [],
+    "value": 221,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314bb"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861015,
+        50.6118
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 37
+    },
+    "transactions_history": [],
+    "value": 285,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314bc"
+    },
+    "comments": [],
+    "full_name": "Tilia platyphyllos",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861163,
+        50.61164
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 700,
+      "diameter": 27
+    },
+    "transactions_history": [],
+    "value": 189,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Tilia platyphyllos"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314bd"
+    },
+    "comments": [],
+    "full_name": "Prunus cerasifera 'Nigra'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5862937,
+        50.61172
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 770,
+      "diameter": 19
+    },
+    "transactions_history": [],
+    "value": 146,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus cerasifera 'Nigra'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314be"
+    },
+    "comments": [],
+    "full_name": "Chamaecyparis sp.",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5862565,
+        50.611725
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 900,
+      "diameter": 25
+    },
+    "transactions_history": [],
+    "value": 225,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Chamaecyparis sp."
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314bf"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585577,
+        50.611317
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2060,
+      "diameter": 82
+    },
+    "transactions_history": [],
+    "value": 1689,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c0"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5859284,
+        50.611324
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2140,
+      "diameter": 61
+    },
+    "transactions_history": [],
+    "value": 1305,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c1"
+    },
+    "comments": [],
+    "full_name": "Taxus baccata",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852895,
+        50.61119
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 620,
+      "diameter": 14
+    },
+    "transactions_history": [],
+    "value": 87,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Taxus baccata"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c2"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852194,
+        50.61123
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1480,
+      "diameter": 22
+    },
+    "transactions_history": [],
+    "value": 326,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c3"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852184,
+        50.611187
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1700,
+      "diameter": 23
+    },
+    "transactions_history": [],
+    "value": 391,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c4"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585229,
+        50.61116
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 980,
+      "diameter": 18
+    },
+    "transactions_history": [],
+    "value": 176,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c5"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852284,
+        50.611137
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 690,
+      "diameter": 10
+    },
+    "transactions_history": [],
+    "value": 69,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c7"
+    },
+    "comments": [],
+    "full_name": "Platanus x acerifolia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.595065,
+        50.646065
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2200,
+      "diameter": 84
+    },
+    "transactions_history": [],
+    "value": 1848,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Platanus x acerifolia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c8"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5852633,
+        50.6109
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1570,
+      "diameter": 28
+    },
+    "transactions_history": [],
+    "value": 440,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314c9"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585269,
+        50.610817
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1540,
+      "diameter": 40
+    },
+    "transactions_history": [],
+    "value": 616,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ca"
+    },
+    "comments": [],
+    "full_name": "Acer platanoides",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585708,
+        50.61075
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1460,
+      "diameter": 32
+    },
+    "transactions_history": [],
+    "value": 467,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer platanoides"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314cb"
+    },
+    "comments": [],
+    "full_name": "Alnus glutinosa",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585911,
+        50.61106
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2130,
+      "diameter": 51
+    },
+    "transactions_history": [],
+    "value": 1086,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Alnus glutinosa"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314cc"
+    },
+    "comments": [],
+    "full_name": "Fagus sylvatica",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.58591,
+        50.61103
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 930,
+      "diameter": 25
+    },
+    "transactions_history": [],
+    "value": 233,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Fagus sylvatica"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314cd"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5856214,
+        50.610847
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1540,
+      "diameter": 43
+    },
+    "transactions_history": [],
+    "value": 662,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314ce"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5856214,
+        50.611015
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1070,
+      "diameter": 19
+    },
+    "transactions_history": [],
+    "value": 203,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314cf"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585612,
+        50.611076
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1380,
+      "diameter": 27
+    },
+    "transactions_history": [],
+    "value": 373,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d0"
+    },
+    "comments": [],
+    "full_name": "Abies",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585566,
+        50.611233
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2230,
+      "diameter": 59
+    },
+    "transactions_history": [],
+    "value": 1316,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Abies"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d1"
+    },
+    "comments": [],
+    "full_name": "Acer pseudoplatanus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586016,
+        50.610806
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2030,
+      "diameter": 43
+    },
+    "transactions_history": [],
+    "value": 873,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer pseudoplatanus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d2"
+    },
+    "comments": [],
+    "full_name": "Cedrus atlantica 'Glauca'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5860834,
+        50.61067
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 2180,
+      "diameter": 86
+    },
+    "transactions_history": [],
+    "value": 1875,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Cedrus atlantica 'Glauca'"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d3"
+    },
+    "comments": [],
+    "full_name": "Fraxinus excelsior",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586505,
+        50.610676
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1930,
+      "diameter": 38
+    },
+    "transactions_history": [],
+    "value": 733,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Fraxinus excelsior"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d4"
+    },
+    "comments": [],
+    "full_name": "Ginkgo biloba",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5863485,
+        50.610638
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1030,
+      "diameter": 13
+    },
+    "transactions_history": [],
+    "value": 134,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ginkgo biloba"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d5"
+    },
+    "comments": [],
+    "full_name": "Ginkgo biloba",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5862074,
+        50.6114
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1370,
+      "diameter": 30
+    },
+    "transactions_history": [],
+    "value": 411,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ginkgo biloba"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d6"
+    },
+    "comments": [],
+    "full_name": "Ilex aquifolium",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5862474,
+        50.61136
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 950,
+      "diameter": 34
+    },
+    "transactions_history": [],
+    "value": 323,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ilex aquifolium"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d7"
+    },
+    "comments": [],
+    "full_name": "Ilex aquifolium",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586268,
+        50.611286
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 740,
+      "diameter": 21
+    },
+    "transactions_history": [],
+    "value": 155,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ilex aquifolium"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d8"
+    },
+    "comments": [],
+    "full_name": "Carpinus betulus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5864353,
+        50.610672
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1250,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 300,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Carpinus betulus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314d9"
+    },
+    "comments": [],
+    "full_name": "Fraxinus excelsior",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586067,
+        50.61235
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1280,
+      "diameter": 53
+    },
+    "transactions_history": [],
+    "value": 678,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Fraxinus excelsior"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314da"
+    },
+    "comments": [],
+    "full_name": "Taxus baccata",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5861325,
+        50.612267
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1050,
+      "diameter": 27
+    },
+    "transactions_history": [],
+    "value": 284,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Taxus baccata"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314db"
+    },
+    "comments": [],
+    "full_name": "Halesia sp.",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5864935,
+        50.6109
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 640,
+      "diameter": 12
+    },
+    "transactions_history": [],
+    "value": 77,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Halesia sp."
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314dc"
+    },
+    "comments": [],
+    "full_name": "Acer negundo",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586172,
+        50.61221
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1340,
+      "diameter": 35
+    },
+    "transactions_history": [],
+    "value": 469,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer negundo"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314dd"
+    },
+    "comments": [],
+    "full_name": "Acer pseudoplatanus",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.586649,
+        50.61099
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1420,
+      "diameter": 29
+    },
+    "transactions_history": [],
+    "value": 412,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Acer pseudoplatanus"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314df"
+    },
+    "comments": [],
+    "full_name": "Robinia pseudoacacia",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5867076,
+        50.61094
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 1880,
+      "diameter": 48
+    },
+    "transactions_history": [],
+    "value": 902,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Robinia pseudoacacia"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314e0"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.585065,
+        50.612186
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 570,
+      "diameter": 24
+    },
+    "transactions_history": [],
+    "value": 137,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata"
+  },{
+    "_id": {
+      "$oid": "5f7b08c05059351633d314e1"
+    },
+    "comments": [],
+    "full_name": "Prunus serrulata 'Kanzan'",
+    "given_name": null,
+    "is_locked": false,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        5.5850554,
+        50.612267
+      ]
+    },
+    "owner_id": null,
+    "size": {
+      "height": 590,
+      "diameter": 46
+    },
+    "transactions_history": [],
+    "value": 271,
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Prunus serrulata 'Kanzan'"
+}]

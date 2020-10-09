@@ -39,7 +39,6 @@
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.3",
-    "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
     "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
@@ -48,18 +47,20 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "gravatar": "^1.8.1",
     "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.7.1",
     "mongoose": "^5.10.6",
     "mongoose-unique-validator": "^2.0.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "react-leaflet-markercluster": "^2.0.0"
   },
   "husky": {
     "hooks": {

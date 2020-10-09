@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(225, 255, 165);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
