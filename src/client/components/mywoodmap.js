@@ -48,6 +48,7 @@ function MyWoodMap() {
                             <p>{`Height: ${tree.size.height}m`}</p>
                             <p>{`Diameter: ${tree.size.diameter}cm`}</p>
                             <p>{`Price: ${tree.value} leaves`}</p>
+                            <p>{`${tree.location.coordinates[1]},${tree.location.coordinates[0]}`}</p>
                         </Popup>
                     </Marker>
                 ))}
