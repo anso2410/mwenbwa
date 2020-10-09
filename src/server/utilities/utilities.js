@@ -39,7 +39,7 @@ exports.buyTree = async (req, res, next) => {
     const treeId = req.body.treeId;
     let user = await User.findById(userId);
     let tree = await Tree.findById(treeId);
-    let alltree = await Tree.find();
+    // let alltree = await Tree.find();
     let userLeaves = user.number_of_leaves;
     let treeCost = tree.value;
     let treeOwner = String(tree.owner_id);
@@ -54,35 +54,47 @@ exports.buyTree = async (req, res, next) => {
             if (lock === true) {
                 res.json({msg: "you can't buy it, is LOCK"});
             } else {
-                const treeAround = alltree
-                    .aggregate([
-                        {
-                            $geoNear: {
-                                near: {
-                                    type: "Point",
-                                    coordinates: ["5.580591", "50.651524"],
-                                },
-                                distanceField: "distance.calculated",
-                                maxDistance: 300,
+                const surroundingTrees = await Tree.find({
+                    location: {
+                        $near: {
+                            $maxDistance: 100,
+                            $geometry: {
+                                type: "Point",
+                                coordinates: [
+                                    tree.location.coordinates[0],
+                                    tree.location.coordinates[1],
+                                ],
                             },
                         },
-                    ])
-                    .toArray();
-                res.json({treeAround});
+                    },
+                });
+                // amount of tree 100m
+                let amountTree = surroundingTrees.length;
+                console.log(amountTree);
+
+                // value of all your tree in 100m
+                let valueMyTrees = surroundingTrees
+                    .filter(({owner_id}) => owner_id == userId)
+                    .reduce((sum, tree) => sum + tree.value, 0);
+                console.log(valueMyTrees);
+
+                // res.json({surroundingTrees});
+
+                //
             }
         }
     } else {
-        // "[value of the targetted tree"
+        // "[value of the targetted tree" ------ OK
         //  +
         // "[value of all the targetted player's trees in 100m radius]"
         //  ×
-        // "[amount of trees in 100m radius]"
+        // "[amount of trees in 100m radius]" --------OK
         //  /
         // "[amount of tree of targetted player in 100m radius]"
         //  +
         // "[value of all the other players trees in 100m radius]"
         //  -
-        // "[value of all your tree in 100m radius]"
+        // "[value of all your tree in 100m radius]" --------OK
         if (userLeaves > treeCost) {
             let newName = await exports.testName(treeId);
             tree.owner_id = userId;
