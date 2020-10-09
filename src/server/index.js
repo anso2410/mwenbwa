@@ -152,3 +152,4 @@ app.listen(PORT, () =>
 // app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
 
 //calculations.assignRandomFreeTrees("5f7f0a362816ab0241c98744");
+app.use("/locktree/:id", calculations.lockTree);

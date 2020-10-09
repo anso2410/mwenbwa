@@ -53,7 +53,12 @@ exports.assignNumberOfLeaves = async () => {
 
 exports.lockTree = async (req, res, next) => {
     try {
-        const treeToLock = await Tree.findById(req.body.treeId);
+        const treeToLock = await Tree.findById(req.params.id);
+
+        console.log(treeToLock.location);
+
+        console.log(treeToLock.location.coordinates[0]);
+        console.log(treeToLock.location.coordinates[1]);
 
         const surroundingTrees = await Tree.find({
             location: {
@@ -62,17 +67,28 @@ exports.lockTree = async (req, res, next) => {
                     $geometry: {
                         type: "Point",
                         coordinates: [
-                            , latt]
-                    }
-                }
-        })
-        }).find((error, results) => {
-            if (error) console.log(error);
-            console.log(JSON.stringify(results, 0, 2));
+                            treeToLock.location.coordinates[0],
+                            treeToLock.location.coordinates[1],
+                        ],
+                    },
+                },
+            },
         });
-
+        console.log(surroundingTrees.length);
+        res.json({surroundingTrees});
+        //res.json({msg: "Ok."});
     } catch (err) {
-
+        console.log({errors: [{msg: "Server internal error."}]});
+        res.status(500).json({error: "Server internal error."});
     }
 };
 
+
+/*
+Whenever he wants, a player can lock a tree by paying the following formula:
+[value of the tree] × 10 +
+([value of all the trees in 100m radius] × [amount of players in 100m radius]) -
+([value of all player's trees in 100m radius] / [amount of players in 100m radius]).
+
+A locked tree can't be buy by another player.
+ */
