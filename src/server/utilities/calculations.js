@@ -79,11 +79,12 @@ exports.lockTree = async (req, res, next) => {
         // Count of all surrounding users
         let listOfOwnerIds = [];
         surroundingTrees.forEach(tree => {
-            if (tree.owner_id != null && !listOfOwnerIds.includes(tree.owner_id))
-            {
-                listOfOwnerIds.push(tree.owner_id);
+            if (String(tree.owner_id) != null && !listOfOwnerIds.includes(String(tree.owner_id))) {
+                console.log("Is not null");
+                listOfOwnerIds.push(String(tree.owner_id));
             }
         });
+        console.log(listOfOwnerIds);
         let amountOfPlayers = listOfOwnerIds.length;
 
         /*
@@ -101,6 +102,7 @@ exports.lockTree = async (req, res, next) => {
             Math.round(valueOfAllSurroundingTreesOfPlayer / amountOfPlayers);*/
 
         console.log(valueOfAllSurroundingTrees);
+        //res.json({msg: "Ok.", Trees: surroundingTrees});
         res.json({"Amount of Players": amountOfPlayers, Length: surroundingTrees.length, Value: valueOfAllSurroundingTrees, Trees: surroundingTrees});
         //res.json({msg: "Ok."});
     } catch (err) {
