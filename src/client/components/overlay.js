@@ -18,6 +18,7 @@ class Overlay extends React.Component {
             email: "",
             password: "",
             color: "#FF0000",
+            token: "",
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
