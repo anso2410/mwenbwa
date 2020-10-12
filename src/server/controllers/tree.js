@@ -4,12 +4,49 @@ const User = require("../models/user");
 const Gamelog = require("../controllers/gamelog");
 
 // Middlewares
-exports.getAllTrees = (req, res, next) => {
-    // Modifier cette fonction pour préciser pour quelle zone des arbres doivent être chargés
-    //req.body.zoom = 16 > near, max distance = 200m
-    Tree.find()
-        .then(trees => res.status(200).json(trees))
-        .catch(err => res.status(400).json({err}));
+exports.getTreesInArea = async (req, res, next) => {
+    try {
+        const {lat, lon, zoom} = req.body;
+        let maxDistance;
+
+        switch(zoom) {
+            case 18:
+                maxDistance = 500;
+                break;
+            case 17:
+                maxDistance = 1000;
+                break;
+            case 16:
+                maxDistance = 2000;
+                break;
+            case 15:
+                maxDistance = 4000;
+                break;
+            case 14:
+                maxDistance = 8000;
+                break;
+        }
+
+        const treesInArea = await Tree.find({
+            location: {
+                $near: {
+                    $maxDistance: maxDistance,
+                    $geometry: {
+                        type: "Point",
+                        coordinates: [
+                            lon,
+                            lat,
+                        ],
+                    },
+                },
+            },
+        });
+
+        res.status(200).json({number: treesInArea.length, msg: treesInArea});
+    } catch (err) {
+        console.log({errors: [{msg: "Server internal error."}]});
+        res.status(500).json({ errors: [{ msg: "Server internal error"}]});
+    }
 };
 
 exports.getOneTree = async (req, res, next) => {
@@ -20,6 +57,14 @@ exports.getOneTree = async (req, res, next) => {
         return res.status(404).json({err});
     }
 };
+
+exports.getAllTrees = (req, res, next) => {
+    // Modifier cette fonction pour préciser pour quelle zone des arbres doivent être chargés
+    //req.body.zoom = 16 > near, max distance = 200m
+    Tree.find()
+        .then(trees => res.status(200).json(trees))
+        .catch(err => res.status(400).json({err}));
+}
 
 exports.updateOneThree = (req, res, next) => {
     const updatedTree = req.body;
