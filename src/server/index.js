@@ -1,8 +1,7 @@
 // Import < ES6 modules syntax, not from CommonJS, which is const express = require(''). CommonJS is the only one working for node.js, but Babel makes it possible to work with ES6 syntax for modules, even for node.
 import express from "express";
 import path from "path";
-import connectDB from "./config/db";
-
+import connectDB from "./config/db"
 // Op to run before anything else
 const sanitizeDataset = require("./utilities/sanitizeTrees");
 
