@@ -50,7 +50,7 @@ exports.signup = async (req, res, next) => {
         await user.save(); // Renvoie une promesse avec le nouveau document User créé (user.id est donc accessble)
 
         // Calculation of free trees given to new user
-        //await calculations.assignRandomFreeTrees(user.id);
+        await calculations.assignRandomFreeTrees(user.id);
 
         // Send directly token of authentification
         const payload = {

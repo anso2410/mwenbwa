@@ -1,14 +1,14 @@
 // Import < ES6 modules syntax, not from CommonJS, which is const express = require(''). CommonJS is the only one working for node.js, but Babel makes it possible to work with ES6 syntax for modules, even for node.
 import express from "express";
 import path from "path";
-import connectDB from "./config/db";
-
+import connectDB from "./config/db"
 // Op to run before anything else
 const sanitizeDataset = require("./utilities/sanitizeTrees");
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
 const userRoutes = require("./routes/user");
+const gamelogRoutes = require("./routes/gamelog");
 
 const Data = require("./models/data");
 const Tree = require("./models/tree");
@@ -139,9 +139,8 @@ app.delete("/hello/:id", (req, res) => {
 // Define routes
 app.use("/api/tree", treeRoutes);
 app.use("/api/user", userRoutes);
-/*app.use("/api/leaderboard", userRoutes);
-app.use("/api/gamelog", userRoutes);*/
-
+//app.use("/api/leaderboard", userRoutes);
+app.use("/api/gamelog", gamelogRoutes);
 
 // App listening on port
 app.listen(PORT, () =>
@@ -150,6 +149,3 @@ app.listen(PORT, () =>
 
 // Tests
 // app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
-
-//calculations.assignRandomFreeTrees("5f7f0a362816ab0241c98744");
-app.use("/locktree/:id", calculations.lockTree);
