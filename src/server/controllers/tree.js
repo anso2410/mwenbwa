@@ -10,7 +10,7 @@ exports.getAllTrees = async (req, res, next) => {
         const allTrees = await Tree.find();
         res.status(200).json({msg: allTrees});
     } catch (err) {
-        res.status(500).json({ errors: [{ msg: "Server internal error", err}]});
+        res.status(500).json({errors: [{msg: "Server internal error", err}]});
     }
 };
 /*
@@ -68,7 +68,7 @@ exports.updateOneThree = (req, res, next) => {
 
     //use Tree.replaceOne() instead
     Tree.findOne({_id: req.params.id})
-        .then(tree => {
+        .then((tree) => {
             tree.owner_id = updatedTree.owner_id
                 ? updatedTree.owner_id
                 : tree.owner_id;
@@ -86,8 +86,6 @@ exports.updateOneThree = (req, res, next) => {
 exports.treePrice = async (req, res, next) => {
     const userId = req.body.userId;
     const treeId = req.body.treeId;
-    console.log(`user id : ${userId}`);
-    console.log(`tree id : ${treeId}`);
     let user = await User.findById(userId);
     let tree = await Tree.findById(treeId);
     let treeOwner = String(tree.owner_id);
@@ -96,8 +94,6 @@ exports.treePrice = async (req, res, next) => {
     if (tree.owner_id) {
         if (treeOwner === userId) {
             res.json({msg: " YOURS"});
-
-            // console.log(alltree);
         } else {
             if (lock === true) {
                 res.json({msg: "LOCK"});
@@ -116,37 +112,20 @@ exports.treePrice = async (req, res, next) => {
                         },
                     },
                 });
-                // amount of tree 100m
                 let amountTree = surroundingTrees.length;
-                console.log(`amount of tree in 100m : ${amountTree}`);
-
-                // value of all your tree in 100m
                 let valueMyTrees = surroundingTrees
                     .filter(({owner_id}) => owner_id == userId)
                     .reduce((sum, myTree) => sum + myTree.value, 0);
-                console.log(`value of all your tree in 100m : ${valueMyTrees}`);
-                // value of all the targetted player's trees in 100m radius
                 let allTargettedPlayerTrees = parseInt(
                     surroundingTrees
                         .filter(({owner_id}) => owner_id == treeOwner)
                         .reduce((sum, treeAdd) => sum + treeAdd.value, 0),
                 );
-                // + tree.value;
-                console.log(
-                    `value of all the targetted player's trees in 100m radius :${allTargettedPlayerTrees}`,
-                );
-                console.log(tree.owner_id);
-
-                //amount of tree of targetted player in 100m radius
                 let targettedPlayerTrees = surroundingTrees.filter(
                     ({owner_id}) => owner_id == treeOwner,
                 );
                 let numberTargettedPlayerTrees = parseInt(
                     targettedPlayerTrees.length,
-                );
-
-                console.log(
-                    `number of tree for the targetted player:${numberTargettedPlayerTrees}`,
                 );
                 // value of all the other players trees in 100m radius
                 let valueAllPlayersTree = parseInt(
@@ -154,18 +133,12 @@ exports.treePrice = async (req, res, next) => {
                         .filter(({owner_id}) => owner_id)
                         .reduce((sum, treeAdd) => sum + treeAdd.value, 0),
                 );
-
                 let finalAmount =
                     parseInt(tree.value) +
                     (allTargettedPlayerTrees * amountTree) /
-                    numberTargettedPlayerTrees +
+                        numberTargettedPlayerTrees +
                     valueAllPlayersTree -
                     valueMyTrees;
-
-                // {owner_id: ObjectId('5f73770653ac1f0d0081566f')}
-                // {owner_id: ObjectId('5f81b0c08e42093fa9e10372')}
-                // dolni :   5f81b0c08e42093fa9e10372
-                // MM :      5f73770653ac1f0d0181566f
                 res.json({msg: finalAmount});
             }
         }
@@ -180,15 +153,13 @@ exports.showLockingPrice = async (req, res, next) => {
         res.status(200).json({msg: lockingPrice});
     } catch (err) {
         console.log({errors: [{msg: "Server internal error."}]});
-        res.status(500).json({ errors: [{ msg: "Server internal error"}]});
+        res.status(500).json({errors: [{msg: "Server internal error"}]});
     }
 };
 
 exports.buyTree = async (req, res, next) => {
     const userId = req.body.userId;
     const treeId = req.body.treeId;
-    console.log(`user id : ${userId}`);
-    console.log(`tree id : ${treeId}`);
     let user = await User.findById(userId);
     let tree = await Tree.findById(treeId);
     let treeOwner = String(tree.owner_id);
@@ -201,8 +172,6 @@ exports.buyTree = async (req, res, next) => {
     if (tree.owner_id) {
         if (treeOwner === userId) {
             res.json({msg: "you're the owner of this tree"});
-
-            // console.log(alltree);
         } else {
             if (lock === true) {
                 res.json({msg: "you can't buy it, is LOCK"});
@@ -221,39 +190,22 @@ exports.buyTree = async (req, res, next) => {
                         },
                     },
                 });
-                // amount of tree 100m
                 let amountTree = surroundingTrees.length;
-                console.log(`amount of tree in 100m : ${amountTree}`);
 
-                // value of all your tree in 100m
                 let valueMyTrees = surroundingTrees
                     .filter(({owner_id}) => owner_id == userId)
                     .reduce((sum, myTree) => sum + myTree.value, 0);
-                console.log(`value of all your tree in 100m : ${valueMyTrees}`);
-                // value of all the targetted player's trees in 100m radius
                 let allTargettedPlayerTrees = parseInt(
                     surroundingTrees
                         .filter(({owner_id}) => owner_id == treeOwner)
                         .reduce((sum, treeAdd) => sum + treeAdd.value, 0),
                 );
-                // + tree.value;
-                console.log(
-                    `value of all the targetted player's trees in 100m radius :${allTargettedPlayerTrees}`,
-                );
-                console.log(tree.owner_id);
-
-                //amount of tree of targetted player in 100m radius
                 let targettedPlayerTrees = surroundingTrees.filter(
                     ({owner_id}) => owner_id == treeOwner,
                 );
                 let numberTargettedPlayerTrees = parseInt(
                     targettedPlayerTrees.length,
                 );
-
-                console.log(
-                    `number of tree for the targetted player:${numberTargettedPlayerTrees}`,
-                );
-                // value of all the other players trees in 100m radius
                 let valueAllPlayersTree = parseInt(
                     surroundingTrees
                         .filter(({owner_id}) => owner_id)
@@ -263,7 +215,7 @@ exports.buyTree = async (req, res, next) => {
                 let finalAmount =
                     parseInt(tree.value) +
                     (allTargettedPlayerTrees * amountTree) /
-                    numberTargettedPlayerTrees +
+                        numberTargettedPlayerTrees +
                     valueAllPlayersTree -
                     valueMyTrees;
 
@@ -282,22 +234,18 @@ exports.buyTree = async (req, res, next) => {
                     await tree.save();
                     await user.save();
                     await OwnerOfTree.save();
-                    await exports.insertToGamelog(
+                    await Gamelog.insertToGamelog(
                         "purchase",
                         userId,
                         treeId,
                         "purchased a tree",
                     );
-                    await exports.insertToGamelog(
+                    await Gamelog.insertToGamelog(
                         "purchase",
                         userId,
                         treeId,
                         "lost a tree",
                     );
-                    // {owner_id: ObjectId('5f73770653ac1f0d0081566f')}
-                    // {owner_id: ObjectId('5f81b0c08e42093fa9e10372')}
-                    // dolni :   5f81b0c08e42093fa9e10372
-                    // MM :      5f73770653ac1f0d0181566f
                     res.json({msg: "You bought this tree"});
                 } else {
                     res.json({msg: "You don't have enough leaves..."});
@@ -344,44 +292,53 @@ exports.lockTree = async (req, res, next) => {
             await ownerOfTreeToLock.save();
             await treeToLock.save();
 
-            await Gamelog.insertToGamelog("Locking", ownerOfTreeToLock.id, treeToLock.id, "has been locked");
+            await Gamelog.insertToGamelog(
+                "Locking",
+                ownerOfTreeToLock.id,
+                treeToLock.id,
+                "has been locked",
+            );
 
             return res.status(200).json({msg: "Tree has been locked."});
         } else {
-            return res.status(500).json({ errors: [{ msg: "User doesn't have enough leaves."}]});
+            return res
+                .status(500)
+                .json({errors: [{msg: "User doesn't have enough leaves."}]});
         }
     } catch (err) {
-        res.status(500).json({ errors: [{ msg: "Tree locking has failed."}]});
+        res.status(500).json({errors: [{msg: "Tree locking has failed."}]});
     }
 };
 
 exports.addComment = async (req, res, next) => {
-    const userId = req.body.userId;
-    const treeId = req.body.treeId;
-    const comment = req.body.comment;
+    try {
+        const userId = req.body.userId;
+        const treeId = req.body.treeId;
+        const comment = req.body.comment;
 
-    let tree = await Tree.findById(treeId);
-    tree.comments.push({
-        content: comment,
-        user_id: userId,
-    });
-    await tree.save();
-    res.json({msg: "Done"});
+        let tree = await Tree.findById(treeId);
+        tree.comments.push({
+            content: comment,
+            user_id: userId,
+        });
+        await tree.save();
+        res.json({msg: "Done"});
+    } catch (err) {
+        res.json({msg: "errors"});
+    }
 };
 
 exports.showAllComment = async (req, res, next) => {
-    // try {
-    const trees = await Tree.find({comments: {$ne: []}}).select("comments");
-    res.json({trees});
-    // } catch (err) {
-    //     console.log({errors: [{msg: "leaderbords has failed."}]});
-    //     res.json({msg: "errors"});
-    // }
+    try {
+        const trees = await Tree.find({comments: {$ne: []}}).select("comments");
+        res.json({trees});
+    } catch (err) {
+        res.json({msg: "error"});
+    }
 };
 
-
 // Other functions
-exports.calculateLockingPrice = async treeId => {
+exports.calculateLockingPrice = async (treeId) => {
     try {
         const treeToLock = await Tree.findById(treeId);
 
@@ -401,29 +358,39 @@ exports.calculateLockingPrice = async treeId => {
         });
 
         // Value of all surrounding trees
-        const valueOfAllSurroundingTrees = surroundingTrees.reduce((accumulator, tree) => {
-            return accumulator + parseInt(tree.value);
-        }, 0);
+        const valueOfAllSurroundingTrees = surroundingTrees.reduce(
+            (accumulator, tree) => {
+                return accumulator + parseInt(tree.value);
+            },
+            0,
+        );
 
         // Count of all surrounding users
         const listOfOwnerIds = [];
-        surroundingTrees.forEach(tree => {
-            if (tree.owner_id != null && !listOfOwnerIds.includes(String(tree.owner_id))) {
+        surroundingTrees.forEach((tree) => {
+            if (
+                tree.owner_id != null &&
+                !listOfOwnerIds.includes(String(tree.owner_id))
+            ) {
                 listOfOwnerIds.push(String(tree.owner_id));
             }
         });
         const amountOfPlayers = listOfOwnerIds.length;
 
         // Value of all surrounding trees belonging to player
-        const valueOfAllSurroundingTreesOfPlayer = surroundingTrees.reduce((accumulator, tree) => {
-            if (String(tree.owner_id) === String(treeToLock.owner_id))
-            {
-                accumulator += parseInt(tree.value);
-            }
-            return accumulator;
-        }, 0);
+        const valueOfAllSurroundingTreesOfPlayer = surroundingTrees.reduce(
+            (accumulator, tree) => {
+                if (String(tree.owner_id) === String(treeToLock.owner_id)) {
+                    accumulator += parseInt(tree.value);
+                }
+                return accumulator;
+            },
+            0,
+        );
 
-        const valueToPayToLockTree = (parseInt(treeToLock.value) * 10) + (valueOfAllSurroundingTrees * amountOfPlayers) -
+        const valueToPayToLockTree =
+            parseInt(treeToLock.value) * 10 +
+            valueOfAllSurroundingTrees * amountOfPlayers -
             Math.round(valueOfAllSurroundingTreesOfPlayer / amountOfPlayers);
 
         return valueToPayToLockTree;

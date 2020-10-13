@@ -17,7 +17,7 @@ const {APP_PORT} = process.env;
 const PORT = process.env.PORT || APP_PORT;
 
 // Setting values for time modifications
-app.set('previousRequestHour', Date.now());
+app.set("previousRequestHour", Date.now());
 
 // Connect to MongoDB
 connectDB();
