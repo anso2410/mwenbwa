@@ -58,6 +58,10 @@
     line-height: 50px;
     color: rgb(8, 109, 67);
 }
+.treeImg, .leafImg {
+    width: 30px;
+    height: auto;
+}
 /* <<<<< TOP-BAR ///// */
 
 /* ///// LOGIN-MODAL >>>>> */

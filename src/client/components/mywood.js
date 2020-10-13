@@ -17,19 +17,32 @@ class MyWood extends React.Component {
         super();
         this.state = {
             trees: [],
+            filteredTrees: [],
         };
         this.getTreesCoordinates = this.getTreesCoordinates.bind(this);
     }
     componentDidMount() {
+        // test
+        let center = [50.6283, 5.5768];
+        let latMin = center[0] - 0.003;
+        let latMax = center[0] + 0.003;
+        let lonMin = center[1] - 0.007;
+        let lonMax = center[1] + 0.007;
+        // endtest
         let response = [];
         axios.get(`http://localhost/api/tree`).then(res => {
             console.log("it worked");
             response = res.data.msg;
             let filtered = response.filter(
-                tree => tree.location.coordinates[1] <= 50.64333,
+                tree =>
+                    tree.location.coordinates[0] > lonMin &&
+                    tree.location.coordinates[0] < lonMax &&
+                    tree.location.coordinates[1] > latMin &&
+                    tree.location.coordinates[1] < latMax,
             );
             this.setState({
-                trees: filtered,
+                trees: response,
+                filteredTrees: filtered,
             });
             setTimeout(console.log(response), 800);
             setTimeout(console.log(filtered), 1000);
@@ -41,9 +54,22 @@ class MyWood extends React.Component {
         // })
     }
     getTreesCoordinates(e) {
-        const zoom = e.zoom;
+        // const zoom = e.zoom;
         const coordinates = e.center;
-        console.log(zoom);
+        let latMin = coordinates[0] - 0.003;
+        let latMax = coordinates[0] + 0.003;
+        let lonMin = coordinates[1] - 0.007;
+        let lonMax = coordinates[1] + 0.007;
+        let filtered = this.state.trees.filter(
+            tree =>
+                tree.location.coordinates[0] > lonMin &&
+                tree.location.coordinates[0] < lonMax &&
+                tree.location.coordinates[1] > latMin &&
+                tree.location.coordinates[1] < latMax,
+        );
+        this.setState({
+            filteredTrees: filtered,
+        });
         // let response = [];
         // condition pour ne charger qu'une fois
         // if (this.state.trees.length === 0) {
@@ -69,7 +95,7 @@ class MyWood extends React.Component {
                 <Overlay />
                 <MyWoodMap
                     getTreesCoordinates={this.getTreesCoordinates}
-                    treeCoordinates={this.state.trees}
+                    treeCoordinates={this.state.filteredTrees}
                 />
             </div>
         );
