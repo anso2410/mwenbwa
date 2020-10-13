@@ -15,6 +15,7 @@ const Tree = require("./models/tree");
 const User = require("./models/user");
 
 const calculations = require("./utilities/calculations");
+const timeModifications = require("./utilities/timeModifications");
 
 const app = express();
 
@@ -149,3 +150,5 @@ app.listen(PORT, () =>
 
 // Tests
 // app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
+
+//timeModifications.removeLeavesInterval();
