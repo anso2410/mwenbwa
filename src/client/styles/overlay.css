@@ -122,6 +122,10 @@ button, .button {
     height: 700px;
     align-items: center;
 }
+.leaderFlex {
+    display: flex;
+    flex-direction: column;
+}
 .rules {
     width: 90vw;
     max-width: 700px;

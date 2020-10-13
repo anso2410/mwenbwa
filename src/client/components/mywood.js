@@ -20,28 +20,45 @@ class MyWood extends React.Component {
         };
         this.getTreesCoordinates = this.getTreesCoordinates.bind(this);
     }
+    componentDidMount() {
+        let response = [];
+        axios
+            .post(`http://localhost/api/tree`, {
+                lat: 50.64327,
+                lon: 5.5980396,
+                zoom: 17,
+            })
+            .then(res => {
+                console.log("it worked");
+                response = res.data.msg;
+                this.setState({
+                    trees: response,
+                });
+                console.log(this.state.trees);
+            });
+    }
     getTreesCoordinates(e) {
         const zoom = e.zoom;
         const coordinates = e.center;
-        console.log(coordinates);
-        let response = [];
+        console.log(zoom);
+        // let response = [];
         // condition pour ne charger qu'une fois
-        if (this.state.trees.length === 0) {
-            axios
-                .post(`http://localhost/api/tree`, {
-                    lat: 50.64327,
-                    lon: 5.5980396,
-                    zoom: 16,
-                })
-                .then(res => {
-                    console.log("it worked");
-                    response = res.data.msg;
-                    this.setState({
-                        trees: response,
-                    });
-                    console.log(this.state.trees);
-                });
-        }
+        // if (this.state.trees.length === 0) {
+        //     axios
+        //         .post(`http://localhost/api/tree`, {
+        //             lat: 50.64327,
+        //             lon: 5.5980396,
+        //             zoom: zoom,
+        //         })
+        //         .then(res => {
+        //             console.log("it worked");
+        //             response = res.data.msg;
+        //             this.setState({
+        //                 trees: response,
+        //             });
+        //             console.log(this.state.trees);
+        //         });
+        // }
     }
     render() {
         return (
