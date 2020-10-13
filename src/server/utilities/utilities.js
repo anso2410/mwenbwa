@@ -1,30 +1,6 @@
 import {nameByRace} from "fantasy-name-generator";
 import Tree from "../models/tree";
 import User from "../models/user";
-<<<<<<< HEAD
-import Gamelog from "../models/gamelog";
-let tabRace = [
-    "angel",
-    "cavePerson",
-    "darkelf",
-    "demon",
-    "dragon",
-    "drow",
-    "dwarf",
-    "elf",
-    "fairy",
-    "gnome",
-    "gobin",
-    "halfdemon",
-    "halfling",
-    "halfelf",
-    "halffairy",
-    "human",
-    "ogre",
-    "orc",
-];
-exports.testName = async (treeId) => {
-=======
 import Gamelog, {replaceOne} from "../models/gamelog";
 
 exports.testName = async (treeId) => {
@@ -48,7 +24,6 @@ exports.testName = async (treeId) => {
         "ogre",
         "orc",
     ];
->>>>>>> mikedev
     let randomIndex = Math.floor(Math.random(0, tabRace.length) * 10);
     const randomName = nameByRace(tabRace[randomIndex], {gender: "male"});
     let treeName = await Tree.findById(treeId);
@@ -58,37 +33,9 @@ exports.testName = async (treeId) => {
     return treeName.given_name;
 };
 
-<<<<<<< HEAD
-// RECUP ID USER , ID ARBRE , FUNCTION BYAAAA
-=======
-exports.insertToGamelog = async (logType, userId, treeId, message) => {
-    try {
-        const newLog = new Gamelog({
-            type: logType,
-            user_id: userId,
-            tree_id: treeId,
-            message: message,
-        });
-        await newLog.save();
-
-        console.log({infos: [{msg: "Insertion to gamelog has succeeded."}]});
-    } catch (err) {
-        console.log({errors: [{msg: "Insertion to gamelog has failed."}]});
-    }
-};
->>>>>>> mikedev
-
 exports.buyTree = async (req, res, next) => {
     const userId = req.body.userId;
     const treeId = req.body.treeId;
-<<<<<<< HEAD
-    let user = await User.findById(userId);
-    let tree = await Tree.findById(treeId);
-    // let alltree = await Tree.find();
-    let userLeaves = user.number_of_leaves;
-    let treeCost = tree.value;
-    let treeOwner = String(tree.owner_id);
-=======
     console.log(`user id : ${userId}`);
     console.log(`tree id : ${treeId}`);
     let user = await User.findById(userId);
@@ -98,18 +45,12 @@ exports.buyTree = async (req, res, next) => {
     let userLeaves = user.number_of_leaves;
     let treeCost = tree.value;
 
->>>>>>> mikedev
     let lock = tree.is_locked;
 
     if (tree.owner_id) {
         if (treeOwner === userId) {
-<<<<<<< HEAD
-            // res.json({msg: "you're the owner of this tree"});
-            res.json({tree});
-=======
             res.json({msg: "you're the owner of this tree"});
 
->>>>>>> mikedev
             // console.log(alltree);
         } else {
             if (lock === true) {
@@ -131,37 +72,11 @@ exports.buyTree = async (req, res, next) => {
                 });
                 // amount of tree 100m
                 let amountTree = surroundingTrees.length;
-<<<<<<< HEAD
-                console.log(amountTree);
-=======
                 console.log(`amount of tree in 100m : ${amountTree}`);
->>>>>>> mikedev
 
                 // value of all your tree in 100m
                 let valueMyTrees = surroundingTrees
                     .filter(({owner_id}) => owner_id == userId)
-<<<<<<< HEAD
-                    .reduce((sum, tree) => sum + tree.value, 0);
-                console.log(valueMyTrees);
-
-                // res.json({surroundingTrees});
-
-                //
-            }
-        }
-    } else {
-        // "[value of the targetted tree" ------ OK
-        //  +
-        // "[value of all the targetted player's trees in 100m radius]"
-        //  ×
-        // "[amount of trees in 100m radius]" --------OK
-        //  /
-        // "[amount of tree of targetted player in 100m radius]"
-        //  +
-        // "[value of all the other players trees in 100m radius]"
-        //  -
-        // "[value of all your tree in 100m radius]" --------OK
-=======
                     .reduce((sum, myTree) => sum + myTree.value, 0);
                 console.log(`value of all your tree in 100m : ${valueMyTrees}`);
                 // value of all the targetted player's trees in 100m radius
@@ -239,16 +154,12 @@ exports.buyTree = async (req, res, next) => {
             }
         }
     } else {
->>>>>>> mikedev
         if (userLeaves > treeCost) {
             let newName = await exports.testName(treeId);
             tree.owner_id = userId;
             user.number_of_leaves = user.number_of_leaves - treeCost;
             user.number_of_trees = user.number_of_trees + 1;
-<<<<<<< HEAD
-=======
             tree.transactions_history.user_id = userId;
->>>>>>> mikedev
             await tree.save();
             await user.save();
 
@@ -263,11 +174,6 @@ exports.buyTree = async (req, res, next) => {
                 msg: `${user.username} just bought a tree called ${newName}`,
             });
             await log.save();
-<<<<<<< HEAD
-        }
-    }
-};
-=======
         } else {
             res.json({msg: "You don't have enough leaves..."});
         }
@@ -405,4 +311,3 @@ exports.showAllComment = async (req, res, next) => {
     //     res.json({msg: "errors"});
     // }
 };
->>>>>>> mikedev
