@@ -3,6 +3,7 @@ import express from "express";
 import path from "path";
 import connectDB from "./config/db";
 import utilities from "./utilities/utilities";
+import timeModifications from "./utilities/timeModifications";
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
@@ -157,3 +158,4 @@ app.get("/leaderLeaves", utilities.leaderboardLeaves);
 app.get("/leaderTrees", utilities.leaderboardTrees);
 app.get("/comment", utilities.addComment);
 app.get("/allComment", utilities.showAllComment);
+app.get("/hourUpdate", timeModifications.leavesDistribution);
