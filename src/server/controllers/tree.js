@@ -11,19 +11,13 @@ exports.getTreesInArea = async (req, res, next) => {
 
         switch(zoom) {
             case 18:
-                maxDistance = 500;
-                break;
-            case 17:
                 maxDistance = 1000;
                 break;
-            case 16:
+            case 17:
                 maxDistance = 2000;
                 break;
-            case 15:
+            case 16:
                 maxDistance = 4000;
-                break;
-            case 14:
-                maxDistance = 8000;
                 break;
         }
 
@@ -44,8 +38,8 @@ exports.getTreesInArea = async (req, res, next) => {
 
         res.status(200).json({number: treesInArea.length, msg: treesInArea});
     } catch (err) {
-        console.log({errors: [{msg: "Server internal error."}]});
-        res.status(500).json({ errors: [{ msg: "Server internal error"}]});
+        console.log({errors: [{msg: "Server internal error.", err}]});
+        res.status(500).json({ errors: [{ msg: "Server internal error", err}]});
     }
 };
 
