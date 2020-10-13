@@ -1,6 +1,5 @@
 /*Every fifteen minutes in real life, each player will receive an amount of leaves equals to the total of each of his trees.
     Every hour in real life, each player loose half his leaves.*/
-
 const Tree = require("../models/tree");
 const User = require("../models/user");
 
@@ -20,6 +19,20 @@ exports.addLeavesInterval = async () => {
 
 exports.removeLeavesInterval = async (req, res, next) => {
     try {
+        let oldRequestHour = req.app.get('previousRequestHour');
+        let newRequestHour = Date.now();
+
+
+
+
+
+
+
+
+
+
+        req.app.set('previousRequestHour', newRequestHour);
+
         const users = await User.find().select("number_of_leaves");
 
         users.map((user) => {
