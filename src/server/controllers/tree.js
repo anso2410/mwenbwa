@@ -4,6 +4,15 @@ const User = require("../models/user");
 const Gamelog = require("../controllers/gamelog");
 
 // Middlewares
+exports.getAllTrees = async (req, res, next) => {
+    try {
+        const allTrees = await Tree.find();
+        res.status(200).json({msg: allTrees});
+    } catch (err) {
+        res.status(500).json({ errors: [{ msg: "Server internal error", err}]});
+    }
+};
+/*
 exports.getTreesInArea = async (req, res, next) => {
     try {
         const {lat, lon, zoom} = req.body;
@@ -42,6 +51,7 @@ exports.getTreesInArea = async (req, res, next) => {
         res.status(500).json({ errors: [{ msg: "Server internal error", err}]});
     }
 };
+ */
 
 exports.getOneTree = async (req, res, next) => {
     try {
@@ -51,14 +61,6 @@ exports.getOneTree = async (req, res, next) => {
         return res.status(404).json({err});
     }
 };
-
-exports.getAllTrees = (req, res, next) => {
-    // Modifier cette fonction pour préciser pour quelle zone des arbres doivent être chargés
-    //req.body.zoom = 16 > near, max distance = 200m
-    Tree.find()
-        .then(trees => res.status(200).json(trees))
-        .catch(err => res.status(400).json({err}));
-}
 
 exports.updateOneThree = (req, res, next) => {
     const updatedTree = req.body;
