@@ -53,12 +53,8 @@ class MyWood extends React.Component {
         //     zoom: 17,
         // })
         let data = {
-            params: {
-                from: "2020-03-12",
-                to: "2020-03-13",
-            },
             headers: {
-                "x-auth-token": "HERE WILL BE THE TOKEN",
+                "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NWJhZWMyYzA3ODIwN2Y3YTA0MmEyIn0sImlhdCI6MTYwMjU5OTY2OCwiZXhwIjoxNjAyNjg2MDY4fQ.G7HzoFpI_f3IYeNhskOcLgfXjJlbKwhaBBzCsqIzhv0",
                 "content-type": "application/json",
             },
         };
