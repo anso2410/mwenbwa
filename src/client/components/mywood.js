@@ -70,24 +70,6 @@ class MyWood extends React.Component {
         this.setState({
             filteredTrees: filtered,
         });
-        // let response = [];
-        // condition pour ne charger qu'une fois
-        // if (this.state.trees.length === 0) {
-        //     axios
-        //         .post(`http://localhost/api/tree`, {
-        //             lat: 50.64327,
-        //             lon: 5.5980396,
-        //             zoom: zoom,
-        //         })
-        //         .then(res => {
-        //             console.log("it worked");
-        //             response = res.data.msg;
-        //             this.setState({
-        //                 trees: response,
-        //             });
-        //             console.log(this.state.trees);
-        //         });
-        // }
     }
     render() {
         return (
