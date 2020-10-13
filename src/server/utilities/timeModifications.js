@@ -20,6 +20,7 @@ exports.addLeavesInterval = async () => {
 
 exports.removeLeavesInterval = async (req, res, next) => {
     try {
+        let newRequest
         const users = await User.find().select("number_of_leaves");
 
         users.map((user) => {
