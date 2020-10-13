@@ -22,24 +22,23 @@ class MyWood extends React.Component {
     }
     componentDidMount() {
         let response = [];
-        axios
-            .post(`http://localhost/api/tree`, {
-                lat: 50.64327,
-                lon: 5.5980396,
-                zoom: 17,
-            })
-            .then(res => {
-                console.log("it worked");
-                response = res.data.msg;
-                let filtered = response.filter(
-                    tree => tree.location.coordinates[1] <= 50.64333,
-                );
-                this.setState({
-                    trees: filtered,
-                });
-                setTimeout(console.log(response), 800);
-                setTimeout(console.log(filtered), 1000);
+        axios.get(`http://localhost/api/tree`).then(res => {
+            console.log("it worked");
+            response = res.data.msg;
+            let filtered = response.filter(
+                tree => tree.location.coordinates[1] <= 50.64333,
+            );
+            this.setState({
+                trees: filtered,
             });
+            setTimeout(console.log(response), 800);
+            setTimeout(console.log(filtered), 1000);
+        });
+        // .post(`http://localhost/api/tree`, {
+        //     lat: 50.64327,
+        //     lon: 5.5980396,
+        //     zoom: 17,
+        // })
     }
     getTreesCoordinates(e) {
         const zoom = e.zoom;
