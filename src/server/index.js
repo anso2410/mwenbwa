@@ -1,9 +1,8 @@
 // Import < ES6 modules syntax, not from CommonJS, which is const express = require(''). CommonJS is the only one working for node.js, but Babel makes it possible to work with ES6 syntax for modules, even for node.
 import express from "express";
 import path from "path";
-import connectDB from "./config/db"
-// Op to run before anything else
-const sanitizeDataset = require("./utilities/sanitizeTrees");
+import connectDB from "./config/db";
+import utilities from "./utilities/utilities";
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
@@ -32,9 +31,15 @@ app.use(express.urlencoded({extended: false}));
 
 // Defining Headers so the frontend can communicate with the backend
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader(
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization",
+    );
+    res.setHeader(
+        "Access-Control-Allow-Methods",
+        "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+    );
     next();
 });
 
@@ -44,32 +49,29 @@ app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 // API Test
 app.get("/", (req, res) => {
-    res.send('API Running.');
+    res.send("API Running.");
 });
 
 app.get("/users", (req, res) => {
     User.find()
-        .then(users => res.status(200).json(users))
+        .then((users) => res.status(200).json(users))
         .catch(() => res.status(400).json({error: "No user found!"}));
 });
 
 app.get("/users/:id", (req, res) => {
     User.findOne({_id: req.params.id})
-        .then(user => res.status(200).json(user))
+        .then((user) => res.status(200).json(user))
         .catch(() => res.status(400).json({error: "No user found!"}));
 });
 
 app.get("/api/trees/:id", async (req, res) => {
     try {
-        const tree = await Tree
-            .findById(req.params.id)
-            .populate('owner_id');
+        const tree = await Tree.findById(req.params.id).populate("owner_id");
         res.status(200).json(tree);
     } catch (err) {
         res.status(400).json({error: "No tree found!"});
     }
 });
-
 
 /*app.get("/api/trees/:id", (req, res) => {
     Data.findOne({ _id: req.params.id }, (err, doc) => {
@@ -86,7 +88,7 @@ app.post("/hello", (req, res) => {
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,
-        color: req.body.color
+        color: req.body.color,
     });
 
     /*if(
@@ -101,15 +103,16 @@ app.post("/hello", (req, res) => {
     }*/
 
     // Register to DB
-    newUser.save()
+    newUser
+        .save()
         .then(() => res.status(201).json({message: "User created!"}))
-        .catch(error => res.status(500).json({error}));
+        .catch((error) => res.status(500).json({error}));
 });
 
 app.put("/hello/:id", (req, res) => {
     const updatedUser = req.body;
     User.findOne({_id: req.params.id})
-        .then(user => {
+        .then((user) => {
             user.username = updatedUser.username
                 ? updatedUser.username
                 : user.username;
@@ -125,7 +128,7 @@ app.put("/hello/:id", (req, res) => {
 
 app.delete("/hello/:id", (req, res) => {
     User.deleteOne({_id: req.params.id})
-        .then(data => {
+        .then((data) => {
             if (data.deletedCount !== 0) {
                 res.status(200).json({msg: "User deleted!"});
             } else {
@@ -140,15 +143,17 @@ app.delete("/hello/:id", (req, res) => {
 // Define routes
 app.use("/api/tree", treeRoutes);
 app.use("/api/user", userRoutes);
-//app.use("/api/leaderboard", userRoutes);
-app.use("/api/gamelog", gamelogRoutes);
+/*app.use("/api/leaderboard", userRoutes);
+app.use("/api/gamelog", userRoutes);*/
 
 // App listening on port
-app.listen(PORT, () =>
-    console.log(`🚀 Server is listening on port ${PORT}.`),
-);
+app.listen(PORT, () => console.log(`🚀 Server is listening on port ${PORT}.`));
 
-// Tests
-// app.get("/sanitizeDataset", sanitizeDataset.sanitizeTrees);
+// MIKE ROUTES
+app.get("/buyTree", utilities.buyTree);
+app.get("/treePrice", utilities.treePrice);
 
-//timeModifications.removeLeavesInterval();
+app.get("/leaderLeaves", utilities.leaderboardLeaves);
+app.get("/leaderTrees", utilities.leaderboardTrees);
+app.get("/comment", utilities.addComment);
+app.get("/allComment", utilities.showAllComment);
