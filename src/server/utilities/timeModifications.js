@@ -18,7 +18,7 @@ exports.addLeavesInterval = async () => {
     }
 };*/
 
-exports.removeLeavesInterval = async () => {
+exports.removeLeavesInterval = async (req, res, next) => {
     try {
         const users = await User.find().select("number_of_leaves");
 
@@ -31,9 +31,19 @@ exports.removeLeavesInterval = async () => {
                 await user.save();
             }),
         )
-            .then(() => {console.log({msg: "Half of each player's total of leaves has been removed."})})
-            .catch((err) => console.log(err));
+            .then(() => {
+                console.log({msg: "Half of each player's total of leaves has been removed."});
+                //res.status(200).json({msg: "Half of each player's total of leaves has been removed."});
+                return (req, res, next) => {
+                    next();
+                };
+            })
+            .catch((err) => {
+                console.log(err);
+                res.status(500).json({msg: "Server internal error."});
+            });
     } catch (err) {
         console.log({errors: [{msg: "Server internal error.", err}]});
+        res.status(500).json({msg: "Server internal error."});
     }
 };
