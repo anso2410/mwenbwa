@@ -17,8 +17,8 @@ function MyWoodMap(props) {
         <Map
             id="leafletContainer"
             center={[50.6283, 5.5768]}
-            zoom={16}
-            minZoom={15}
+            zoom={17}
+            minZoom={17}
             onViewportChanged={e => props.getTreesCoordinates(e)}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

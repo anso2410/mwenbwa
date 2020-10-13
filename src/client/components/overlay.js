@@ -19,6 +19,11 @@ class Overlay extends React.Component {
             password: "",
             color: "#FF0000",
             token: "",
+            leaders: [
+                {id: 1, name: "Arti", leaves: 500},
+                {id: 2, name: "Laeti", leaves: 300},
+                {id: 3, name: "Michael", leaves: 200},
+            ],
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
