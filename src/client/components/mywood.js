@@ -31,10 +31,14 @@ class MyWood extends React.Component {
             .then(res => {
                 console.log("it worked");
                 response = res.data.msg;
+                let filtered = response.filter(
+                    tree => tree.location.coordinates[1] <= 50.64333,
+                );
                 this.setState({
-                    trees: response,
+                    trees: filtered,
                 });
-                console.log(this.state.trees);
+                setTimeout(console.log(response), 800);
+                setTimeout(console.log(filtered), 1000);
             });
     }
     getTreesCoordinates(e) {
