@@ -52,6 +52,24 @@ class MyWood extends React.Component {
         //     lon: 5.5980396,
         //     zoom: 17,
         // })
+        let data = {
+            params: {
+                from: "2020-03-12",
+                to: "2020-03-13",
+            },
+            headers: {
+                "x-auth-token": "HERE WILL BE THE TOKEN",
+                "content-type": "application/json",
+            },
+        };
+        axios
+            .get(`http://localhost/api/user`, data)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log("X AUTH FAILED! Bhuuu");
+            });
     }
     getTreesCoordinates(e) {
         // const zoom = e.zoom;
