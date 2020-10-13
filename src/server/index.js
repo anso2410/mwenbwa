@@ -43,7 +43,7 @@ app.use(express.urlencoded({extended: false}));
 // Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
 // (permet d'avoir accès à l'index.html pour la route "/" notamment.
 // Avant de servir statiquement le serveur, on lance les fonctions de temps.
-//app.use("/", timeModifications.timeUpdates);
+app.use("/", timeModifications.timeUpdates);
 app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 // Define routes
