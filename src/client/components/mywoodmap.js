@@ -2,7 +2,7 @@ import React from "react";
 import {Map, Marker, Popup, TileLayer} from "react-leaflet";
 import L from "leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
-import arbustum from "../../../data/working_arbust.json";
+// import arbustum from "../../../data/working_arbust.json";
 import "../styles/map.css";
 import treeImg from "./img/treeImg.png";
 
@@ -18,6 +18,7 @@ function MyWoodMap(props) {
             id="leafletContainer"
             center={[50.6283, 5.5768]}
             zoom={16}
+            minZoom={15}
             onViewportChanged={e => props.getTreesCoordinates(e)}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

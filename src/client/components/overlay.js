@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import Button from "./button";
 import TopBar from "./topbar";
 import Rules from "./rules";
@@ -18,6 +18,7 @@ class Overlay extends React.Component {
             email: "",
             password: "",
             color: "#FF0000",
+            token: "",
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
