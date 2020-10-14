@@ -2,6 +2,7 @@
 const Tree = require("../models/tree");
 const User = require("../models/user");
 const Gamelog = require("../controllers/gamelog");
+
 const Utilities = require("../utilities/utilities");
 
 // Middlewares
@@ -258,21 +259,29 @@ exports.buyTree = async (req, res, next) => {
             tree.owner_id = userId;
             user.number_of_leaves = user.number_of_leaves - treeCost;
             user.number_of_trees = user.number_of_trees + 1;
-            tree.transactions_history.user_id = userId;
+            tree.transactions_history.push({
+                user_id: userId,
+                price: tree.value,
+            });
             await tree.save();
             await user.save();
 
             //AJOUT DANS LES GAMELOGS
-            let log = new Gamelog({
-                type: "Purchase",
-                user_id: userId,
-                tree_id: treeId,
-                message: `${user.username} Puchased the tree called ${newName}`,
-            });
+            // let log = new Gamelog({
+            //     type: "Purchase",
+            //     user_id: userId,
+            //     tree_id: treeId,
+            //     message: `${user.username} Puchased the tree called ${newName}`,
+            // });
+            await Gamelog.insertToGamelog(
+                "Purchase",
+                userId,
+                treeId,
+                "Purchased a tree",
+            );
             res.json({
                 msg: `${user.username} just bought a tree called ${newName}`,
             });
-            await log.save();
         } else {
             res.json({msg: "You don't have enough leaves..."});
         }
