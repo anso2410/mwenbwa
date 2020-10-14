@@ -23,11 +23,8 @@ class Overlay extends React.Component {
             password: "",
             color: "#FF0000",
             token: "",
-            leaders: [
-                {_id: 1, username: "Arti", number_of_leaves: 500},
-                {_id: 2, username: "Laeti", number_of_leaves: 300},
-                {_id: 3, username: "Michael", number_of_leaves: 200},
-            ],
+            leaders: [],
+            gamelog: [1, 2, 3],
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
@@ -130,6 +127,17 @@ class Overlay extends React.Component {
             showGamelog: !this.state.showGamelog,
             showLeaderboard: false,
             showRules: false,
+        });
+        axios
+            .get(`http://localhost/api/gamelog`)
+            .then(res => {
+                // this.setState({
+                //     leaders: res.data.users,
+                // });
+                console.log(res.data.msg);
+            })
+            .catch(err => {
+                console.log("Couldn't get Game Log");
         });
     }
     closeModals() {

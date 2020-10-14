@@ -44,8 +44,6 @@ class MyWood extends React.Component {
                 trees: response,
                 filteredTrees: filtered,
             });
-            setTimeout(console.log(response), 800);
-            setTimeout(console.log(filtered), 1000);
         });
         // .post(`http://localhost/api/tree`, {
         //     lat: 50.64327,

@@ -5,10 +5,11 @@ function Gamelog(props) {
         <div className="gamelog center-modal flex-col pad-med border bgc-prim">
             <h1>Game Log</h1>
             <ul className="gamelogFlex">
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
-                <li>Test</li>
+                {props.state.gamelog.map(entry => (
+                    <>
+                        <li>You mapped one entry</li>
+                    </>
+                ))}
             </ul>
         </div>
     );
