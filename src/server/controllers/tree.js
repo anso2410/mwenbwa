@@ -58,6 +58,7 @@ exports.getTreesInArea = async (req, res, next) => {
 exports.getOneTree = async (req, res, next) => {
     try {
         const tree = await Tree.findById(req.params.id);
+        // Ajouter request lock et buy
         return res.status(200).json(tree);
     } catch (err) {
         return res.status(404).json({err});
