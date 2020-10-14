@@ -28,7 +28,9 @@ function MyWoodMap(props) {
                 {props.treeCoordinates.map(tree => (
                     <Marker
                         icon={treeIcon}
-                        key={tree._id.$oid}
+                        key={tree._id}
+                        // onclick={props.sendTreeId(tree._id.$oid)}
+                        // onclick={e => console.log(tree._id)}
                         position={[
                             tree.location.coordinates[1],
                             tree.location.coordinates[0],
@@ -43,7 +45,14 @@ function MyWoodMap(props) {
                             <p>{`Height: ${tree.size.height}m`}</p>
                             <p>{`Diameter: ${tree.size.diameter}cm`}</p>
                             <p>{`Price: ${tree.value} leaves`}</p>
-                            <p>{`${tree.location.coordinates[1]},${tree.location.coordinates[0]}`}</p>
+                            <input
+                                type="button"
+                                onClick={() => props.sendTreeId(tree._id)}
+                                // onClick={() =>
+                                //     console.log(`the ID of tree is ${tree._id}`)
+                                // }
+                                value="Send ID to back"
+                            />
                         </Popup>
                     </Marker>
                 ))}

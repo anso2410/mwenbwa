@@ -54,7 +54,8 @@ class MyWood extends React.Component {
         // })
         let data = {
             headers: {
-                "x-auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NWJhZWMyYzA3ODIwN2Y3YTA0MmEyIn0sImlhdCI6MTYwMjU5OTY2OCwiZXhwIjoxNjAyNjg2MDY4fQ.G7HzoFpI_f3IYeNhskOcLgfXjJlbKwhaBBzCsqIzhv0",
+                "x-auth-token":
+                    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NWJhZWMyYzA3ODIwN2Y3YTA0MmEyIn0sImlhdCI6MTYwMjU5OTY2OCwiZXhwIjoxNjAyNjg2MDY4fQ.G7HzoFpI_f3IYeNhskOcLgfXjJlbKwhaBBzCsqIzhv0",
                 "content-type": "application/json",
             },
         };
@@ -85,6 +86,28 @@ class MyWood extends React.Component {
             filteredTrees: filtered,
         });
     }
+    sendTreeId(id) {
+        console.log(`the ID of tree is ${id}`);
+        let data = {
+            headers: {
+                "x-auth-token":
+                    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NmI1ZjY0NzllODQwMTZmYWI2N2M0In0sImlhdCI6MTYwMjY3MDg2MSwiZXhwIjoxNjAyNzU3MjYxfQ.zdY4DLD8l5XbD-nBqFSlc1O3dqOtfI6eRFLWhSakQGs",
+                "content-type": "application/json",
+            },
+            body: {
+                userId: "5f86b5f6479e84016fab67c4",
+                treeId: "5f7b08c05059351633d31405",
+            },
+        };
+        axios
+            .get(`http://localhost/api/tree/buyTree`, data)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log("Couldn't send ID to back");
+            });
+    }
     render() {
         return (
             <div>
@@ -92,6 +115,7 @@ class MyWood extends React.Component {
                 <MyWoodMap
                     getTreesCoordinates={this.getTreesCoordinates}
                     treeCoordinates={this.state.filteredTrees}
+                    sendTreeId={this.sendTreeId}
                 />
             </div>
         );

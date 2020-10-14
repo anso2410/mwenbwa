@@ -1,10 +1,11 @@
 import React from "react";
-// import axios from "axios";
+import axios from "axios";
 import Button from "./button";
 import TopBar from "./topbar";
 import Rules from "./rules";
 import LoginModal from "./loginmodal";
 import Leaderboard from "./leaderboard";
+import Gamelog from "./gamelog";
 import "../styles/overlay.css";
 
 class Overlay extends React.Component {
@@ -14,7 +15,10 @@ class Overlay extends React.Component {
             logged: false,
             showSignup: false,
             showLeaderboard: false,
+            showGamelog: false,
             showRules: false,
+            showLoader: false,
+            username: "",
             email: "",
             password: "",
             color: "#FF0000",
@@ -31,6 +35,7 @@ class Overlay extends React.Component {
         this.logOut = this.logOut.bind(this);
         this.toggleLeaderboard = this.toggleLeaderboard.bind(this);
         this.toggleRules = this.toggleRules.bind(this);
+        this.toggleGamelog = this.toggleGamelog.bind(this);
         this.closeModals = this.closeModals.bind(this);
     }
     // componentDidMount() {
@@ -56,29 +61,72 @@ class Overlay extends React.Component {
             showSignup: !this.state.showSignup,
         });
     }
+    signUp() {
+        console.log("need a function to Sign Up");
+    }
     logIn() {
         this.setState({
             logged: true,
+            showLeaderboard: false,
             showRules: true,
+            showGamelog: false,
         });
+        // this.setState({
+        //     showLoader: true,
+        // });
+        // setTimeout(
+        //     this.setState({
+        //         logged: true,
+        //         showRules: true,
+        //         showLoader: false,
+        //     }),
+        //     3000,
+        // );
+        // setTimeout(
+        //     () =>
+        //         this.setState({
+        //             logged: true,
+        //             showRules: true,
+        //             showLoader: false,
+        //         }),
+        //     3000,
+        // );
     }
     logOut() {
         this.setState({
             logged: false,
             showLeaderboard: false,
             showRules: false,
+            showGamelog: false,
         });
     }
     toggleLeaderboard() {
         this.setState({
             showLeaderboard: !this.state.showLeaderboard,
             showRules: false,
+            showGamelog: false,
         });
+        axios
+            .get(`http://localhost/api/leaderboard/trees`)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log("Couldn't get Leaderboard");
+            });
     }
     toggleRules() {
         this.setState({
             showRules: !this.state.showRules,
             showLeaderboard: false,
+            showGamelog: false,
+        });
+    }
+    toggleGamelog() {
+        this.setState({
+            showGamelog: !this.state.showGamelog,
+            showLeaderboard: false,
+            showRules: false,
         });
     }
     closeModals() {
@@ -93,6 +141,7 @@ class Overlay extends React.Component {
                 {/* Show DarkenMap if a modal is open (NB: not logged=show login modal) */}
                 {(!this.state.logged ||
                     this.state.showLeaderboard ||
+                    this.state.showGamelog ||
                     this.state.showRules) && (
                     <div
                         id="darken-map"
@@ -102,6 +151,7 @@ class Overlay extends React.Component {
                         }
                     />
                 )}
+                {this.state.showLoader && <div className="loader"></div>}
                 <TopBar />
                 {this.state.logged && (
                     <>
@@ -121,11 +171,17 @@ class Overlay extends React.Component {
                             handleClick={this.toggleRules}
                             className="button-rules"
                         />
+                        <Button
+                            value="Game Log"
+                            handleClick={this.toggleGamelog}
+                            className="button-gamelog"
+                        />
                     </>
                 )}
                 {this.state.showLeaderboard && (
                     <Leaderboard state={this.state} />
                 )}
+                {this.state.showGamelog && <Gamelog state={this.state} />}
                 {this.state.showRules && <Rules />}
                 {!this.state.logged && (
                     <LoginModal
@@ -133,6 +189,7 @@ class Overlay extends React.Component {
                         handleChange={this.handleChange}
                         toggleSignup={this.toggleSignup}
                         logIn={this.logIn}
+                        signUp={this.signUp}
                     />
                 )}
             </div>
