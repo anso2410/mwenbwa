@@ -24,7 +24,10 @@ class Overlay extends React.Component {
             color: "#FF0000",
             token: "",
             leaders: [],
-            gamelog: [1, 2, 3],
+            gamelog: [
+                {user_id: {_id: "this is the ID"}},
+                {user_id: {_id: "ID number 2"}},
+            ],
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
@@ -132,13 +135,13 @@ class Overlay extends React.Component {
             .get(`http://localhost/api/gamelog`)
             .then(res => {
                 // this.setState({
-                //     leaders: res.data.users,
+                //     leaders: res.data.msg,
                 // });
                 console.log(res.data.msg);
             })
             .catch(err => {
                 console.log("Couldn't get Game Log");
-        });
+            });
     }
     closeModals() {
         this.setState({
