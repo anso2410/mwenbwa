@@ -7,7 +7,7 @@ function Leaderboard(props) {
             <h1>Leaderboard</h1>
             <ol className="leaderFlex">
                 {props.state.leaders.map(leader => (
-                    <Leader key={leader.id} leader={leader} />
+                    <Leader key={leader._id} leader={leader} />
                 ))}
             </ol>
         </div>

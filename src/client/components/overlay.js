@@ -24,9 +24,9 @@ class Overlay extends React.Component {
             color: "#FF0000",
             token: "",
             leaders: [
-                {id: 1, name: "Arti", leaves: 500},
-                {id: 2, name: "Laeti", leaves: 300},
-                {id: 3, name: "Michael", leaves: 200},
+                {_id: 1, username: "Arti", number_of_leaves: 500},
+                {_id: 2, username: "Laeti", number_of_leaves: 300},
+                {_id: 3, username: "Michael", number_of_leaves: 200},
             ],
         };
         this.handleChange = this.handleChange.bind(this);
@@ -109,7 +109,10 @@ class Overlay extends React.Component {
         axios
             .get(`http://localhost/api/leaderboard/trees`)
             .then(res => {
-                console.log(res);
+                this.setState({
+                    leaders: res.data.users,
+                });
+                console.log(res.data.users);
             })
             .catch(err => {
                 console.log("Couldn't get Leaderboard");
