@@ -1,6 +1,3 @@
-/*Every fifteen minutes in real life, each player will receive an amount of leaves equals to the total of each of his trees.
-    Every hour in real life, each player loose half his leaves.*/
-
 const Tree = require("../models/tree");
 const User = require("../models/user");
 
