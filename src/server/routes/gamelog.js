@@ -4,6 +4,6 @@ const router = express.Router();
 const auth = require("../middlewares/auth");
 const gamelogCtrl = require("../controllers/gamelog");
 
-router.get("/", auth, gamelogCtrl.getGamelog);
+router.get("/", gamelogCtrl.getGamelog);
 
 module.exports = router;

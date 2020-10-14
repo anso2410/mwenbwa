@@ -2,9 +2,27 @@ import React from "react";
 
 function LoginModal(props) {
     return (
-        <div className="login-modal center-modal flex-col pad-med border bgc-prim">
+        <form
+            action={
+                props.state.showSignup
+                    ? "http://localhost/api/user/signup"
+                    : "http://localhost/api/user/login"
+            }
+            method="POST"
+            className="login-modal center-modal flex-col pad-med border bgc-prim">
             {/* Change title depending on SignUp/LogIn */}
             <h2>{props.state.showSignup ? "Sign Up" : "Log In"}</h2>
+            {props.state.showSignup && (
+                <input
+                    type="text"
+                    name="username"
+                    id="login-modal-id"
+                    placeholder="username"
+                    value={props.state.username}
+                    onChange={props.handleChange}
+                    required
+                />
+            )}
             <input
                 type="text"
                 name="email"
@@ -40,13 +58,16 @@ function LoginModal(props) {
             <div id="loginmodal-buttons">
                 {/* Handle Login or Signup depending on showSignup state */}
                 <input
-                    type="button"
+                    type="submit"
                     value={props.state.showSignup ? "Sign Up" : "Log In"}
                     onClick={
-                        props.state.showSignup
-                            ? console.log("need to add signup function")
-                            : props.logIn
+                        props.state.showSignup ? props.signUp : props.logIn
                     }
+                    // onClick={
+                    //     props.state.showSignup
+                    //         ? props.signUp
+                    //         : setTimeout(() => props.logIn, 3000)
+                    // }
                     className="button"
                 />
             </div>
@@ -63,7 +84,7 @@ function LoginModal(props) {
                     onClick={props.toggleSignup}
                 />
             </div>
-        </div>
+        </form>
     );
 }
 

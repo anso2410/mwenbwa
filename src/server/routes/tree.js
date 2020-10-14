@@ -7,7 +7,7 @@ const treeCtrl = require("../controllers/tree");
 router.get("/", treeCtrl.getAllTrees);
 router.get("/:id", auth, treeCtrl.getOneTree);
 router.put("/:id", auth, treeCtrl.updateOneThree);
-router.get("/buyTree", auth, treeCtrl.buyTree);
+router.post("/buyTree", auth, treeCtrl.buyTree);
 router.get("/treePrice", auth, treeCtrl.treePrice);
 router.get("/lockingPrice/:id", auth, treeCtrl.showLockingPrice);
 router.get("/lockTree/:id", auth, treeCtrl.lockTree);
