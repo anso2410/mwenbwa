@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/*Every fifteen minutes in real life, each player will receive an amount of leaves equals to the total of each of his trees.
-    Every hour in real life, each player loose half his leaves.*/
-=======
->>>>>>> mikedev
 const Tree = require("../models/tree");
 const User = require("../models/user");
 
@@ -78,7 +73,6 @@ exports.removeLeavesInterval = async () => {
             }),
         )
             .then(() => {
-<<<<<<< HEAD
                 console.log({msg: "Half of each player's total of leaves has been removed."});
                 //res.status(200).json({msg: "Half of each player's total of leaves has been removed."});
             })
@@ -86,14 +80,6 @@ exports.removeLeavesInterval = async () => {
                 console.log(err);
                 //res.status(500).json({msg: "Server internal error."});
             });
-=======
-                console.log({
-                    msg:
-                        "Half of each player's total of leaves has been removed.",
-                });
-            })
-            .catch((err) => console.log(err));
->>>>>>> mikedev
     } catch (err) {
         console.log({errors: [{msg: "Server internal error.", err}]});
         //res.status(500).json({msg: "Server internal error."});
