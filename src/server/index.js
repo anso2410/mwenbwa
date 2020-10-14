@@ -1,13 +1,8 @@
-// Import < ES6 modules syntax, not from CommonJS, which is const express = require(''). CommonJS is the only one working for node.js, but Babel makes it possible to work with ES6 syntax for modules, even for node.
 import express from "express";
 import path from "path";
 import connectDB from "./config/db";
-<<<<<<< HEAD
-const timeModifications = require("./utilities/timeModifications");
-=======
-import utilities from "./utilities/utilities";
+
 import timeModifications from "./utilities/timeModifications";
->>>>>>> mikedev
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
@@ -45,10 +40,11 @@ app.use(express.urlencoded({extended: false}));
     next();
 });*/
 
-// Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
-// (permet d'avoir accès à l'index.html pour la route "/" notamment.
 // Avant de servir statiquement le serveur, on lance les fonctions de temps.
 app.use("/", timeModifications.timeUpdates);
+
+// Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
+// (permet d'avoir accès à l'index.html pour la route "/" notamment.
 app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 
 // Define routes
