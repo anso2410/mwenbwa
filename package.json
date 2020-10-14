@@ -44,7 +44,7 @@
     "style-loader": "^1.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "axios": "^0.20.0",
@@ -52,6 +52,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
+    "fantasy-name-generator": "^2.0.0",
     "gravatar": "^1.8.1",
     "jsonwebtoken": "^8.5.1",
     "leaflet": "^1.7.1",

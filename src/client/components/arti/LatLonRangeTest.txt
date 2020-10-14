@@ -1,19 +1,9 @@
 latitude: vertical variation
 longitude: horizontal variation
 
-zoom 18
-tree on left: 50.611923, 5.584002
-tree on right: 50.613045, 5.5921826
-
-difference in longitude : 0.00818
-
-Testing values: 
-difference in latitude of 0.00546
-difference in longitude of 0.0084
-
-                ;{/* Marker for Bryan's Home in Madagascar */}
-                <Marker
-                    icon={treeIcon}
-                    key={"Bryan"}
-                    position={[-18.926263, 47.544829]}
-                />
+    ;{/* Marker for Bryan's Home in Madagascar */}
+    <Marker
+        icon={treeIcon}
+        key={"Bryan"}
+        position={[-18.926263, 47.544829]}
+    />

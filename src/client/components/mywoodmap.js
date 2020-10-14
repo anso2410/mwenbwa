@@ -2,35 +2,30 @@ import React from "react";
 import {Map, Marker, Popup, TileLayer} from "react-leaflet";
 import L from "leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
-import arbustum from "../../../data/working_arbust.json";
+// import arbustum from "../../../data/working_arbust.json";
 import "../styles/map.css";
 import treeImg from "./img/treeImg.png";
 
-function MyWoodMap() {
+function MyWoodMap(props) {
     const treeIcon = L.icon({
         iconUrl: treeImg,
         iconAnchor: [10, 0],
         popupAnchor: [16, 0],
         iconSize: [38, 50],
     });
-    function logData(e) {
-        const zoom = e.zoom;
-        const coordinates = e.center;
-        console.log(`zoom is ${zoom}`);
-        console.log(`lat: ${coordinates[0]}, long:${coordinates[1]}`);
-    }
     return (
         <Map
             id="leafletContainer"
             center={[50.6283, 5.5768]}
-            zoom={16}
-            onViewportChanged={e => logData(e)}>
+            zoom={17}
+            minZoom={17}
+            onViewportChanged={e => props.getTreesCoordinates(e)}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
             <MarkerClusterGroup disableClusteringAtZoom={18}>
-                {arbustum.map(tree => (
+                {props.treeCoordinates.map(tree => (
                     <Marker
                         icon={treeIcon}
                         key={tree._id.$oid}

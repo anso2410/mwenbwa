@@ -40,6 +40,7 @@
 }
 /* ///// TOP-BAR >>>>> */
 .top-bar {
+    display: flex;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
@@ -57,6 +58,10 @@
     line-height: 50px;
     color: rgb(8, 109, 67);
     text-align: center;
+}
+.treeImg, .leafImg {
+    width: 30px;
+    height: auto;
 }
 /* <<<<< TOP-BAR ///// */
 
@@ -122,6 +127,10 @@ button, .button {
     width: 400px;
     height: 700px;
     align-items: center;
+}
+.leaderFlex {
+    display: flex;
+    flex-direction: column;
 }
 .rules {
     width: 90vw;

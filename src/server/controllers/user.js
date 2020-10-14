@@ -5,7 +5,7 @@ const { validationResult } = require('express-validator');
 const { JWT_SECRET } = process.env;
 
 const User = require("../models/user");
-const calculations = require("../utilities/calculations");
+const Utilities = require("../utilities/utilities");
 
 exports.signup = async (req, res, next) => {
     // Check if any error in the form sent by frontend
@@ -34,7 +34,7 @@ exports.signup = async (req, res, next) => {
         let hash = await bcrypt.hash(password, 10);
 
         // Calculation of amout of leaves given to new user
-        let newNumberOfLeaves = await calculations.assignNumberOfLeaves();
+        let newNumberOfLeaves = await Utilities.assignNumberOfLeaves();
 
         // Create user
         user = new User({
@@ -50,7 +50,7 @@ exports.signup = async (req, res, next) => {
         await user.save(); // Renvoie une promesse avec le nouveau document User créé (user.id est donc accessble)
 
         // Calculation of free trees given to new user
-        //await calculations.assignRandomFreeTrees(user.id);
+        await Utilities.assignRandomFreeTrees(user.id);
 
         // Send directly token of authentification
         const payload = {

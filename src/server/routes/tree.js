@@ -4,8 +4,14 @@ const router = express.Router();
 const auth = require("../middlewares/auth");
 const treeCtrl = require("../controllers/tree");
 
-router.get("/", auth, treeCtrl.getAllTrees);
+router.get("/", treeCtrl.getAllTrees);
 router.get("/:id", auth, treeCtrl.getOneTree);
 router.put("/:id", auth, treeCtrl.updateOneThree);
+router.get("/buyTree", auth, treeCtrl.buyTree);
+router.get("/treePrice", auth, treeCtrl.treePrice);
+router.get("/lockingPrice/:id", auth, treeCtrl.showLockingPrice);
+router.get("/lockTree/:id", auth, treeCtrl.lockTree);
+router.get("/getComments", treeCtrl.showAllComment);
+router.post("/addComment", auth, treeCtrl.addComment);
 
 module.exports = router;

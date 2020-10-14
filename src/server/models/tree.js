@@ -12,12 +12,17 @@ const treeSchema = new mongoose.Schema({
         type: {type: String, required: true, default: "Point"},
         coordinates: [{type: Number, require: true}],
     },
-    owner_id: {type: mongoose.ObjectId, ref: 'User', required: true, default: null},
+    owner_id: {
+        type: mongoose.ObjectId,
+        ref: "User",
+        required: false,
+        default: null,
+    },
     is_locked: {type: Boolean, required: true, default: false},
     transactions_history: [
         {
-            content: {type: String},
-            user_id: {type: mongoose.ObjectId, ref: 'User'},
+            user_id: {type: mongoose.ObjectId, ref: "User"},
+            price: {type: Number},
             datetime: {type: Date, default: Date.now},
         },
     ],

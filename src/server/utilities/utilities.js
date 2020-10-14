@@ -1,28 +1,28 @@
 import {nameByRace} from "fantasy-name-generator";
 import Tree from "../models/tree";
 import User from "../models/user";
-import Gamelog from "../models/gamelog";
-let tabRace = [
-    "angel",
-    "cavePerson",
-    "darkelf",
-    "demon",
-    "dragon",
-    "drow",
-    "dwarf",
-    "elf",
-    "fairy",
-    "gnome",
-    "gobin",
-    "halfdemon",
-    "halfling",
-    "halfelf",
-    "halffairy",
-    "human",
-    "ogre",
-    "orc",
-];
+
 exports.testName = async (treeId) => {
+    let tabRace = [
+        "angel",
+        "cavePerson",
+        "darkelf",
+        "demon",
+        "dragon",
+        "drow",
+        "dwarf",
+        "elf",
+        "fairy",
+        "gnome",
+        "gobin",
+        "halfdemon",
+        "halfling",
+        "halfelf",
+        "halffairy",
+        "human",
+        "ogre",
+        "orc",
+    ];
     let randomIndex = Math.floor(Math.random(0, tabRace.length) * 10);
     const randomName = nameByRace(tabRace[randomIndex], {gender: "male"});
     let treeName = await Tree.findById(treeId);
@@ -32,88 +32,61 @@ exports.testName = async (treeId) => {
     return treeName.given_name;
 };
 
-// RECUP ID USER , ID ARBRE , FUNCTION BYAAAA
+exports.assignRandomFreeTrees = async (user_id) => {
+    try {
+        // Check free trees and assign tree random ones
+        const freeTrees = await Tree.find({owner_id: null});
 
-exports.buyTree = async (req, res, next) => {
-    const userId = req.body.userId;
-    const treeId = req.body.treeId;
-    let user = await User.findById(userId);
-    let tree = await Tree.findById(treeId);
-    // let alltree = await Tree.find();
-    let userLeaves = user.number_of_leaves;
-    let treeCost = tree.value;
-    let treeOwner = String(tree.owner_id);
-    let lock = tree.is_locked;
+        if (freeTrees) {
+            const threeRandomFreeTree = [];
 
-    if (tree.owner_id) {
-        if (treeOwner === userId) {
-            // res.json({msg: "you're the owner of this tree"});
-            res.json({tree});
-            // console.log(alltree);
-        } else {
-            if (lock === true) {
-                res.json({msg: "you can't buy it, is LOCK"});
-            } else {
-                const surroundingTrees = await Tree.find({
-                    location: {
-                        $near: {
-                            $maxDistance: 100,
-                            $geometry: {
-                                type: "Point",
-                                coordinates: [
-                                    tree.location.coordinates[0],
-                                    tree.location.coordinates[1],
-                                ],
-                            },
-                        },
-                    },
-                });
-                // amount of tree 100m
-                let amountTree = surroundingTrees.length;
-                console.log(amountTree);
-
-                // value of all your tree in 100m
-                let valueMyTrees = surroundingTrees
-                    .filter(({owner_id}) => owner_id == userId)
-                    .reduce((sum, tree) => sum + tree.value, 0);
-                console.log(valueMyTrees);
-
-                // res.json({surroundingTrees});
-
-                //
+            for (let i = 0; i < 3; i++) {
+                let randomValue = Math.floor(
+                    Math.random() * Math.floor(freeTrees.length),
+                );
+                threeRandomFreeTree.push(freeTrees[randomValue]);
+                threeRandomFreeTree[i].owner_id = user_id;
             }
-        }
-    } else {
-        // "[value of the targetted tree" ------ OK
-        //  +
-        // "[value of all the targetted player's trees in 100m radius]"
-        //  ×
-        // "[amount of trees in 100m radius]" --------OK
-        //  /
-        // "[amount of tree of targetted player in 100m radius]"
-        //  +
-        // "[value of all the other players trees in 100m radius]"
-        //  -
-        // "[value of all your tree in 100m radius]" --------OK
-        if (userLeaves > treeCost) {
-            let newName = await exports.testName(treeId);
-            tree.owner_id = userId;
-            user.number_of_leaves = user.number_of_leaves - treeCost;
-            user.number_of_trees = user.number_of_trees + 1;
-            await tree.save();
-            await user.save();
 
-            //AJOUT DANS LES GAMELOGS
-            let log = new Gamelog({
-                type: "Purchase",
-                user_id: userId,
-                tree_id: treeId,
-                message: `${user.username} Puchased the tree called ${newName}`,
-            });
-            res.json({
-                msg: `${user.username} just bought a tree called ${newName}`,
-            });
-            await log.save();
+            await Promise.all(
+                threeRandomFreeTree.map(async (tree) => {
+                    exports.testName(tree.id);
+                    await tree.save();
+                }),
+            )
+                .then(() =>
+                    console.log({
+                        msg: "Three free trees have been assigned to the user.",
+                    }),
+                )
+                .catch((err) => console.log(err));
+        } else {
+            console.log({errors: [{msg: "There's noo free tree anymore."}]});
         }
+    } catch (err) {
+        console.log({errors: [{msg: "Server internal error.", err}]});
+    }
+};
+
+exports.assignNumberOfLeaves = async () => {
+    try {
+        // Assign number of leaves
+        const totalAmountOfPlayers = await User.find().estimatedDocumentCount();
+        const leavesInGame = await User.find().select("number_of_leaves");
+
+        let totalAmountOfLeavesInGame = 0;
+
+        leavesInGame.forEach((user) => {
+            totalAmountOfLeavesInGame += parseInt(user.number_of_leaves);
+        });
+
+        let leavesToGiveToNewUser = Math.round(
+            totalAmountOfLeavesInGame / totalAmountOfPlayers,
+        );
+
+        // Assign result to user
+        return leavesToGiveToNewUser;
+    } catch {
+        console.log({errors: [{msg: "Server internal error."}]});
     }
 };

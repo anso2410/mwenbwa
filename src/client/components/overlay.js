@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+// import axios from "axios";
 import Button from "./button";
 import TopBar from "./topbar";
 import Rules from "./rules";
@@ -18,6 +18,12 @@ class Overlay extends React.Component {
             email: "",
             password: "",
             color: "#FF0000",
+            token: "",
+            leaders: [
+                {id: 1, name: "Arti", leaves: 500},
+                {id: 2, name: "Laeti", leaves: 300},
+                {id: 3, name: "Michael", leaves: 200},
+            ],
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
@@ -28,10 +34,16 @@ class Overlay extends React.Component {
         this.closeModals = this.closeModals.bind(this);
     }
     // componentDidMount() {
-    //     console.log("component did mount");
-    //     axios.get(`https://jsonplaceholder.typicode.com/posts`).then(res => {
-    //         res.data.map(x => console.log(x));
-    //     });
+    //     axios
+    //         .post(`http://localhost/api/tree`, {
+    //             lat: 50.64327,
+    //             lon: 5.5980396,
+    //             zoom: 16,
+    //         })
+    //         .then(res => {
+    //             console.log(res.data);
+    //             // res.data.map(x => console.log(x));
+    //         });
     // }
     handleChange(event) {
         const {name, value} = event.target;
