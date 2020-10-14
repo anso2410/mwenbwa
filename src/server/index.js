@@ -17,7 +17,10 @@ const {APP_PORT} = process.env;
 const PORT = process.env.PORT || APP_PORT;
 
 // Setting values for time modifications
-app.set("previousRequestHour", Date.now());
+app.set("addPreviousRequestHour", Date.now());
+app.set("removePreviousRequestHour", Date.now());
+app.set("addTimeIntervalRest", 0);
+app.set("removeTimeIntervalRest", 0);
 
 // Connect to MongoDB
 connectDB();
@@ -41,7 +44,7 @@ app.use(express.urlencoded({extended: false}));
 });*/
 
 // Avant de servir statiquement le serveur, on lance les fonctions de temps.
-app.use("/", timeModifications.timeUpdates);
+app.use("/", timeModifications.updateAddLeaves, timeModifications.updateRemoveLeaves);
 
 // Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
 // (permet d'avoir accès à l'index.html pour la route "/" notamment.

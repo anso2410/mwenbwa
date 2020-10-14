@@ -1,25 +1,33 @@
 const Tree = require("../models/tree");
 const User = require("../models/user");
 
-const {TIME_ADD_LEAVES} = process.env;
+const {TIME_ADD_LEAVES, TIME_REMOVE_LEAVES} = process.env;
 
-exports.timeUpdates = async (req, res, next) => {
+exports.updateAddLeaves = async (req, res, next) => {
     try {
-        let oldRequestHour = req.app.get('previousRequestHour');
+        let oldRequestHour = req.app.get('addPreviousRequestHour');
         let newRequestHour = Date.now();
         let timeInterval = newRequestHour - oldRequestHour;
+        timeInterval += req.app.get('addTimeIntervalRest');
         let numberOfActions = timeInterval / TIME_ADD_LEAVES;
         let rest = timeInterval % TIME_ADD_LEAVES;
         const promises = [];
 
         for (let i = 1; i <= numberOfActions; i++) {
             promises.push(exports.addLeavesInterval());
-            if (i % 4 === 0) {
-                promises.push(exports.removeLeavesInterval());
-            }
         }
 
-        req.app.set('previousRequestHour', newRequestHour + rest);
+        req.app.set('addPreviousRequestHour', newRequestHour);
+        req.app.set('addTimeIntervalRest', rest);
+
+        console.log("ADD LEAVES");
+        console.log("Old request hour: " + oldRequestHour);
+        console.log("New request hour: " + newRequestHour);
+        console.log("Time interval: " + timeInterval);
+        console.log("Number of actions: " + numberOfActions);
+        console.log("Rest: " + rest);
+        console.log("Promises to be resolved: " + promises);
+        console.log("Previous Request Hour: " + newRequestHour);
 
         Promise.all(promises)
             .then(() => {
@@ -28,7 +36,48 @@ exports.timeUpdates = async (req, res, next) => {
             })
             .catch((err) => {
                 console.log(err);
-                res.status(500).json({msg: "Server internal error.", err});
+                res.status(500).json({msg: "Server internal error."});
+            });
+    } catch (err) {
+        console.log({errors: [{msg: "Server internal error.", err}]});
+        res.status(500).json({msg: "Server internal error."});
+    }
+};
+
+exports.updateRemoveLeaves = async (req, res, next) => {
+    try {
+        let oldRequestHour = req.app.get('removePreviousRequestHour');
+        let newRequestHour = Date.now();
+        let timeInterval = newRequestHour - oldRequestHour;
+        timeInterval += req.app.get('removeTimeIntervalRest');
+        let numberOfActions = timeInterval / TIME_REMOVE_LEAVES;
+        let rest = timeInterval % TIME_REMOVE_LEAVES;
+        const promises = [];
+
+        for (let i = 1; i <= numberOfActions; i++) {
+            promises.push(exports.removeLeavesInterval());
+        }
+
+        req.app.set('removePreviousRequestHour', newRequestHour);
+        req.app.set('removeTimeIntervalRest', rest);
+
+        console.log("REMOVE LEAVES");
+        console.log("Old request hour: " + oldRequestHour);
+        console.log("New request hour: " + newRequestHour);
+        console.log("Time interval: " + timeInterval);
+        console.log("Number of actions: " + numberOfActions);
+        console.log("Rest: " + rest);
+        console.log("Promises to be resolved: " + promises);
+        console.log("Previous Request Hour: " + newRequestHour);
+
+        Promise.all(promises)
+            .then(() => {
+                console.log({msg: "All interval actions are done."});
+                next();
+            })
+            .catch((err) => {
+                console.log(err);
+                res.status(500).json({msg: "Server internal error."});
             });
     } catch (err) {
         console.log({errors: [{msg: "Server internal error.", err}]});
