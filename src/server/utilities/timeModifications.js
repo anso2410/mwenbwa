@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /*Every fifteen minutes in real life, each player will receive an amount of leaves equals to the total of each of his trees.
     Every hour in real life, each player loose half his leaves.*/
+=======
+>>>>>>> mikedev
 const Tree = require("../models/tree");
 const User = require("../models/user");
 
-const { TIME_ADD_LEAVES, TIME_REMOVE_LEAVES } = process.env;
+const {TIME_ADD_LEAVES, TIME_REMOVE_LEAVES} = process.env;
 /*
 exports.addLeavesInterval = async () => {
     try {
@@ -70,11 +73,12 @@ exports.removeLeavesInterval = async () => {
         });
 
         await Promise.all(
-            users.map(async user => {
+            users.map(async (user) => {
                 await user.save();
             }),
         )
             .then(() => {
+<<<<<<< HEAD
                 console.log({msg: "Half of each player's total of leaves has been removed."});
                 //res.status(200).json({msg: "Half of each player's total of leaves has been removed."});
             })
@@ -82,8 +86,39 @@ exports.removeLeavesInterval = async () => {
                 console.log(err);
                 //res.status(500).json({msg: "Server internal error."});
             });
+=======
+                console.log({
+                    msg:
+                        "Half of each player's total of leaves has been removed.",
+                });
+            })
+            .catch((err) => console.log(err));
+>>>>>>> mikedev
     } catch (err) {
         console.log({errors: [{msg: "Server internal error.", err}]});
         //res.status(500).json({msg: "Server internal error."});
+    }
+};
+
+exports.leavesDistribution = async (req, res, next) => {
+    try {
+        let users = await User.find();
+        await Promise.all(
+            users.map(async (user) => {
+                let singleUser = await User.findById(user.id);
+                const trees = await Tree.find({owner_id: singleUser.id});
+                const treesValue = trees.reduce(
+                    (sum, treeAdd) => sum + treeAdd.value,
+                    0,
+                );
+                singleUser.number_of_leaves =
+                    singleUser.number_of_leaves + treesValue;
+                await singleUser.save();
+            }),
+        );
+
+        res.json({msg: "ok"});
+    } catch (err) {
+        console.log({errors: [{msg: "Server internal error.", err}]});
     }
 };

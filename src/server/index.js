@@ -2,7 +2,12 @@
 import express from "express";
 import path from "path";
 import connectDB from "./config/db";
+<<<<<<< HEAD
 const timeModifications = require("./utilities/timeModifications");
+=======
+import utilities from "./utilities/utilities";
+import timeModifications from "./utilities/timeModifications";
+>>>>>>> mikedev
 
 // Import des routes
 const treeRoutes = require("./routes/tree");
