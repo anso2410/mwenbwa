@@ -17,148 +17,111 @@ function LoginModal(props) {
                         </Col>
                         <Col className="login-right-col">
                             <div className="login-modal">
-                                <h2 className="title-login">
-                                    {props.state.showSignup
-                                        ? "Sign Up"
-                                        : "Log In"}
-                                </h2>
-                                <p className="text-align-left margin-bottom-p dark-purple bold">
-                                    Username
-                                </p>
-                                {props.state.showSignup && (
+                                <div className="line-height-login">
+                                    <h2 className="title-login">
+                                        {props.state.showSignup
+                                            ? "Sign Up"
+                                            : "Log In"}
+                                    </h2>
+                                    <p className="text-align-left margin-bottom-p dark-purple bold">
+                                        Username
+                                    </p>
+                                    {props.state.showSignup && (
+                                        <input
+                                            type="text"
+                                            name="username"
+                                            id="login-modal-id"
+                                            placeholder=""
+                                            value={props.state.username}
+                                            onChange={props.handleChange}
+                                            required
+                                            className="input-space input-border"
+                                        />
+                                    )}
+                                    <p className="text-align-left margin-bottom-p dark-purple bold">
+                                        Email
+                                    </p>
                                     <input
                                         type="text"
-                                        name="username"
+                                        name="email"
                                         id="login-modal-id"
-                                        placeholder=""
-                                        value={props.state.username}
+                                        placeholder="e-mail"
+                                        value={props.state.email}
                                         onChange={props.handleChange}
+                                        required
+                                    />
+                                    <p className="text-align-left margin-bottom-p dark-purple bold">
+                                        Password
+                                    </p>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        id="login-modal-email"
+                                        placeholder=""
+                                        value={props.state.password}
+                                        onChange={props.handleChange}
+                                        minLength="4"
                                         required
                                         className="input-space input-border"
                                     />
-                                )}
-                                <p className="text-align-left margin-bottom-p dark-purple bold">
-                                    Email
-                                </p>
-                                <input
-                                    type="text"
-                                    name="email"
-                                    id="login-modal-id"
-                                    placeholder="e-mail"
-                                    value={props.state.email}
-                                    onChange={props.handleChange}
-                                    required
-                                />
-                                <p className="text-align-left margin-bottom-p dark-purple bold">
-                                    Password
-                                </p>
-                                <input
-                                    type="password"
-                                    name="password"
-                                    id="login-modal-email"
-                                    placeholder=""
-                                    value={props.state.password}
-                                    onChange={props.handleChange}
-                                    minLength="4"
-                                    required
-                                    className="input-space input-border"
-                                />
-                                {/* Show color selector IF signUp */}
-                                {props.state.showSignup && (
-                                    // ID OR CLASSNAME? CHECK!
-                                    <div id="text-align-left color-selector">
-                                        <p className="bold text-align-left dark-purple">
-                                            Pick a color&nbsp;
-                                        </p>
-                                        <input
-                                            type="color"
-                                            id="color-input"
-                                            name="color"
-                                            value={props.state.color}
-                                            onChange={props.handleChange}
-                                            className="text-align-left input-space"
-                                        />
-                                    </div>
-                                )}
-                                {/* MANUAL MERGE STOPPED HERE */}
+                                    {/* Show color selector IF signUp */}
+                                    {props.state.showSignup && (
+                                        // ID OR CLASSNAME? CHECK!
+                                        <div id="text-align-left color-selector">
+                                            <p className="bold text-align-left dark-purple">
+                                                Pick a color&nbsp;
+                                            </p>
+                                            <input
+                                                type="color"
+                                                id="color-input"
+                                                name="color"
+                                                value={props.state.color}
+                                                onChange={props.handleChange}
+                                                className="text-align-left input-space"
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+                                <div id="loginmodal-buttons">
+                                    {/* Handle Login or Signup depending on showSignup state */}
+                                    <input
+                                        type="button"
+                                        value={
+                                            props.state.showSignup
+                                                ? "Sign Up"
+                                                : "Log In"
+                                        }
+                                        onClick={
+                                            props.state.showSignup
+                                                ? props.signUp
+                                                : props.logIn
+                                        }
+                                        className="button-login"
+                                    />
+                                </div>
+                                <div id="toggle-signup-group">
+                                    <p className="light-purple">
+                                        {props.state.showSignup
+                                            ? "Already have an account?"
+                                            : "No account yet?"}
+                                    </p>
+                                    <input
+                                        id="toggle-signup"
+                                        type="button"
+                                        value={
+                                            props.state.showSignup
+                                                ? "Log In"
+                                                : "Sign Up"
+                                        }
+                                        onClick={props.toggleSignup}
+                                        className="signup-button-style dark-purple"
+                                    />
+                                </div>
                             </div>
                         </Col>
                     </Row>
                 </div>
             </Container>
-            <h2>{props.state.showSignup ? "Sign Up" : "Log In"}</h2>
-            {props.state.showSignup && (
-                <input
-                    type="text"
-                    name="username"
-                    id="login-modal-id"
-                    placeholder="username"
-                    value={props.state.username}
-                    onChange={props.handleChange}
-                    required
-                />
-            )}
-            <input
-                type="text"
-                name="email"
-                id="login-modal-id"
-                placeholder="e-mail"
-                value={props.state.email}
-                onChange={props.handleChange}
-                required
-            />
-            <input
-                type="password"
-                name="password"
-                id="login-modal-email"
-                placeholder="password"
-                value={props.state.password}
-                onChange={props.handleChange}
-                minLength="4"
-                required
-            />
-            {/* Show color selector IF signUp */}
-            {props.state.showSignup && (
-                <div id="color-selector">
-                    <p>pick a color :&nbsp;</p>
-                    <input
-                        type="color"
-                        id="color-input"
-                        name="color"
-                        value={props.state.color}
-                        onChange={props.handleChange}
-                    />
-                </div>
-            )}
-            <div id="loginmodal-buttons">
-                {/* Handle Login or Signup depending on showSignup state */}
-                <input
-                    type="button"
-                    value={props.state.showSignup ? "Sign Up" : "Log In"}
-                    onClick={
-                        props.state.showSignup ? props.signUp : props.logIn
-                    }
-                    // onClick={
-                    //     props.state.showSignup
-                    //         ? props.signUp
-                    //         : setTimeout(() => props.logIn, 3000)
-                    // }
-                    className="button"
-                />
-            </div>
-            <div id="toggle-signup-group">
-                <p>
-                    {props.state.showSignup
-                        ? "Already have an account?"
-                        : "No account yet?"}
-                </p>
-                <input
-                    id="toggle-signup"
-                    type="button"
-                    value={props.state.showSignup ? "Log In" : "Sign Up"}
-                    onClick={props.toggleSignup}
-                />
-            </div>
         </div>
     );
 }
