@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import connectDB from "./config/db";
 
+import Utilities from "./utilities/utilities";
 import timeModifications from "./utilities/timeModifications";
 
 // Import des routes
@@ -44,7 +45,7 @@ app.use(express.urlencoded({extended: false}));
 });*/
 
 // Avant de servir statiquement le serveur, on lance les fonctions de temps.
-app.use("/", timeModifications.updateAddLeaves, timeModifications.updateRemoveLeaves);
+//app.use("/", timeModifications.updateAddLeaves, timeModifications.updateRemoveLeaves);
 
 // Set le serveur statique servant le bin/client pour les fichiers dont le front (qui est statique) a besoin : tous les HTML et le CSS
 // (permet d'avoir accès à l'index.html pour la route "/" notamment.

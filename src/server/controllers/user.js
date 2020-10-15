@@ -35,7 +35,7 @@ exports.signup = async (req, res, next) => {
         // Create bcrypt hash
         let hash = await bcrypt.hash(password, 10);
 
-        // Calculation of amout of leaves given to new user
+        // Calculation of amount of leaves given to new user
         let newNumberOfLeaves = await Utilities.assignNumberOfLeaves();
 
         // Create user
@@ -110,7 +110,7 @@ exports.login = async (req, res, next) => {
 
         jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
             if (err) throw err;
-            res.status(200).json({msg: "User logged in!", token: token});
+            res.status(200).json({msg: "User logged in!", user: user, token: token});
         });
     } catch (err) {
         console.error(err.message);

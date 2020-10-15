@@ -16,7 +16,7 @@ class MyWood extends React.Component {
     constructor() {
         super();
         this.state = {
-            token: "",
+            tokenCopy: "",
             userId: {},
             trees: [],
             filteredTrees: [],

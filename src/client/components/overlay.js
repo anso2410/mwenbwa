@@ -23,6 +23,9 @@ class Overlay extends React.Component {
             password: "",
             color: "#FF0000",
             token: "",
+            realUsername: "",
+            realColor: "",
+            gravatar: "",
             leaders: [],
             gamelog: [],
         };
@@ -61,28 +64,30 @@ class Overlay extends React.Component {
     }
     signUp() {
         const data = {
+            username: this.state.username,
+            email: this.state.email,
+            password: this.state.password,
+            color: this.state.color,
+        };
+        const config = {
             headers: {
                 "content-type": "application/json",
             },
-            body: {
-                username: this.state.username,
-                email: this.state.email,
-                password: this.state.password,
-                color: this.state.color,
-            },
         };
         axios
-            .post(`http://localhost/api/user/signup`, data)
+            .post(`http://localhost/api/user/signup`, data, config)
             .then(res => {
-                console.log(res);
+                this.setState({
+                    token: res.data.token,
+                    realUsername: res.data.user.username,
+                    realColor: res.data.user.color,
+                    gravatar: res.data.user.avatar,
+                });
+                console.log(this.state);
             })
             .catch(err => {
                 console.log("Sign Up failed! Oh no!");
-                console.log(err);
             });
-        console.log(
-            `name: ${this.state.username}, email: ${this.state.email}, password: ${this.state.password}, color: ${this.state.color}`,
-        );
     }
     logIn() {
         this.setState({
