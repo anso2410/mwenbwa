@@ -24,10 +24,7 @@ class Overlay extends React.Component {
             color: "#FF0000",
             token: "",
             leaders: [],
-            gamelog: [
-                {user_id: {_id: "this is the ID"}},
-                {user_id: {_id: "ID number 2"}},
-            ],
+            gamelog: [],
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
@@ -134,9 +131,9 @@ class Overlay extends React.Component {
         axios
             .get(`http://localhost/api/gamelog`)
             .then(res => {
-                // this.setState({
-                //     leaders: res.data.msg,
-                // });
+                this.setState({
+                    gamelog: res.data.msg,
+                });
                 console.log(res.data.msg);
             })
             .catch(err => {

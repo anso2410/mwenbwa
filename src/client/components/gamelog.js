@@ -7,8 +7,7 @@ function Gamelog(props) {
             <h1>Game Log</h1>
             <ul className="gamelogFlex">
                 {props.state.gamelog.map(entry => (
-                    // <li>It works</li>
-                    <Logentry key={entry.user_id._id} entry={entry} />
+                    <Logentry key={entry._id} entry={entry} />
                 ))}
             </ul>
         </div>
