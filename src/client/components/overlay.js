@@ -6,7 +6,6 @@ import Rules from "./rules";
 import LoginModal from "./loginmodal";
 import Leaderboard from "./leaderboard";
 import "../styles/overlay.css";
-import exitIcon from "./img/exit-icon .png";
 
 class Overlay extends React.Component {
     constructor() {
@@ -19,6 +18,7 @@ class Overlay extends React.Component {
             email: "",
             password: "",
             color: "#b55c9c",
+            token: "",
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);

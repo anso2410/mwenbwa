@@ -189,8 +189,7 @@ input[type="color"]::-webkit-color-swatch {
 
 /* ///// BUTTONS >>>>> */
 .button-logout button {
-    margin-top: 30px;
-    margin-right: 30px;
+    margin-top: 7px;
     width: 80px;
     height: 80px;
     background-color: #4f236e;

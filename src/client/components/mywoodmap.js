@@ -24,6 +24,7 @@ function MyWoodMap() {
             id="leafletContainer"
             center={[50.6283, 5.5768]}
             zoom={16}
+            minZoom={14}
             onViewportChanged={e => logData(e)}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
