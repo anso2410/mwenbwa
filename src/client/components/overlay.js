@@ -7,6 +7,10 @@ import LoginModal from "./loginmodal";
 import Leaderboard from "./leaderboard";
 import Gamelog from "./gamelog";
 import "../styles/overlay.css";
+import exitIcon from "./img/exit-icon .png";
+import crownIcon from "./img/crown-icon.png";
+import rulesIcon from "./img/parchment-icon-white.png";
+import historyIcon from "./img/history-icon.png";
 
 class Overlay extends React.Component {
     constructor() {
@@ -21,7 +25,7 @@ class Overlay extends React.Component {
             username: "",
             email: "",
             password: "",
-            color: "#FF0000",
+            color: "#b55c9c",
             token: "",
             user: {},
             // realUsername: "",
@@ -208,25 +212,25 @@ class Overlay extends React.Component {
                 {this.state.logged && (
                     <>
                         <Button
-                            value="Log Out"
+                            value={<img src={exitIcon} alt=''/>}
                             handleClick={this.logOut}
                             className="button-logout"
                         />
                         <Button
-                            value="Leaderboard"
+                            value={<img src={crownIcon} alt=''/>}
                             handleClick={this.toggleLeaderboard}
                             className="button-leaderboard"
                         />
                         <Button
-                            value="Game Rules"
+                            value={<img src={rulesIcon} alt=''/>}
                             name="showRules"
                             handleClick={this.toggleRules}
                             className="button-rules"
                         />
                         <Button
-                            value="Game Log"
+                            value={<img src={historyIcon} alt=''/>}
                             handleClick={this.toggleGamelog}
-                            className="button-gamelog"
+                            className="button-infos"
                         />
                     </>
                 )}
