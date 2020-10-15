@@ -1,4 +1,3 @@
-/*
 import React from "react";
 
 function Leader(props) {
@@ -11,4 +10,5 @@ function Leader(props) {
     );
 }
 
-export default Leader;*/
+export default Leader;
+

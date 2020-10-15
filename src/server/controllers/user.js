@@ -1,40 +1,42 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const gravatar = require("gravatar");
-const { validationResult } = require('express-validator');
-const { JWT_SECRET } = process.env;
+const {validationResult} = require("express-validator");
+const {JWT_SECRET} = process.env;
 
 const User = require("../models/user");
-const calculations = require("../utilities/calculations");
+const Utilities = require("../utilities/utilities");
 
 exports.signup = async (req, res, next) => {
     // Check if any error in the form sent by frontend
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
+        return res.status(400).json({errors: errors.array()});
     }
 
     // Get request body from frontend
-    const { username, email, password, color } = req.body;
+    const {username, email, password, color} = req.body;
 
     try {
         // Check if the user's already registered in the db
         let user = await User.findOne({email: email});
         if (user) {
-            return res.status(400).json({errors: [{msg: "User already exists!"}]});
+            return res
+                .status(400)
+                .json({errors: [{msg: "User already exists!"}]});
         }
 
         // Create a gravatar image for new user
         const avatar = gravatar.url(email, {
-            s: '100',
-            r: 'pg',
-            d: 'mm'
+            s: "100",
+            r: "pg",
+            d: "mm",
         });
-            // Create bcrypt hash
+        // Create bcrypt hash
         let hash = await bcrypt.hash(password, 10);
 
         // Calculation of amout of leaves given to new user
-        let newNumberOfLeaves = await calculations.assignNumberOfLeaves();
+        let newNumberOfLeaves = await Utilities.assignNumberOfLeaves();
 
         // Create user
         user = new User({
@@ -50,28 +52,22 @@ exports.signup = async (req, res, next) => {
         await user.save(); // Renvoie une promesse avec le nouveau document User créé (user.id est donc accessble)
 
         // Calculation of free trees given to new user
-        await calculations.assignRandomFreeTrees(user.id);
+        await Utilities.assignRandomFreeTrees(user.id);
 
         // Send directly token of authentification
         const payload = {
             user: {
-                id: user.id
-            }
-        }
+                id: user.id,
+            },
+        };
 
-        jwt.sign(
-            payload,
-            JWT_SECRET,
-            {expiresIn: "24h"},
-            (err, token) => {
-                if (err)
-                    throw err;
-                res.json({ msg: "User created!", user: user, token: token });
-            }
-            );
-    } catch(err) {
+        jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
+            if (err) throw err;
+            res.json({msg: "User created!", user: user, token: token});
+        });
+    } catch (err) {
         console.error(err.message);
-        res.status(500).json({ errors: [{ msg: "Server error"}]});
+        res.status(500).json({errors: [{msg: "Server error"}]});
     }
 };
 
@@ -79,23 +75,27 @@ exports.login = async (req, res, next) => {
     // Check if any error in the form sent by frontend
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ errors: errors.array() });
+        return res.status(400).json({errors: errors.array()});
     }
 
     // Get request body from frontend
-    const { email, password } = req.body;
+    const {email, password} = req.body;
 
     try {
         // Check if the user's already registered in the db
         let user = await User.findOne({email: email});
 
         if (!user) {
-            return res.status(400).json({errors: [{msg: "Invalid credentials. User not found!"}]});
+            return res
+                .status(400)
+                .json({
+                    errors: [{msg: "Invalid credentials. User not found!"}],
+                });
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
 
-        if(!isMatch) {
+        if (!isMatch) {
             return res
                 .status(401)
                 .json({error: "Invalid credentials. Password incorrect!"});
@@ -104,29 +104,23 @@ exports.login = async (req, res, next) => {
         // If everything is fine, send token of identification
         const payload = {
             user: {
-                id: user.id
-            }
-        }
+                id: user.id,
+            },
+        };
 
-        jwt.sign(
-            payload,
-            JWT_SECRET,
-            {expiresIn: "24h"},
-            (err, token) => {
-                if (err)
-                    throw err;
-                res.status(200).json({ msg: "User logged in!", token: token });
-            }
-        );
-    } catch(err) {
+        jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
+            if (err) throw err;
+            res.status(200).json({msg: "User logged in!", token: token});
+        });
+    } catch (err) {
         console.error(err.message);
-        res.status(500).json({ errors: [{ msg: "Server error"}]});
+        res.status(500).json({errors: [{msg: "Server error"}]});
     }
 };
 
 exports.getAllUsers = async (req, res, next) => {
     try {
-        const users = await User.find().select('-password');
+        const users = await User.find().select("-password");
         res.status(200).json(users);
     } catch (err) {
         res.status(404).json({error: err});
@@ -135,7 +129,7 @@ exports.getAllUsers = async (req, res, next) => {
 
 exports.getOneUser = async (req, res, next) => {
     try {
-        const user = await User.findById(req.params.id).select('-password');
+        const user = await User.findById(req.params.id).select("-password");
         res.status(200).json(user);
     } catch (err) {
         res.status(404).json({error: err});
@@ -150,7 +144,7 @@ exports.updateUser = async (req, res, next) => {
 
         userToUpdate.username = username ? username : userToUpdate.username;
 
-        if(password) {
+        if (password) {
             let hash = await bcrypt.hash(password, 10);
             userToUpdate.password = hash;
         } else {
@@ -173,8 +167,8 @@ exports.updateUser = async (req, res, next) => {
         res.status(200).json({msg: "User updated!", userToUpdate});
     } catch (err) {
         res.status(400).json({errors: [{msg: "No user found!"}]});
-    };
-}
+    }
+};
 
 exports.deleteUser = async (req, res, next) => {
     try {
@@ -182,11 +176,15 @@ exports.deleteUser = async (req, res, next) => {
         if (response.deletedCount !== 0) {
             res.status(200).json({msg: "User deleted!"});
         } else {
-            res.status(500).json({errors: [{
-                msg: "User couldn't be deleted. Try again.",
-            }]});
+            res.status(500).json({
+                errors: [
+                    {
+                        msg: "User couldn't be deleted. Try again.",
+                    },
+                ],
+            });
         }
-    } catch(err) {
+    } catch (err) {
         res.status(400).json({errors: [{msg: "No user found!"}]});
     }
 };

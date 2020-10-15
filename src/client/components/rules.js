@@ -2,7 +2,7 @@ import React from "react";
 import iconRules from "./img/rules-icon.jpg"
 function Rules() {
     return (
-        <div className="rules center-modal flex-col pad-med border bgc-prim">
+        <div className="modal-div center-modal flex-col pad-med border bgc-prim">
             <div className="rules-img">
                 <img src={iconRules} alt=""></img>
             </div>
