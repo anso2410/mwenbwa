@@ -63,7 +63,17 @@ exports.signup = async (req, res, next) => {
 
         jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
             if (err) throw err;
-            res.json({msg: "User created!", user: user, token: token});
+            res.json({msg: "User created!", user:
+                    {
+                    _id: user._id,
+                        username: user.username,
+                    email: user.email,
+                    color: user.color,
+                    avatar: user.avatar,
+                    number_of_trees: user.number_of_trees,
+                    number_of_leaves: user.number_of_leaves,
+                },
+                token: token});
         });
     } catch (err) {
         console.error(err.message);
@@ -110,7 +120,18 @@ exports.login = async (req, res, next) => {
 
         jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
             if (err) throw err;
-            res.status(200).json({msg: "User logged in!", user: user, token: token});
+            res.status(200).json({msg: "User logged in!",
+                user:
+                    {
+                        _id: user._id,
+                        username: user.username,
+                        email: user.email,
+                        color: user.color,
+                        avatar: user.avatar,
+                        number_of_trees: user.number_of_trees,
+                        number_of_leaves: user.number_of_leaves,
+                    },
+                token: token});
         });
     } catch (err) {
         console.error(err.message);
