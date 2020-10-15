@@ -5,6 +5,7 @@
   "author": "Team Ailante Glanduleux",
   "license": "MIT",
   "private": true,
+  
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run buil",
     "lint": "npx eslint --fix --cache --ignore-pattern 'docs/*' src",
@@ -68,5 +69,6 @@
     "hooks": {
       "pre-commit": "npx lint-staged"
     }
-  }
+  },
+    "proxy":"http://localhost:80"
 }

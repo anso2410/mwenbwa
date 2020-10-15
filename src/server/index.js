@@ -54,4 +54,38 @@ app.use("/api/leaderboard", leaderboardRoutes);
 app.use("/api/gamelog", gamelogRoutes);
 
 // App listening on port
+// eslint-disable-next-line no-console
 app.listen(PORT, () => console.log(`🚀 Server is listening on port ${PORT}.`));
+
+if (process.env.NODE_ENV === "production") {
+    // Serve any static files
+    app.use(express.static(path.join(__dirname, "client/build")));
+    // Handle React routing, return all requests to React app
+    app.get("*", (_req, res) => {
+        res.sendFile(path.join(__dirname, "client/build", "index.html"));
+    });
+}
+// ** MIDDLEWARE ** //
+const whitelist = [
+    "http://localhost:3000",
+    "http://localhost:80",
+    "http://localhost:8080",
+    "https://floating-reaches-02343.herokuapp.com",
+];
+const corsOptions = {
+    origin(origin, callback) {
+        // eslint-disable-next-line no-console
+        console.log(`** Origin of request ${origin}`);
+        if (whitelist.includes(origin) || !origin) {
+            // eslint-disable-next-line no-console
+            console.log("Origin acceptable");
+            callback(null, true);
+        } else {
+            // eslint-disable-next-line no-console
+            console.log("Origin rejected");
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+};
+// eslint-disable-next-line no-undef
+app.use(cors(corsOptions));
