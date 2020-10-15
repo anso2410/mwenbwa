@@ -2,14 +2,7 @@ import React from "react";
 
 function LoginModal(props) {
     return (
-        <form
-            action={
-                props.state.showSignup
-                    ? "http://localhost/api/user/signup"
-                    : "http://localhost/api/user/login"
-            }
-            method="POST"
-            className="login-modal center-modal flex-col pad-med border bgc-prim">
+        <div className="login-modal center-modal flex-col pad-med border bgc-prim">
             {/* Change title depending on SignUp/LogIn */}
             <h2>{props.state.showSignup ? "Sign Up" : "Log In"}</h2>
             {props.state.showSignup && (
@@ -58,7 +51,7 @@ function LoginModal(props) {
             <div id="loginmodal-buttons">
                 {/* Handle Login or Signup depending on showSignup state */}
                 <input
-                    type="submit"
+                    type="button"
                     value={props.state.showSignup ? "Sign Up" : "Log In"}
                     onClick={
                         props.state.showSignup ? props.signUp : props.logIn
@@ -84,7 +77,7 @@ function LoginModal(props) {
                     onClick={props.toggleSignup}
                 />
             </div>
-        </form>
+        </div>
     );
 }
 

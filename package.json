@@ -63,6 +63,9 @@
     "react-leaflet": "^2.7.0",
     "react-leaflet-markercluster": "^2.0.0"
   },
+  "engines":{
+    "node": "12.19"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npx lint-staged"
