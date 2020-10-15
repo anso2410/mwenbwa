@@ -106,21 +106,22 @@ class Overlay extends React.Component {
         axios
             .post(`http://localhost/api/user/login`, data, config)
             .then(res => {
-                this.setState({
-                    token: res.data.token,
-                    realUsername: res.data.user.username,
-                    realColor: res.data.user.color,
-                    gravatar: res.data.user.avatar,
-                    logged: true,
-                    showLeaderboard: false,
-                    showRules: true,
-                    showGamelog: false,
-                });
-                console.log(this.state);
+                // this.setState({
+                //     token: res.data.token,
+                //     realUsername: res.data.user_id.username,
+                //     // realColor: res.data.user.color,
+                //     // gravatar: res.data.user.avatar,
+                //     logged: true,
+                //     showLeaderboard: false,
+                //     showRules: true,
+                //     showGamelog: false,
+                // });
+                // console.log(this.state);
+                console.log(res.data);
             })
             .catch(err => {
                 console.log("Log In failed! Oh no!");
-                console.log(data);
+                console.log(err);
             });
     }
     logOut() {
@@ -168,15 +169,20 @@ class Overlay extends React.Component {
                 "content-type": "application/json",
             },
         };
+        console.log("the data is :");
+        console.log(data);
         axios
-            .get(`http://localhost/api/gamelog`)
+            .get(`http://localhost/api/gamelog`, data)
             .then(res => {
                 this.setState({
                     gamelog: res.data.msg,
                 });
+                console.log("gameLog is :");
+                console.log(this.state.gamelog);
             })
             .catch(err => {
                 console.log(err);
+                console.log("GameLog Request failed");
             });
     }
     closeModals() {
