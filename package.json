@@ -19,7 +19,8 @@
     "build:client": "npx webpack --progress --profile --colors",
     "work:client": "npx webpack --env=dev --progress",
     "build2": "npm webpack --node production",
-    "build": "npm run build2 && npm run build"
+    "build": "npm run build:client && npm run build:client",
+    "start": "npm run build2 && npm run build"
   },
   "lint-staged": {
     "*.js": [
