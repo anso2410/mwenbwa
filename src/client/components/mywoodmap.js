@@ -11,7 +11,7 @@ function MyWoodMap(props) {
         iconUrl: treeImg,
         iconAnchor: [10, 0],
         popupAnchor: [16, 0],
-        iconSize: [38, 50],
+        iconSize: [28, 37],
     });
     return (
         <Map
