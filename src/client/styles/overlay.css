@@ -126,8 +126,13 @@ button, .button {
     left: 10px;
 }
 /* <<<<< BUTTONS ///// */
-.leaderboard, .gamelog {
+.leaderboard {
     width: 400px;
+    height: 700px;
+    align-items: center;
+}
+.gamelog {
+    width: 85vw;
     height: 700px;
     align-items: center;
 }

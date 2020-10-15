@@ -4,8 +4,7 @@ function Logentry(props) {
     return (
         <li>
             <h3>
-                {props.entry.tree_id.given_name} {props.entry.message}
-                {props.entry.user_id.username}
+                {props.entry.tree_id.full_name} {props.entry.message}
             </h3>
         </li>
     );

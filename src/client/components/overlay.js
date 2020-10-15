@@ -28,6 +28,7 @@ class Overlay extends React.Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.toggleSignup = this.toggleSignup.bind(this);
+        this.signUp = this.signUp.bind(this);
         this.logIn = this.logIn.bind(this);
         this.logOut = this.logOut.bind(this);
         this.toggleLeaderboard = this.toggleLeaderboard.bind(this);
@@ -59,7 +60,29 @@ class Overlay extends React.Component {
         });
     }
     signUp() {
-        console.log("need a function to Sign Up");
+        const data = {
+            headers: {
+                "content-type": "application/json",
+            },
+            body: {
+                username: this.state.username,
+                email: this.state.email,
+                password: this.state.password,
+                color: this.state.color,
+            },
+        };
+        axios
+            .post(`http://localhost/api/user/signup`, data)
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => {
+                console.log("Sign Up failed! Oh no!");
+                console.log(err);
+            });
+        console.log(
+            `name: ${this.state.username}, email: ${this.state.email}, password: ${this.state.password}, color: ${this.state.color}`,
+        );
     }
     logIn() {
         this.setState({
@@ -134,10 +157,9 @@ class Overlay extends React.Component {
                 this.setState({
                     gamelog: res.data.msg,
                 });
-                console.log(res.data.msg);
             })
             .catch(err => {
-                console.log("Couldn't get Game Log");
+                console.log(err);
             });
     }
     closeModals() {
