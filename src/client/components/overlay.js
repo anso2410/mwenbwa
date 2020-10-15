@@ -82,6 +82,10 @@ class Overlay extends React.Component {
                     realUsername: res.data.user.username,
                     realColor: res.data.user.color,
                     gravatar: res.data.user.avatar,
+                    logged: true,
+                    showLeaderboard: false,
+                    showRules: true,
+                    showGamelog: false,
                 });
                 console.log(this.state);
             })
@@ -90,32 +94,34 @@ class Overlay extends React.Component {
             });
     }
     logIn() {
-        this.setState({
-            logged: true,
-            showLeaderboard: false,
-            showRules: true,
-            showGamelog: false,
-        });
-        // this.setState({
-        //     showLoader: true,
-        // });
-        // setTimeout(
-        //     this.setState({
-        //         logged: true,
-        //         showRules: true,
-        //         showLoader: false,
-        //     }),
-        //     3000,
-        // );
-        // setTimeout(
-        //     () =>
-        //         this.setState({
-        //             logged: true,
-        //             showRules: true,
-        //             showLoader: false,
-        //         }),
-        //     3000,
-        // );
+        const data = {
+            email: this.state.email,
+            password: this.state.password,
+        };
+        const config = {
+            headers: {
+                "content-type": "application/json",
+            },
+        };
+        axios
+            .post(`http://localhost/api/user/login`, data, config)
+            .then(res => {
+                this.setState({
+                    token: res.data.token,
+                    realUsername: res.data.user.username,
+                    realColor: res.data.user.color,
+                    gravatar: res.data.user.avatar,
+                    logged: true,
+                    showLeaderboard: false,
+                    showRules: true,
+                    showGamelog: false,
+                });
+                console.log(this.state);
+            })
+            .catch(err => {
+                console.log("Log In failed! Oh no!");
+                console.log(data);
+            });
     }
     logOut() {
         this.setState({
@@ -156,6 +162,12 @@ class Overlay extends React.Component {
             showLeaderboard: false,
             showRules: false,
         });
+        const data = {
+            headers: {
+                "x-auth-token": this.state.token,
+                "content-type": "application/json",
+            },
+        };
         axios
             .get(`http://localhost/api/gamelog`)
             .then(res => {
