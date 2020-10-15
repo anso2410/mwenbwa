@@ -23,9 +23,10 @@ class Overlay extends React.Component {
             password: "",
             color: "#FF0000",
             token: "",
-            realUsername: "",
-            realColor: "",
-            gravatar: "",
+            user: {},
+            // realUsername: "",
+            // realColor: "",
+            // gravatar: "",
             leaders: [],
             gamelog: [],
         };
@@ -79,9 +80,7 @@ class Overlay extends React.Component {
             .then(res => {
                 this.setState({
                     token: res.data.token,
-                    realUsername: res.data.user.username,
-                    realColor: res.data.user.color,
-                    gravatar: res.data.user.avatar,
+                    user: res.data.user,
                     logged: true,
                     showLeaderboard: false,
                     showRules: true,
@@ -106,17 +105,14 @@ class Overlay extends React.Component {
         axios
             .post(`http://localhost/api/user/login`, data, config)
             .then(res => {
-                // this.setState({
-                //     token: res.data.token,
-                //     realUsername: res.data.user_id.username,
-                //     // realColor: res.data.user.color,
-                //     // gravatar: res.data.user.avatar,
-                //     logged: true,
-                //     showLeaderboard: false,
-                //     showRules: true,
-                //     showGamelog: false,
-                // });
-                // console.log(this.state);
+                this.setState({
+                    token: res.data.token,
+                    user: res.data.user,
+                    logged: true,
+                    showLeaderboard: false,
+                    showRules: true,
+                    showGamelog: false,
+                });
                 console.log(res.data);
             })
             .catch(err => {
@@ -208,7 +204,7 @@ class Overlay extends React.Component {
                     />
                 )}
                 {this.state.showLoader && <div className="loader"></div>}
-                <TopBar />
+                <TopBar state={this.state} />
                 {this.state.logged && (
                     <>
                         <Button
