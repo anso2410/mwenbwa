@@ -16,6 +16,8 @@ class MyWood extends React.Component {
     constructor() {
         super();
         this.state = {
+            token: "",
+            userId: {},
             trees: [],
             filteredTrees: [],
         };
@@ -94,7 +96,7 @@ class MyWood extends React.Component {
             },
             body: {
                 userId: "5f86b5f6479e84016fab67c4",
-                treeId: "5f7b08c05059351633d31405",
+                treeId: id,
             },
         };
         axios

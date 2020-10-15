@@ -3,7 +3,9 @@ import React from "react";
 function Logentry(props) {
     return (
         <li>
-            <h3>{props.entry.user_id._id} is there something before??</h3>
+            <h3>
+                {props.entry.tree_id.full_name} {props.entry.message}
+            </h3>
         </li>
     );
 }
