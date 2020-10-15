@@ -6,6 +6,7 @@ import Rules from "./rules";
 import LoginModal from "./loginmodal";
 import Leaderboard from "./leaderboard";
 import "../styles/overlay.css";
+import exitIcon from "./img/exit-icon .png";
 
 class Overlay extends React.Component {
     constructor() {
@@ -94,20 +95,20 @@ class Overlay extends React.Component {
                 {this.state.logged && (
                     <>
                         <Button
-                            value="Log Out"
+                            value={<img src={exitIcon} alt=''/>}
                             handleClick={this.logOut}
                             className="button-logout"
                         />
                         <Button
                             value="Leaderboard"
                             handleClick={this.toggleLeaderboard}
-                            className="button-leaderboard"
+                            className=""
                         />
                         <Button
                             value="Game Rules"
                             name="showRules"
                             handleClick={this.toggleRules}
-                            className="button-rules"
+                            className=""
                         />
                     </>
                 )}

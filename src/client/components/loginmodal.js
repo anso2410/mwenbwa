@@ -8,11 +8,11 @@ function LoginModal(props) {
             <div className="card d-flex flex-column text-center">
                 <Row className="row-height">
                     <Col>
-                        <div className="no-padding">
+                        <div className="login-img">
                             <img src={treeImgLogin} alt=""/>
                         </div>
                     </Col>
-                    <Col>
+                    <Col className="login-right-col">
                         <div className="login-modal">
                             {/* Change title depending on SignUp/LogIn */}
                             <div className="line-height-login">
@@ -42,7 +42,7 @@ function LoginModal(props) {
                                 />
                                 {/* Show color selector IF signUp */}
                                 {props.state.showSignup && (
-                                    <div id="text-align-left color-selector" className="input-space block">
+                                    <div id="text-align-left color-selector" className="">
                                         <p className="bold text-align-left dark-purple">Pick a color&nbsp;</p>
                                         <input
                                             type="color"
@@ -65,7 +65,7 @@ function LoginModal(props) {
                                             ? console.log("need to add signup function")
                                             : props.logIn
                                     }
-                                    className="button"
+                                    className="button-login"
                                 />
                             </div>
                             <div id="toggle-signup-group">
