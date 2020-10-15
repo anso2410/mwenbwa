@@ -35,7 +35,7 @@ exports.signup = async (req, res, next) => {
         // Create bcrypt hash
         let hash = await bcrypt.hash(password, 10);
 
-        // Calculation of amout of leaves given to new user
+        // Calculation of amount of leaves given to new user
         let newNumberOfLeaves = await Utilities.assignNumberOfLeaves();
 
         // Create user

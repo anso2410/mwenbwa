@@ -74,6 +74,10 @@ exports.assignNumberOfLeaves = async () => {
         const totalAmountOfPlayers = await User.find().estimatedDocumentCount();
         const leavesInGame = await User.find().select("number_of_leaves");
 
+        if (totalAmountOfPlayers === 0) {
+            return 0;
+        }
+
         let totalAmountOfLeavesInGame = 0;
 
         leavesInGame.forEach((user) => {
