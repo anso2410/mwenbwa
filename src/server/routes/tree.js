@@ -8,7 +8,7 @@ router.get("/", treeCtrl.getAllTrees);
 router.get("/:id", auth, treeCtrl.getOneTree);
 router.put("/:id", auth, treeCtrl.updateOneThree);
 router.post("/buyTree", auth, treeCtrl.buyTree);
-router.get("/treePrice", auth, treeCtrl.treePrice);
+router.post("/treePrice", treeCtrl.treePrice);
 router.get("/lockingPrice/:id", auth, treeCtrl.showLockingPrice);
 router.get("/lockTree/:id", auth, treeCtrl.lockTree);
 router.get("/getComments", treeCtrl.showAllComment);

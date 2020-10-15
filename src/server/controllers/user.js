@@ -110,7 +110,7 @@ exports.login = async (req, res, next) => {
 
         jwt.sign(payload, JWT_SECRET, {expiresIn: "24h"}, (err, token) => {
             if (err) throw err;
-            res.status(200).json({msg: "User logged in!", token: token});
+            res.status(200).json({msg: "User logged in!", user: user, token: token});
         });
     } catch (err) {
         console.error(err.message);
