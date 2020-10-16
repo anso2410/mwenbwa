@@ -23,20 +23,22 @@ function LoginModal(props) {
                                             ? "Sign Up"
                                             : "Log In"}
                                     </h2>
-                                    <p className="text-align-left margin-bottom-p dark-purple bold">
-                                        Username
-                                    </p>
                                     {props.state.showSignup && (
-                                        <input
-                                            type="text"
-                                            name="username"
-                                            id="login-modal-id"
-                                            placeholder=""
-                                            value={props.state.username}
-                                            onChange={props.handleChange}
-                                            required
-                                            className="input-space input-border"
-                                        />
+                                        <div>
+                                            <p className="text-align-left margin-bottom-p dark-purple bold">
+                                                Username
+                                            </p>
+                                            <input
+                                                type="text"
+                                                name="username"
+                                                id="login-modal-id"
+                                                placeholder=""
+                                                value={props.state.username}
+                                                onChange={props.handleChange}
+                                                required
+                                                className="input-space input-border"
+                                            />
+                                        </div>
                                     )}
                                     <p className="text-align-left margin-bottom-p dark-purple bold">
                                         Email
@@ -49,6 +51,7 @@ function LoginModal(props) {
                                         value={props.state.email}
                                         onChange={props.handleChange}
                                         required
+                                        className="input-space input-border"
                                     />
                                     <p className="text-align-left margin-bottom-p dark-purple bold">
                                         Password

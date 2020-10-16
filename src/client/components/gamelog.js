@@ -4,7 +4,7 @@ import historyIcon from "./img/history-icon.png"
 
 function Gamelog(props) {
     return (
-        <div className="modal-div gamelog center-modal flex-col pad-med border bgc-prim">
+        <div className="modal-div center-modal flex-col pad-med border bgc-prim">
             <div className="gamelog-img">
                 <img src={historyIcon} alt=""></img>
             </div>
