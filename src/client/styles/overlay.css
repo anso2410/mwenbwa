@@ -437,6 +437,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 .rules-text h2 {
     color: #4f236e;
+    font-family: 'Lobster Two', cursive;
 }
 .rules-text p {
     font-size: 20px
@@ -456,6 +457,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 .leaderboard-text h2 {
     color: #4f236e;
+    font-family: 'Lobster Two', cursive;
     text-align: center;
 }
 .leaderboard-text ol {
@@ -487,6 +489,7 @@ ul.gamelogFlex {
     margin-top: 30px;
     color: #4f236e;
     text-align: center;
+    font-family: 'Lobster Two', cursive;
 }
 .gamelog-entry {
     color: #865a97;
@@ -520,6 +523,8 @@ h3.game-title {
     color: #4f236e;
     position: fixed;
     font-size: 39px;
+  /*  font-family: 'Russo One', sans-serif;*/
+    font-family: 'Lobster Two', cursive;
 }
 
 .info-bar-img-tree {
