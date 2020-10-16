@@ -194,9 +194,9 @@ class Overlay extends React.Component {
                     />
                 )}
                 {this.state.showLoader && <div className="loader"></div>}
-                <TopBar state={this.state} />
                 {this.state.logged && (
                     <>
+                        <TopBar state={this.state} />
                         <Button
                             value={<img src={exitIcon} alt="" />}
                             handleClick={this.logOut}
