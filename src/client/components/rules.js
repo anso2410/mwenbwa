@@ -1,5 +1,5 @@
 import React from "react";
-import iconRules from "./img/rules-icon.jpg"
+import iconRules from "./img/parchment-icon-white-purple.png"
 function Rules() {
     return (
         <div className="modal-div center-modal flex-col pad-med border bgc-prim">

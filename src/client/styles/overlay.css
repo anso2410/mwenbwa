@@ -416,12 +416,18 @@ input[type="color"]::-webkit-color-swatch {
 
 /*///////////////////////////RULES//////////////////////*/
 .rules-img {
-    max-width: 300px;
-    display: block;
-    margin-left: 27%;
-    margin-right: 50%;
-    width: 100%;
-    padding-top: 20px;
+    width: 250px;
+    height: 250px;
+    margin-left: 30%;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #703f8f;
+}
+.rules-img img{
+    width: 210px;
+    margin-left: 20px;
+    margin-top: 21px;
+    height: auto;
 }
 .rules-text {
     padding-right: 10%;
@@ -495,7 +501,7 @@ ul.gamelogFlex {
     width: 400px;
     /* border: 1px solid purple; */
     left: 0px;
-    height: 150px;
+    height: 140px;
     background-color: white;
 }
 .user-bubble {
