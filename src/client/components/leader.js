@@ -11,4 +11,3 @@ function Leader(props) {
 }
 
 export default Leader;
-

@@ -28,9 +28,6 @@ class Overlay extends React.Component {
             color: "#b55c9c",
             token: "",
             user: {},
-            // realUsername: "",
-            // realColor: "",
-            // gravatar: "",
             leaders: [],
             gamelog: [],
         };
@@ -44,18 +41,6 @@ class Overlay extends React.Component {
         this.toggleGamelog = this.toggleGamelog.bind(this);
         this.closeModals = this.closeModals.bind(this);
     }
-    // componentDidMount() {
-    //     axios
-    //         .post(`http://localhost/api/tree`, {
-    //             lat: 50.64327,
-    //             lon: 5.5980396,
-    //             zoom: 16,
-    //         })
-    //         .then(res => {
-    //             console.log(res.data);
-    //             // res.data.map(x => console.log(x));
-    //         });
-    // }
     handleChange(event) {
         const {name, value} = event.target;
         this.setState({
@@ -189,6 +174,7 @@ class Overlay extends React.Component {
         this.setState({
             showRules: false,
             showLeaderboard: false,
+            showGamelog: false,
         });
     }
     render() {
@@ -212,23 +198,23 @@ class Overlay extends React.Component {
                 {this.state.logged && (
                     <>
                         <Button
-                            value={<img src={exitIcon} alt=''/>}
+                            value={<img src={exitIcon} alt="" />}
                             handleClick={this.logOut}
                             className="button-logout"
                         />
                         <Button
-                            value={<img src={crownIcon} alt=''/>}
+                            value={<img src={crownIcon} alt="" />}
                             handleClick={this.toggleLeaderboard}
                             className="button-leaderboard"
                         />
                         <Button
-                            value={<img src={rulesIcon} alt=''/>}
+                            value={<img src={rulesIcon} alt="" />}
                             name="showRules"
                             handleClick={this.toggleRules}
                             className="button-rules"
                         />
                         <Button
-                            value={<img src={historyIcon} alt=''/>}
+                            value={<img src={historyIcon} alt="" />}
                             handleClick={this.toggleGamelog}
                             className="button-infos"
                         />

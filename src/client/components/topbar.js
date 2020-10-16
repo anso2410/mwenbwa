@@ -5,24 +5,10 @@ import treeWhiteIcon from "./img/top-tree-purple.png";
 
 function TopBar(props) {
     return (
-<<<<<<< HEAD
-        <div className="top-bar bgc-prim">
-            <img
-                src={
-                    props.state.user.avatar ||
-                    "https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg"
-                }></img>
-            <h2 className="game-title">{props.state.user.username}</h2>
-            <img src={treeImg} className="treeImg"></img>
-            <p>{props.state.user.number_of_trees}</p>
-            <img src={leafImg} className="leafImg"></img>
-            <p>{props.state.user.number_of_leaves}</p>
-=======
         <div className="top-bar-display">
-            <div className="top-bar-button">
-            </div>
+            <div className="top-bar-button"></div>
             <div className="top-bar bgc-prim">
-                <img src={treeWhiteIcon} alt=""/>
+                <img src={treeWhiteIcon} alt="" />
             </div>
             <div className="info-bar">
                 <div className="info-bar-img-tree">
@@ -41,21 +27,7 @@ function TopBar(props) {
                         "https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg"}></img>
                 <h2 className="game-title">{props.state.user.username}</h2>
             </div>
->>>>>>> Kim
         </div>
-
-  /*  <div className="top-bar bgc-prim">
-        <img
-            src={
-                props.state.user.avatar ||
-                "https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg"
-            }></img>
-        <h2 className="game-title">{props.state.user.username}</h2>
-        <img src={treeImg} className="treeImg"></img>
-        <p>{props.state.user.number_of_trees}</p>
-        <img src={leafImg} className="leafImg"></img>
-        <p>{props.state.user.number_of_leaves}</p>
-    </div>*/
     );
 }
 
