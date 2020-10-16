@@ -77,7 +77,7 @@ function LoginModal(props) {
                                     />
                                 </div>
                                 <div id="toggle-signup-group">
-                                    <p class="light-purple">
+                                    <p className="light-purple">
                                         {props.state.showSignup
                                             ? "Already have an account?"
                                             : "No account yet?"}

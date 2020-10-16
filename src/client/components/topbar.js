@@ -14,23 +14,16 @@ function TopBar(props) {
             <div className="info-bar">
                 <div className="info-bar-img-tree">
                     <img src={treeImg} className="treeImg"></img>
-                    <p>{props.state.user.number_of_trees}</p>
+                    <p>15</p>
                 </div>
                 <div className="info-bar-img-leaf">
                     <img src={leafImg} className="leafImg"></img>
-                    <p>{props.state.user.number_of_leaves}</p>
+                    <p>139</p>
                 </div>
-            </div>
-            <div className="user-bubble">
-                <img
-                    src={
-                        props.state.user.avatar ||
-                        "https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg"}></img>
-                <h2 className="game-title">{props.state.user.username}</h2>
             </div>
         </div>
 
-  /*  <div className="top-bar bgc-prim">
+ /*   <div className="top-bar bgc-prim">
         <img
             src={
                 props.state.user.avatar ||
