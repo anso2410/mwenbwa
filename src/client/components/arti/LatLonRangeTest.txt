@@ -1,9 +1,0 @@
-latitude: vertical variation
-longitude: horizontal variation
-
-    ;{/* Marker for Bryan's Home in Madagascar */}
-    <Marker
-        icon={treeIcon}
-        key={"Bryan"}
-        position={[-18.926263, 47.544829]}
-    />

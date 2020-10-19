@@ -12,6 +12,7 @@ import "./styles/normalize.css";
 import "./styles/responsive.css";
 import "./styles/main.css";
 import MyWood from "./components/mywood";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import Login from "./components/login";
 

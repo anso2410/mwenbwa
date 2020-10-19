@@ -7,6 +7,10 @@ import LoginModal from "./loginmodal";
 import Leaderboard from "./leaderboard";
 import Gamelog from "./gamelog";
 import "../styles/overlay.css";
+import exitIcon from "./img/exit-icon .png";
+import crownIcon from "./img/crown-icon.png";
+import rulesIcon from "./img/parchment-icon-white.png";
+import historyIcon from "./img/history-icon.png";
 
 class Overlay extends React.Component {
     constructor() {
@@ -21,12 +25,9 @@ class Overlay extends React.Component {
             username: "",
             email: "",
             password: "",
-            color: "#FF0000",
+            color: "#b55c9c",
             token: "",
             user: {},
-            // realUsername: "",
-            // realColor: "",
-            // gravatar: "",
             leaders: [],
             gamelog: [],
         };
@@ -40,18 +41,6 @@ class Overlay extends React.Component {
         this.toggleGamelog = this.toggleGamelog.bind(this);
         this.closeModals = this.closeModals.bind(this);
     }
-    // componentDidMount() {
-    //     axios
-    //         .post(`http://localhost/api/tree`, {
-    //             lat: 50.64327,
-    //             lon: 5.5980396,
-    //             zoom: 16,
-    //         })
-    //         .then(res => {
-    //             console.log(res.data);
-    //             // res.data.map(x => console.log(x));
-    //         });
-    // }
     handleChange(event) {
         const {name, value} = event.target;
         this.setState({
@@ -185,6 +174,7 @@ class Overlay extends React.Component {
         this.setState({
             showRules: false,
             showLeaderboard: false,
+            showGamelog: false,
         });
     }
     render() {
@@ -204,29 +194,29 @@ class Overlay extends React.Component {
                     />
                 )}
                 {this.state.showLoader && <div className="loader"></div>}
-                <TopBar state={this.state} />
                 {this.state.logged && (
                     <>
+                        <TopBar state={this.state} />
                         <Button
-                            value="Log Out"
+                            value={<img src={exitIcon} alt="" />}
                             handleClick={this.logOut}
                             className="button-logout"
                         />
                         <Button
-                            value="Leaderboard"
+                            value={<img src={crownIcon} alt="" />}
                             handleClick={this.toggleLeaderboard}
                             className="button-leaderboard"
                         />
                         <Button
-                            value="Game Rules"
+                            value={<img src={rulesIcon} alt="" />}
                             name="showRules"
                             handleClick={this.toggleRules}
                             className="button-rules"
                         />
                         <Button
-                            value="Game Log"
+                            value={<img src={historyIcon} alt="" />}
                             handleClick={this.toggleGamelog}
-                            className="button-gamelog"
+                            className="button-infos"
                         />
                     </>
                 )}

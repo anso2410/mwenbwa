@@ -1,5 +1,22 @@
+
+h2 {
+    font-size: 65px !important;
+    margin-bottom: 20px;
+}
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 10px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 10px;
+}
 #overlay {
-    width: 100%; 
+    width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -10,8 +27,33 @@
     position: absolute;
     z-index: 750;
 }
-
+/*///////////////////////////TEXT///////////////////*/
+.bold {
+    font-weight: bold;
+}
+.text-align-left {
+    text-align: left !important;
+}
+.text-align-center {
+    text-align: center;
+}
+/*///////////////////////////COLOR///////////////////*/
+.dark-purple {
+    color: #61397c;
+}
+.light-purple {
+    color: #865a97;
+}
 /* HELPER CLASSES >>> */
+.modal-div {
+    width: 700px;
+    max-width: 700px;
+    height: 930px;
+    padding-top: 0 !important;
+    background: white;
+    box-shadow: 10px 10px 100px black;
+    overflow: hidden;
+}
 .center-modal {
     top: 50%;
     left: 50%;
@@ -25,7 +67,7 @@
     padding: 30px;
 }
 .bgc-prim {
-    background-color:  rgb(194, 240, 208)
+    background-color:  white;
 }
 .border {
     border: 6px solid rgb(78, 194, 132);
@@ -35,29 +77,54 @@
 
 #darken-map {
     background-color: rgba(35, 45, 40, 0.394);
-    width: 100%; 
+    width: 100%;
     height: 100vh;
 }
 /* ///// TOP-BAR >>>>> */
-.top-bar {
-    display: flex;
-    top: 0px;
+.top-bar-display {
     left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    height: 55px;
-    border-width: 0px 6px 6px 6px;
-    /* border-top-width: 6px; */
-    border-style: none solid solid solid;
-    /* border-top-style: solid; */
-    border-color: rgb(78, 194, 132);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
-.game-title {
+.top-bar {
+    text-align: center;
+    background-color: white;
+    width: 110px;
+    height: 95px;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.top-bar-button{
+    text-align: center;
+    background-color: white;
+    border-top: none;
+    width: 370px;
+    height: 95px;
+    box-shadow: 5px 0px 45px 5px grey;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: relative;
+}
+.top-bar img {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    transition: 0.3s;
+}
+.top-bar img:hover {
+    width: 80px;
+    height: 80px;
+    transform: rotate(0deg);
+    text-align: center;
+}
+/*.img-top-bar {
+    background: url("./src/client/components/img/top-tree-white.png");
+}*/
+/*.game-title {
     line-height: 50px;
     color: rgb(8, 109, 67);
-}
+}*/
+
 .treeImg, .leafImg {
     width: 30px;
     height: auto;
@@ -65,30 +132,106 @@
 /* <<<<< TOP-BAR ///// */
 
 /* ///// LOGIN-MODAL >>>>> */
+.card {
+    width: 960px !important;
+}
+.login-img img{
+    max-width: 900px;
+}
+.margin-bottom-p {
+    margin: 0;
+}
+.input-border {
+    border: 0;
+    border-bottom: 3px solid #61397c;
+    background-color: white !important;
+    margin-left: 3%;
+}
+.container-size {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0!important;
+    box-shadow: 10px 10px 100px black;
+    padding-right: 100px;
+}
+.row-height {
+    /*max-height: 553px;*/
+
+}
+.login-width {
+    max-width: 200px;
+}
 .login-modal {
-    align-items: center;
-    width: 400px;
-    height: 300px;
+    padding-left: 10%;
+    width: 85%;
+    height: 70%;
+}
+.login-right-col{
+    max-height: 700px;
+    background-color: white;
+}
+.line-height-login {
+    width: 100%;
+    height: 80%;
+}
+.input-space {
+    margin-bottom: 25px;
+}
+.title-login {
+    padding-bottom: 10px;
+    padding-top: 16px;
+    color: #61397c;
 }
 #login-modal-id, #login-modal-email {
-    width: 200px;
+    width: 100%;
+    height: 50px;
 }
 #color-selector {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 #color-selector p {
     line-height: 30px;
 }
 #color-input {
-    height: 30px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
 }
+
 /* <<<<< LOGIN-MODAL ///// */
 
 /* ///// BUTTONS >>>>> */
-.button-logout {
-    top: 10px;
+.button-logout button {
+    margin-top: 7px;
+    width: 80px;
+    height: 80px;
+    background-color: #4f236e;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.7;
+    transition: 0.3s;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.button-logout img {
+    background-color: transparent;
+    width: 70%;
+}
+.button-logout button:hover {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #4f236e;
+    border-radius: 50%;
+    border: none;
+    opacity: 1;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 .button-signup {
     top: 45px;
@@ -96,22 +239,46 @@
 .button-logout, .button-signup {
     right: 10px;
 }
-button, .button {
-    width: 120px;
-    height: 30px;
-    background-color: rgb(0, 97, 76);
+.button-login {
+    width: 160px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #61397c;
     color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.button-login:hover {
+    width: 160px;
+    height: 40px;
+    background-color: white;
+    border: 3px solid #61397c;
+    color: #61397c;
+    border-radius: 10px;
 }
 #loginmodal-buttons {
     display: flex;
+    position: fixed;
     justify-content: center;
+    margin-top : 155px;
+    margin-left: 7.5%;
 }
 #toggle-signup-group {
-    margin: 10px;
+    position: fixed;
+    margin-top: 210px;
+    margin-left: 6.1em;
+}
+#toggle-signup-group p {
+    margin-bottom: 5px;
 }
 #toggle-signup {
+    position: fixed;
     display: block;
     margin: 10px auto;
+    margin-top: 0px;
+    margin-left: 8px;
 }
 .button-leaderboard {
     bottom: 45px;
@@ -120,6 +287,23 @@ button, .button {
 .button-rules {
     bottom: 10px;
     left: 10px;
+}
+.signup-button-style {
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    transition: 0.1s;
+    opacity: 0.6;
+}
+.signup-button-style:hover {
+    color: #61397c;
+    border: 1px solid #61397c;
+    border: none;
+    border-bottom: 3px solid #61397c;
+    opacity: 1;
 }
 .button-gamelog {
     bottom: 80px;
@@ -131,23 +315,279 @@ button, .button {
     height: 700px;
     align-items: center;
 }
-.gamelog {
-    width: 85vw;
-    height: 700px;
-    align-items: center;
-}
 .leaderFlex {
     display: flex;
     flex-direction: column;
 }
-.rules {
-    width: 90vw;
-    max-width: 700px;
+
+.button-leaderboard {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 7px;
+    margin-left: 47.5%;
+    border-radius: 50%;
+    background-color: #4f236e;
+    transition: 0.3s;
+    box-shadow: 3px 3px 4px grey;
+}
+.button-leaderboard button {
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.button-leaderboard:hover {
+    top: 14.5px;
+    margin-left: 47.8%;
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+}
+.button-leaderboard button:hover {
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+.button-rules {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4f236e;
+    left: 42%;
+    top: 7px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 4px grey;
+}
+.button-rules button {
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.button-rules:hover {
+    top: 14.5px;
+    left: 42.3%;
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+}
+.button-rules button:hover {
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+.button-infos {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 53.8%;
+    top: 7px;
+    border-radius: 50%;
+    background-color: #4f236e;
+    transition: 0.3s;
+    box-shadow: 3px 3px 4px grey;
+}
+.button-infos button {
+    background-color: transparent;
+    border: none;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+.button-infos:hover {
+    top: 14.5px;
+    margin-left: 54.1%;
+    width: 70px;
+    height: 70px;
+    box-shadow: none;
+}
+.button-infos button:hover {
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+
+/*///////////////////////////RULES//////////////////////*/
+.rules-img {
+    width: 250px;
+    height: 250px;
+    margin-left: 30%;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #703f8f;
+}
+.rules-img img{
+    width: 210px;
+    margin-left: 20px;
+    margin-top: 21px;
     height: auto;
 }
-.rules p {
-    font-size: 20px;
-    margin-top: 15px;
+.rules-text {
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: justify;
+    color: #865a97;
+}
+.rules-text h2 {
+    color: #4f236e;
+    font-family: 'Lobster Two', cursive;
+}
+.rules-text p {
+    font-size: 20px
+}
+
+/*//////////////////////////LEADERBOARD////////////////////*/
+.leaderboard-img {
+    width: 250px;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #703f8f;
+}
+.leaderboard-text {
+    padding-top: 40px;
+}
+.leaderboard-text h2 {
+    color: #4f236e;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+}
+.leaderboard-text ol {
+    margin-left: 40px;
+    margin-top: 30px;
+    line-height: 15px;
+}
+
+.leaderFlex li {
+    color: #865a97;
+}
+/*///////////////////GAMELOG*/
+ul.gamelogFlex {
+    padding-top: 10px;
+}
+.gamelog-img {
+    width: 250px;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #703f8f;
+}
+.gamelog-text {
+    margin-right: 8%;
+    margin-left: 8%;
+}
+.gamelog-text h2 {
+    margin-top: 30px;
+    color: #4f236e;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+.gamelog-entry {
+    color: #865a97;
+}
+/*//////////////////////////Info bar//////////////////////*/
+.info-bar {
+    position: fixed;
+    border-bottom-right-radius: 1;
+    border-top-right-radius: 100px;
+    bottom: 0px;
+    box-shadow: 5px 0px 45px 5px grey;
+    width: 400px;
+    /* border: 1px solid purple; */
+    left: 0px;
+    height: 140px;
+    background-color: white;
+}
+.user-bubble {
+    bottom: 10px;
+    left: 20px;
+    position: fixed;
+}
+.user-bubble img {
+    border-radius: 50%;
+    width: 120px;
+}
+h3.game-title {
+    bottom: 73px;
+    left: 155px;
+    font-weight: bold;
+    color: #4f236e;
+    position: fixed;
+    font-size: 39px;
+  /*  font-family: 'Russo One', sans-serif;*/
+    font-family: 'Lobster Two', cursive;
+}
+
+.info-bar-img-tree {
+    width: 28px;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    left: 180px;
+    bottom: 0px;
+    padding-top: 10px;
+}
+.info-bar-img-leaf {
+    width: 65px;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 240px;
+    padding-top: 10px;
+}
+.info-bar-img-leaf img {
+width: 30%;
+}
+.info-bar p {
+font-weight: bold;
+color: #4f236e;
+}
+
+.leaflet-popup-content-wrapper{
+    background-color: white;
+    text-align: center;
+}
+
+.leaflet-popup-content-wrapper h4{
+    color: #4f236e;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.leaflet-popup-content {
+    margin: 13px;
+    line-height: 1.4;
+}
+.leaflet-popup-content p {
+    text-align: left;
+    font-weight: bold;
+    color: #865a97;
+    margin-left: 20px;
+}
+.leaflet-popup-content input {
+    border: none;
+    background-color: #4f236e;
+    color: white;
+    width: 118px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.leaflet-popup-content input:hover {
+    background-color: white;
+    color: #4f236e;
+    border: 1px solid #4f236e;
 }
 /* LOADER >>> */
 .loader {

@@ -35,7 +35,7 @@ function MyWoodMap(props) {
                             tree.location.coordinates[1],
                             tree.location.coordinates[0],
                         ]}>
-                        <Popup>
+                        <Popup className="leaflet-popup-style">
                             <a
                                 href={tree.wikipedia_page}
                                 rel="noreferrer"
