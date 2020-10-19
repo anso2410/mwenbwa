@@ -13,7 +13,8 @@
     "work:client": "npx webpack --env=dev --progress",
     "build": "npm run build:server && npm run build:client",
     "build-2": "webpack --mode production",
-    "start": "npm run build-2 && npm run build"
+    "start": "npm run build-2 && npm run build",
+    "heroku-prebuild": "npm install --dev"
   },
   "lint-staged": {
     "*.js": [
