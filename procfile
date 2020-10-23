@@ -1,1 +1,1 @@
-web: node bin/server/index.js
+web: node dotenv/config bin/server/index.js
