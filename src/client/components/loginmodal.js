@@ -101,6 +101,12 @@ function LoginModal(props) {
                                         }
                                         className="button-login"
                                     />
+                                    <input
+                                        type="button"
+                                        value="Login as Trololo"
+                                        onClick={props.loginAsTrololo}
+                                        className="button-login"
+                                    />
                                 </div>
                                 <div id="toggle-signup-group">
                                     <p className="light-purple">

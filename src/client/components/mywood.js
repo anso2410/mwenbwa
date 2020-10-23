@@ -10,7 +10,8 @@ import * as React from "react";
 import MyWoodMap from "./mywoodmap";
 import Overlay from "./overlay";
 import axios from "axios";
-// import getTrees from "./axios/gettrees";
+
+const thisURL = window.location.href;
 
 class MyWood extends React.Component {
     constructor() {
@@ -32,8 +33,10 @@ class MyWood extends React.Component {
         let lonMax = center[1] + 0.007;
         // endtest
         let response = [];
-        axios.get(`http://localhost/api/tree`).then(res => {
-            console.log("it worked");
+        console.log("the URL path for this game is :");
+        console.log();
+        axios.get(`${thisURL}api/tree`).then(res => {
+            console.log("Fetching all trees: SUCCESS!");
             response = res.data.msg;
             let filtered = response.filter(
                 tree =>
@@ -47,29 +50,23 @@ class MyWood extends React.Component {
                 filteredTrees: filtered,
             });
         });
-        // .post(`http://localhost/api/tree`, {
-        //     lat: 50.64327,
-        //     lon: 5.5980396,
-        //     zoom: 17,
-        // })
-        let data = {
-            headers: {
-                "x-auth-token":
-                    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NWJhZWMyYzA3ODIwN2Y3YTA0MmEyIn0sImlhdCI6MTYwMjU5OTY2OCwiZXhwIjoxNjAyNjg2MDY4fQ.G7HzoFpI_f3IYeNhskOcLgfXjJlbKwhaBBzCsqIzhv0",
-                "content-type": "application/json",
-            },
-        };
-        axios
-            .get(`http://localhost/api/user`, data)
-            .then(res => {
-                console.log(res);
-            })
-            .catch(err => {
-                console.log("X AUTH FAILED! Bhuuu");
-            });
+        // let data = {
+        //     headers: {
+        //         "x-auth-token":
+        //             "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWY4NWJhZWMyYzA3ODIwN2Y3YTA0MmEyIn0sImlhdCI6MTYwMjU5OTY2OCwiZXhwIjoxNjAyNjg2MDY4fQ.G7HzoFpI_f3IYeNhskOcLgfXjJlbKwhaBBzCsqIzhv0",
+        //         "content-type": "application/json",
+        //     },
+        // };
+        // axios
+        //     .get(`http://localhost/api/user`, data)
+        //     .then(res => {
+        //         console.log(res);
+        //     })
+        //     .catch(err => {
+        //         console.log("X AUTH FAILED! Bhuuu");
+        //     });
     }
     getTreesCoordinates(e) {
-        // const zoom = e.zoom;
         const coordinates = e.center;
         let latMin = coordinates[0] - 0.003;
         let latMax = coordinates[0] + 0.003;
@@ -100,7 +97,7 @@ class MyWood extends React.Component {
             },
         };
         axios
-            .get(`http://localhost/api/tree/buyTree`, data)
+            .get(`${thisURL}api/tree/buyTree`, data)
             .then(res => {
                 console.log(res);
             })

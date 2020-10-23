@@ -12,6 +12,8 @@ import crownIcon from "./img/crown-icon.png";
 import rulesIcon from "./img/parchment-icon-white.png";
 import historyIcon from "./img/history-icon.png";
 
+const thisURL = window.location.href;
+
 class Overlay extends React.Component {
     constructor() {
         super();
@@ -35,6 +37,7 @@ class Overlay extends React.Component {
         this.toggleSignup = this.toggleSignup.bind(this);
         this.signUp = this.signUp.bind(this);
         this.logIn = this.logIn.bind(this);
+        this.loginAsTrololo = this.loginAsTrololo.bind(this);
         this.logOut = this.logOut.bind(this);
         this.toggleLeaderboard = this.toggleLeaderboard.bind(this);
         this.toggleRules = this.toggleRules.bind(this);
@@ -65,7 +68,7 @@ class Overlay extends React.Component {
             },
         };
         axios
-            .post(`http://localhost/api/user/signup`, data, config)
+            .post(`${thisURL}api/user/signup`, data, config)
             .then(res => {
                 this.setState({
                     token: res.data.token,
@@ -92,7 +95,7 @@ class Overlay extends React.Component {
             },
         };
         axios
-            .post(`http://localhost/api/user/login`, data, config)
+            .post(`${thisURL}api/user/login`, data, config)
             .then(res => {
                 this.setState({
                     token: res.data.token,
@@ -106,6 +109,32 @@ class Overlay extends React.Component {
             })
             .catch(err => {
                 console.log("Log In failed! Oh no!");
+                console.log(err);
+            });
+    }
+    loginAsTrololo() {
+        const data = {
+            email: "trololo@gmail.com",
+            password: "trololo",
+        };
+        const config = {
+            headers: {
+                "content-type": "application/json",
+            },
+        };
+        axios
+            .post(`${thisURL}api/user/login`, data, config)
+            .then(res => {
+                this.setState({
+                    token: res.data.token,
+                    user: res.data.user,
+                    logged: true,
+                    showLeaderboard: false,
+                    showRules: true,
+                    showGamelog: false,
+                });
+            })
+            .catch(err => {
                 console.log(err);
             });
     }
@@ -124,7 +153,7 @@ class Overlay extends React.Component {
             showGamelog: false,
         });
         axios
-            .get(`http://localhost/api/leaderboard/trees`)
+            .get(`${thisURL}api/leaderboard/trees`)
             .then(res => {
                 this.setState({
                     leaders: res.data.users,
@@ -157,7 +186,7 @@ class Overlay extends React.Component {
         console.log("the data is :");
         console.log(data);
         axios
-            .get(`http://localhost/api/gamelog`, data)
+            .get(`${thisURL}api/gamelog`, data)
             .then(res => {
                 this.setState({
                     gamelog: res.data.msg,
@@ -232,6 +261,7 @@ class Overlay extends React.Component {
                         toggleSignup={this.toggleSignup}
                         logIn={this.logIn}
                         signUp={this.signUp}
+                        loginAsTrololo={this.loginAsTrololo}
                     />
                 )}
             </div>
